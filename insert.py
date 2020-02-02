@@ -1,8 +1,8 @@
 import mysql.connector
 
-dbase,table = input().split() #first line of input: the database and the table you want to insert to
-params = input().split() #second line of input: the paramaters you want to add to the table 
-values = input().split() #third line of input: values of the params
+dbase,table = input().split() #first line of input: the database and the table you want to insert to SPACE SEPARATED
+params = input().split() #second line of input: the paramaters you want to add to the table SPACE SEPARATED
+values = input().split(",") #third line of input: values of the params COMMA SEPARATED (DONT USE SPACE BEFORE AND AFTER COMMA)
 
 #preprocessing
 paramString = ""
@@ -21,7 +21,7 @@ for i in range(len(params)):
 mydb = mysql.connector.connect(
   host="localhost",
   user="root",
-  passwd="0314",
+  passwd="psswd",
   database=dbase
 )
 mycursor = mydb.cursor()
