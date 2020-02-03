@@ -20,8 +20,8 @@ for i in range(len(params)):
 #database connection
 mydb = mysql.connector.connect(
   host="localhost",
-  user="root",
-  passwd="psswd",
+  user="dbms",
+  passwd="12345678",
   database=dbase
 )
 mycursor = mydb.cursor()
