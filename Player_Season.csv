@@ -1,0 +1,13 @@
+Player_ID,Games_Played,Goals,Assists,Yellow_cards,Red_cards,Club,Tackles
+1,16,2,2,3,0,Liverpool,10
+2,24,3,4,1,0,Liverpool,53
+6,4,0,0,0,0,Manchester City,0
+8,18,3,7,0,0,Manchester City,18
+12,9,1,0,4,0,Manchester United,12
+14,24,3,6,3,0,Manchester United,20
+16,10,2,0,2,0,Chelsea,14
+20,24,4,4,2,0,Chelsea,33
+17,23,4,2,9,0,Chelsea,49
+21,25,0,0,2,0,Arsenal,0
+22,18,2,0,5,0,Arsenal,24
+23,22,2,0,4,1,Arsenal,22
