@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: football_database
 -- ------------------------------------------------------
--- Server version	5.7.29-0ubuntu0.18.04.1
+-- Server version 5.7.29-0ubuntu0.18.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -76,9 +76,9 @@ DROP TABLE IF EXISTS `Injuries`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Injuries` (
   `Player_ID` int(11) NOT NULL,
+  `Duration_of_injury_week` int(11) NOT NULL,
   `Date` date NOT NULL,
   `Injury_name` varchar(20) NOT NULL,
-  `Duration_of_injury_weeks` int(11) DEFAULT NULL,
   KEY `Player_ID` (`Player_ID`),
   CONSTRAINT `Injuries_ibfk_1` FOREIGN KEY (`Player_ID`) REFERENCES `player` (`Player_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -90,7 +90,7 @@ CREATE TABLE `Injuries` (
 
 LOCK TABLES `Injuries` WRITE;
 /*!40000 ALTER TABLE `Injuries` DISABLE KEYS */;
-INSERT INTO `Injuries` VALUES (15,'2020-01-16','Groin',NULL);
+INSERT INTO `Injuries` VALUES (1,14,'2020-01-16','Groin'),(14,9,'2020-01-19','Ankle sprain'),(21,10,'2020-01-22','Knee ligament injuri'),(10,6,'2019-11-23','Muscle strain'),(5,8,'2019-11-10','Shin splints'),(17,10,'2019-11-23','Ankle sprain'),(23,12,'2020-01-22','Rotator cuff strains');
 /*!40000 ALTER TABLE `Injuries` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -234,9 +234,9 @@ CREATE TABLE `Season_club` (
   `Matches_Lost` int(11) DEFAULT NULL,
   `League_Position` int(11) DEFAULT NULL,
   `Club_name` varchar(20) NOT NULL,
-  `Season_Year` varchar(20) DEFAULT NULL,
-  `League_Name` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`Club_name`)
+  `Season_Year` varchar(20) NOT NULL,
+  `League_Name` varchar(20) NOT NULL,
+  PRIMARY KEY (`Club_name`,`Season_Year`,`League_Name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -302,7 +302,7 @@ CREATE TABLE `Season_player` (
 
 LOCK TABLES `Season_player` WRITE;
 /*!40000 ALTER TABLE `Season_player` DISABLE KEYS */;
-INSERT INTO `Season_player` VALUES (1,16,2,2,3,0,'Liverpool',10),(2,24,3,4,1,0,'Liverpool',53),(6,4,0,0,0,0,'Manchester City',0),(8,18,3,7,0,0,'Manchester City',18),(12,9,1,0,4,0,'Manchester United',12),(14,24,3,6,3,0,'Manchester United',20),(16,10,2,0,2,0,'Chelsea',14),(20,24,4,4,2,0,'Chelsea',33),(17,23,4,2,9,0,'Chelsea',49),(21,25,0,0,2,0,'Arsenal',0),(22,18,2,0,5,0,'Arsenal',24),(23,22,2,0,4,1,'Arsenal',22);
+INSERT INTO `Season_player` VALUES (1,16,2,2,3,0,'Liverpool',10),(2,24,3,4,1,0,'Liverpool',53),(3,7,1,0,0,0,'Liverpool',12),(4,22,11,6,1,0,'Liverpool',32),(5,17,0,1,0,1,'Liverpool',0),(6,4,0,0,0,0,'Manchester City',0),(7,19,1,2,4,0,'Manchester City',18),(8,18,3,7,0,0,'Manchester City',18),(9,21,7,7,0,0,'Manchester City',18),(10,21,9,4,1,0,'Manchester City',9),(11,25,0,0,2,0,'Manchester United',0),(12,9,1,0,4,0,'Manchester United',12),(13,22,1,3,3,0,'Manchester United',23),(14,24,3,6,3,0,'Manchester United',20),(15,22,14,4,2,0,'Manchester United',12),(16,10,2,0,2,0,'Chelsea',14),(18,22,1,3,7,0,'Chelsea',40),(19,24,13,3,2,0,'Chelsea',5),(20,24,4,4,2,0,'Chelsea',33),(17,23,4,2,9,0,'Chelsea',49),(21,25,0,0,2,0,'Arsenal',0),(22,18,2,0,5,0,'Arsenal',24),(23,22,2,0,4,1,'Arsenal',22);
 /*!40000 ALTER TABLE `Season_player` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -341,7 +341,7 @@ CREATE TABLE `player` (
 
 LOCK TABLES `player` WRITE;
 /*!40000 ALTER TABLE `player` DISABLE KEYS */;
-INSERT INTO `player` VALUES ('\"James Milner\"',532,55,84,'\"Midfielder\"',34,'\"England\"',1,'\"Liverpool\"','2001','','2022',10800000,0,175,72,''),('\"jordan Henderson\"',334,29,45,'\"Midfielder\"',29,'\"England\"',2,'\"Liverpool\"','2008','','2023',31500000,0,182,75,''),('\"Joel Matip\"',83,4,0,'\"Defender\"',28,'\"Cameroon\"',3,'\"Liverpool\"','2017','','2024',36000000,0,195,78,''),('\"Sadio Mane\"',181,77,28,'\"Forward\"',28,'\"Senegal\"',4,'\"Liverpool\"','2015','','2023',135000000,0,175,68,''),('\"Alisson\"',55,0,1,'\"Goalkeeper\"',31,'\"Brazil\"',5,'\"Liverpool\"','2018','','2024',81000000,0,185,72,''),('\"Claudio Bravo\"',29,0,0,'\"Goalkeeper\"',36,'\"Chile\"',6,'\"Manchester Cit','2016','','2020',1350000,0,184,76,''),('\"Kyle Walker\"',282,7,27,'\"Defender\"',29,'\"England\"',7,'\"Manchester Cit','2010','','2024',45000000,0,178,75,''),('\"David Silva\"',300,57,90,'\"Midfielder\"',34,'\"Spain\"',8,'\"Manchester Cit','2010','','2020',13500000,0,173,70,''),('\"Riyadh Mahrez\"',187,53,38,'\"Forward\"',28,'\"Algeria\"',9,'\"Manchester Cit','2014','','2023',53000000,0,179,79,''),('\"Gabriel Jesus\"',89,36,14,'\"Forward\"',22,'\"Brazil\"',10,'\"Manchester Cit','2016','','2023',63000000,0,175,76,''),('\"David de Gea\"',300,0,0,'\"Goalkeeper\"',29,'\"Spain\"',11,'\"Manchester Uni','2011','','2023',54000000,0,192,79,''),('\"Brandon Williams\"',9,1,0,'\"Defender\"',19,'\"England\"',12,'\"Manchester Uni','2019','','2022',6300000,0,171,67,''),('\"Andreas Pereira\"',42,2,4,'\"Midfielder\"',24,'\"Brazil\"',13,'\"Manchester Uni','2014','','2023',18000000,0,178,65,''),('\"Daniel James\"',24,3,6,'\"Midfielder\"',22,'\"Wales\"',14,'\"Manchester Uni','2015','','2024',25200000,0,170,72,''),('\"Marcus Rashford\"',133,41,18,'\"Forward\"',22,'\"England\"',15,'\"Manchester Uni','2015','','2023',72000000,0,180,80,''),('\"Antonio Rudiger\"',70,1,5,'\"Goalkeeper\"',26,'\"Germany\"',16,'\"Chelsea\"','2017','','2022',45000000,0,190,82,''),('\"Jorginho\"',60,6,2,'\"Midfielder\"',28,'\"Italy\"',17,'\"Chelsea\"','2018','','2023',5850000,0,180,66,''),('\"Mateo Kovacic\"',54,1,5,'\"Midfielder\"',25,'\"Croatia\"',18,'\"Chelsea\"','2018','','2024',40500000,0,178,64,''),('\"Tammy Abraham\"',57,18,4,'\"Forward\"',22,'\"England\"',19,'\"Chelsea\"','2015','','2022',45000000,0,190,79,''),('\"Willian\"',222,32,30,'\"Forward\"',31,'\"Brazil\"',20,'\"Chelsea\"','2013','','2020',28800000,0,175,67,''),('\"Bernd Leno\"',57,0,0,'\"Goalkeeper\"',27,'\"Germany\"',21,'\"Arsenal\"','2018','','2023',31500000,0,190,80,''),('\"Sokratis\"',43,3,2,'\"Defender\"',31,'\"Greece\"',22,'\"Arsenal\"','2018','','2021',16200000,0,186,66,''),('\"David Luiz\"',182,13,6,'\"Defender\"',32,'\"Brazil\"',23,'\"Arsenal\"','2010','','2021',13500000,0,189,68,'');
+INSERT INTO `player` VALUES ('\"James Milner\"',532,55,84,'\"Midfielder\"',34,'\"England\"',1,'\"Liverpool\"','2001','','2022',10800000,0,175,72,''),('\"jordan Henderson\"',334,29,45,'\"Midfielder\"',29,'\"England\"',2,'\"Liverpool\"','2008','','2023',31500000,0,182,75,''),('\"Joel Matip\"',83,4,0,'\"Defender\"',28,'\"Cameroon\"',3,'\"Liverpool\"','2017','','2024',36000000,0,195,78,''),('\"Sadio Mane\"',181,77,28,'\"Forward\"',28,'\"Senegal\"',4,'\"Liverpool\"','2015','','2023',135000000,0,175,68,''),('\"Alisson\"',55,0,1,'\"Goalkeeper\"',31,'\"Brazil\"',5,'\"Liverpool\"','2018','','2024',81000000,0,185,72,''),('\"Claudio Bravo\"',29,0,0,'\"Goalkeeper\"',36,'\"Chile\"',6,'\"Manchester Cit','2016','','2020',1350000,0,184,76,''),('\"Kyle Walker\"',282,7,27,'\"Defender\"',29,'\"England\"',7,'\"Manchester Cit','2010','','2024',45000000,0,178,75,''),('\"David Silva\"',300,57,90,'\"Midfielder\"',34,'\"Spain\"',8,'\"Manchester Cit','2010','','2020',13500000,0,173,70,''),('Riyad Mahrez',187,53,38,'\"Forward\"',28,'\"Algeria\"',9,'\"Manchester Cit','2014','','2023',53000000,0,179,79,''),('\"Gabriel Jesus\"',89,36,14,'\"Forward\"',22,'\"Brazil\"',10,'\"Manchester Cit','2016','','2023',63000000,0,175,76,''),('\"David de Gea\"',300,0,0,'\"Goalkeeper\"',29,'\"Spain\"',11,'\"Manchester Uni','2011','','2023',54000000,0,192,79,''),('\"Brandon Williams\"',9,1,0,'\"Defender\"',19,'\"England\"',12,'\"Manchester Uni','2019','','2022',6300000,0,171,67,''),('\"Andreas Pereira\"',42,2,4,'\"Midfielder\"',24,'\"Brazil\"',13,'\"Manchester Uni','2014','','2023',18000000,0,178,65,''),('\"Daniel James\"',24,3,6,'\"Midfielder\"',22,'\"Wales\"',14,'\"Manchester Uni','2015','','2024',25200000,0,170,72,''),('\"Marcus Rashford\"',133,41,18,'\"Forward\"',22,'\"England\"',15,'\"Manchester Uni','2015','','2023',72000000,0,180,80,''),('\"Antonio Rudiger\"',70,1,5,'\"Goalkeeper\"',26,'\"Germany\"',16,'\"Chelsea\"','2017','','2022',45000000,0,190,82,''),('\"Jorginho\"',60,6,2,'\"Midfielder\"',28,'\"Italy\"',17,'\"Chelsea\"','2018','','2023',5850000,0,180,66,''),('\"Mateo Kovacic\"',54,1,5,'\"Midfielder\"',25,'\"Croatia\"',18,'\"Chelsea\"','2018','','2024',40500000,0,178,64,''),('\"Tammy Abraham\"',57,18,4,'\"Forward\"',22,'\"England\"',19,'\"Chelsea\"','2015','','2022',45000000,0,190,79,''),('\"Willian\"',222,32,30,'\"Forward\"',31,'\"Brazil\"',20,'\"Chelsea\"','2013','','2020',28800000,0,175,67,''),('\"Bernd Leno\"',57,0,0,'\"Goalkeeper\"',27,'\"Germany\"',21,'\"Arsenal\"','2018','','2023',31500000,0,190,80,''),('\"Sokratis\"',43,3,2,'\"Defender\"',31,'\"Greece\"',22,'\"Arsenal\"','2018','','2021',16200000,0,186,66,''),('\"David Luiz\"',182,13,6,'\"Defender\"',32,'\"Brazil\"',23,'\"Arsenal\"','2010','','2021',13500000,0,189,68,'');
 /*!40000 ALTER TABLE `player` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -354,4 +354,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-02-05 10:48:16
+-- Dump completed on 2020-02-05 11:37:27
