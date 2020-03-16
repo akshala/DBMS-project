@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 option = webdriver.ChromeOptions()
 option.add_argument(" — incognito")
 
-browser = webdriver.Chrome(executable_path = '/home/rachit/Downloads/chromedriver_linux64/chromedriver', chrome_options=option)
+browser = webdriver.Chrome(executable_path = '/home/akshala/Documents/IIITD/fourthSem/Misc/web scraping/chromedriver_linux64/chromedriver', chrome_options=option)
 url = "https://www.transfermarkt.co.in/premier-league/startseite/wettbewerb/GB1"
 page = browser.get(url)
 
@@ -48,9 +48,21 @@ for i in teamLinks:
     playerLinks= [x.get_attribute("href") for x in playerLinks_elements]
     playerLinks = list(dict.fromkeys(playerLinks))
     season_stats_elements = []
+    count = 0
     for j in playerLinks:
+        print(count)
+        count += 1
         try:
             url = j
+            if(url == "https://www.transfermarkt.co.in/mix-diskerud/profil/spieler/103559"):
+                continue
+            if(url == "https://www.transfermarkt.co.in/nathaniel-clyne/profil/spieler/85177"):
+                continue
+            if(url == "https://www.transfermarkt.co.in/marco-van-ginkel/profil/spieler/147034"):
+                continue
+            if(url == "https://www.transfermarkt.co.in/phil-ofosu-ayeh/profil/spieler/133858"):
+                continue
+
             page = browser.get(url)
             season_stats_elements = browser.find_elements_by_xpath("//a[@class='trackingLDWidget']")
         except:
@@ -58,7 +70,7 @@ for i in teamLinks:
         
         while(not season_stats_elements):   
             try:
-                print("tadaaaa")    
+                print(url)   
                 url = j
                 page = browser.get(url)
                 season_stats_elements = browser.find_elements_by_xpath("//a[@class='trackingLDWidget']")
