@@ -19,15 +19,51 @@ teamLinks = [x.get_attribute("href") for x in teamLinks_elements]
 
 teamLinks = list(dict.fromkeys(teamLinks))
 teamLinks = teamLinks[:20]
+print(teamLinks)
+
+while (not teamLinks):
+    teamLinks_elements = browser.find_elements_by_xpath("//a[@class='vereinprofil_tooltip tooltipstered']")
+# print(season_stats_elements)
+    teamLinks = [x.get_attribute("href") for x in teamLinks_elements]
+
+    teamLinks = list(dict.fromkeys(teamLinks))
+    teamLinks = teamLinks[:20]
+    print(teamLinks)
+
+    playerLinks_elements = []
 for i in teamLinks:
-    url = i
-    page = browser.get(url)
-    playerLinks_elements = browser.find_elements_by_xpath("//a[@class='spielprofil_tooltip tooltipstered']")
-    playerLinks= [x.get_attribute("href") for x in playerLinks_elements]
-    for j in playerLinks:
-        url = j
+    try:
+        url = i
         page = browser.get(url)
-        season_stats_elements = browser.find_elements_by_xpath("//a[@class='trackingLDWidget']")
+        playerLinks_elements = browser.find_elements_by_xpath("//a[@class='spielprofil_tooltip tooltipstered']")
+
+        # playerLinks= [x.get_attribute("href") for x in playerLinks_elements]
+    except:
+        pass
+    while(not playerLinks_elements):
+        url = i
+        page = browser.get(url)
+        playerLinks_elements = browser.find_elements_by_xpath("//a[@class='spielprofil_tooltip tooltipstered']")
+
+    playerLinks= [x.get_attribute("href") for x in playerLinks_elements]
+    playerLinks = list(dict.fromkeys(playerLinks))
+    season_stats_elements = []
+    for j in playerLinks:
+        try:
+            url = j
+            page = browser.get(url)
+            season_stats_elements = browser.find_elements_by_xpath("//a[@class='trackingLDWidget']")
+        except:
+            pass
+        
+        while(not season_stats_elements):   
+            try:
+                print("tadaaaa")    
+                url = j
+                page = browser.get(url)
+                season_stats_elements = browser.find_elements_by_xpath("//a[@class='trackingLDWidget']")
+            except:
+                pass
 
         season_stats = [x.text for x in season_stats_elements[6:12]]
 
