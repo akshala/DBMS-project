@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 option = webdriver.ChromeOptions()
 option.add_argument(" — incognito")
 
-browser = webdriver.Chrome(executable_path = '/home/rachit/Downloads/chromedriver_linux64/chromedriver', chrome_options=option)
+browser = webdriver.Chrome(executable_path = '/home/akshala/Documents/IIITD/fourthSem/Misc/web scraping/chromedriver_linux64/chromedriver', chrome_options=option)
 url = "https://www.transfermarkt.co.in/premier-league/startseite/wettbewerb/GB1"
 page = browser.get(url)
 
@@ -31,7 +31,7 @@ while (not teamLinks):
 
     teamLinks = list(dict.fromkeys(teamLinks))
     teamLinks = teamLinks[:20]
-    print(teamLinks)
+    # print(teamLinks)
 
     playerLinks_elements = []
 for i in teamLinks:
@@ -83,9 +83,10 @@ for i in teamLinks:
             except:
                 pass
         name = " ".join(list(map(lambda x:x.capitalize(), url.split("/")[3].split("-"))))
+        club = " ".join(list(map(lambda x:x.capitalize(), i.split("/")[3].split("-"))))
         season_stats = [x.text for x in season_stats_elements[6:12]]
         cntt+=1
-        row.append([cntt,name,season_stats[0],season_stats[1], season_stats[2], season_stats[4],season_stats[5], ""])
+        row.append([cntt,name,season_stats[0],season_stats[1], season_stats[2], season_stats[4],season_stats[5], club])
         print(row)
 
 with open('Seaon_player.csv', 'w', newline='') as file:
