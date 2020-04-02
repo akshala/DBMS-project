@@ -57,34 +57,43 @@ for i in teamLinks:
         count += 1
         try:
             url = j
-            if(url == "https://www.transfermarkt.co.in/mix-diskerud/profil/spieler/103559"):
-                continue
-            if(url == "https://www.transfermarkt.co.in/nathaniel-clyne/profil/spieler/85177"):
-                continue
-            if(url == "https://www.transfermarkt.co.in/marco-van-ginkel/profil/spieler/147034"):
-                continue
-            if(url == "https://www.transfermarkt.co.in/phil-ofosu-ayeh/profil/spieler/133858"):
-                continue
-            if(url == "https://www.transfermarkt.co.in/david-brooks/profil/spieler/277033"):
-                continue
-            if(url == "https://www.transfermarkt.co.in/jack-colback/profil/spieler/61644"):
-                continue
+            # if(url == "https://www.transfermarkt.co.in/mix-diskerud/profil/spieler/103559"):
+            #     continue
+            # if(url == "https://www.transfermarkt.co.in/nathaniel-clyne/profil/spieler/85177"):
+            #     continue
+            # if(url == "https://www.transfermarkt.co.in/marco-van-ginkel/profil/spieler/147034"):
+            #     continue
+            # if(url == "https://www.transfermarkt.co.in/phil-ofosu-ayeh/profil/spieler/133858"):
+            #     continue
+            # if(url == "https://www.transfermarkt.co.in/david-brooks/profil/spieler/277033"):
+            #     continue
+            # if(url == "https://www.transfermarkt.co.in/jack-colback/profil/spieler/61644"):
+            #     continue
 
             page = browser.get(url)
             season_stats_elements = browser.find_elements_by_xpath("//a[@class='trackingLDWidget']")
         except:
             pass
-        
+        maxRetries = 0
+        boxEmpty = False
         while(not season_stats_elements):   
             try:
-                print(url)   
+                # print(url)   
                 url = j
                 page = browser.get(url)
                 season_stats_elements = browser.find_elements_by_xpath("//a[@class='trackingLDWidget']")
+                maxRetries+=1
             except:
                 pass
+            if maxRetries>=2:
+                boxEmpty = True
+                break
+        if (boxEmpty):
+            continue
         name = " ".join(list(map(lambda x:x.capitalize(), url.split("/")[3].split("-"))))
         club = " ".join(list(map(lambda x:x.capitalize(), i.split("/")[3].split("-"))))
+        if (club[:2]=="Fc"):
+            club = club[3:]
         season_stats = [x.text for x in season_stats_elements[6:12]]
         cntt+=1
         row.append([cntt,name,season_stats[0], season_stats[2],season_stats[-2],season_stats[1],season_stats[-1], club])
