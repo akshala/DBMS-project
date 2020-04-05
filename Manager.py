@@ -11,7 +11,7 @@ option = webdriver.ChromeOptions()
 option.add_argument(" — incognito")
 
 browser = webdriver.Chrome(executable_path = '/home/rachit/Downloads/chromedriver_linux64/chromedriver', chrome_options=option)
-url = "https://www.transfermarkt.com/premier-league/trainer/pokalwettbewerb/GB1"
+url = "https://www.transfermarkt.com/primera-division/trainer/pokalwettbewerb/ES1"
 page = browser.get(url)
 
 teamLinks_elements = browser.find_elements_by_xpath("//a[@id='0']")
@@ -19,9 +19,11 @@ teamLinks = [x.get_attribute("href") for x in teamLinks_elements]
 
 teamLinks = list(dict.fromkeys(teamLinks))
 teamLinks = teamLinks[:20]
-teamLinks.append("https://www.transfermarkt.com/jurgen-klopp/stationen/trainer/118/plus/1")
-teamLinks.append("https://www.transfermarkt.com/ralph-hasenhuttl/profil/trainer/2300")
+teamLinks.append("https://www.transfermarkt.com/diego-simeone/profil/trainer/2868")
+# teamLinks.append("https://www.transfermarkt.co.in/sinisa-mihajlovic/profil/trainer/3896")
+# teamLinks.append("https://www.transfermarkt.co.in/antonio-conte/profil/trainer/3517")
 print(teamLinks)
+print(len(teamLinks))
 managerRow = []
 managerRow.append(["Manager_ID","Name","Age","Country","Formation","Contract","Win_Percentage"])
 # cntt = 0
@@ -31,7 +33,7 @@ while (not teamLinks):
 
     teamLinks = list(dict.fromkeys(teamLinks))
     teamLinks = teamLinks[:20]
-counter =0
+counter =40
 for i in teamLinks:
     counter+=1
     try:
@@ -53,11 +55,12 @@ for i in teamLinks:
         stats =  browser.find_elements_by_xpath("//td[@class='zentriert']")
         stats = [x.text for x in stats]
         while (not stats):
-            stats =  browser.find_elements_
-            by_xpath("//td[@class='zentriert']")
+            stats =  browser.find_elements_by_xpath("//td[@class='zentriert']")
             stats = [x.text for x in stats]
         winPercentage = int(stats[3])/int(stats[2])
         winPercentage = round(winPercentage*100,2)
-        print(managerID,name,age,country,formation,contract,winPercentage)
+        # ans = [managerID,name,age,country,formation,contract,winPercentage]
+        # print(ans)
+        print(str(managerID)+","+str(name)+","+str(age)+","+str(country)+","+str(formation)+","+str(contract)+","+str(winPercentage))
     except:
         pass
