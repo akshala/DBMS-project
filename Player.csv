@@ -1023,3 +1023,483 @@ S.No,Name,Games_Played,Goals,Assists,Goals Conceded,Clean Sheets,Position,Age,Co
 1022,Gianluca Lapadula,261,107,28,,,Centre-Forward,30,30.06.2020,6.00,1.78,Italy,Lecce
 1023,Samuele Oltremarini,17,5,-,,,Centre-Forward,17,-,6.00,1.75,Italy,Lecce
 1024,Salvatore Rimoli,58,12,1,,,,18,-,6.00,,Italy,Lecce
+1025,Thibaut Courtois,420,,,400,173,Goalkeeper,27,30.06.2024,60.00,1.99,Belgium,Real Madrid
+1026,Alphonse Areola,228,,,208,98,Goalkeeper,27,30.06.2020,16.00,1.95,France,Real Madrid
+1027,Raphael Varane,333,17,7,,,Centre-Back,26,30.06.2022,80.00,1.91,France,Real Madrid
+1028,Eder Militao,97,8,5,,,Centre-Back,22,30.06.2025,40.00,1.86,Brazil,Real Madrid
+1029,Sergio Ramos,685,94,38,,,Centre-Back,34,30.06.2021,18.00,1.84,Spain,Real Madrid
+1030,Nacho Fernandez,245,12,7,,,Centre-Back,30,30.06.2022,15.00,1.80,Spain,Real Madrid
+1031,Ferland Mendy,151,5,15,,,Left-Back,24,30.06.2025,40.00,1.80,France,Real Madrid
+1032,Marcelo,513,40,96,,,Left-Back,31,30.06.2022,20.00,1.74,Brazil,Real Madrid
+1033,Daniel Carvajal,310,7,53,,,Right-Back,28,30.06.2022,50.00,1.73,Spain,Real Madrid
+1034,Casemiro,351,33,28,,,Defensive Midfield,28,30.06.2023,80.00,1.85,Brazil,Real Madrid
+1035,Toni Kroos,554,63,135,,,Central Midfield,30,30.06.2023,60.00,1.83,Germany,Real Madrid
+1036,Federico Valverde,131,5,8,,,Central Midfield,21,30.06.2025,60.00,1.82,Uruguay,Real Madrid
+1037,Luka Modric,562,60,100,,,Central Midfield,34,30.06.2021,15.00,1.72,Croatia,Real Madrid
+1038,Isco,391,70,64,,,Attacking Midfield,27,30.06.2022,50.00,1.76,Spain,Real Madrid
+1039,James Rodriguez,387,104,125,,,Attacking Midfield,28,30.06.2021,40.00,1.81,Colombia,Real Madrid
+1040,Reinier,18,8,3,,,Attacking Midfield,18,30.06.2026,25.00,1.85,Brazil,Real Madrid
+1041,Brahim Diaz,94,24,17,,,Attacking Midfield,20,30.06.2025,15.00,1.71,Spain,Real Madrid
+1042,Eden Hazard,562,161,150,,,Left Winger,29,30.06.2024,100.00,1.75,Belgium,Real Madrid
+1043,Vinicius Junior,113,21,20,,,Left Winger,19,30.06.2025,50.00,1.76,Brazil,Real Madrid
+1044,Rodrygo,70,19,7,,,Right Winger,19,30.06.2025,50.00,1.74,Brazil,Real Madrid
+1045,Gareth Bale,497,166,137,,,Right Winger,30,30.06.2022,40.00,1.85,Wales,Real Madrid
+1046,Lucas Vazquez,310,40,65,,,Right Winger,28,30.06.2021,20.00,1.73,Spain,Real Madrid
+1047,Karim Benzema,649,307,159,,,Centre-Forward,32,30.06.2022,40.00,1.84,France,Real Madrid
+1048,Luka Jovic,169,55,17,,,Centre-Forward,22,30.06.2025,40.00,1.82,Serbia,Real Madrid
+1049,Mariano Diaz,174,81,11,,,Centre-Forward,26,30.06.2023,16.00,1.80,Dominican Republic,Real Madrid
+1050,Marc Andre Ter Stegen,423,,,397,171,Goalkeeper,27,30.06.2022,90.00,1.87,Germany,Barcelona
+1051,Neto,243,,,256,84,Goalkeeper,30,30.06.2023,18.00,1.90,Brazil,Barcelona
+1052,Clement Lenglet,230,11,5,,,Centre-Back,24,30.06.2023,60.00,1.86,France,Barcelona
+1053,Samuel Umtiti,284,7,4,,,Centre-Back,26,30.06.2023,40.00,1.82,France,Barcelona
+1054,Gerard Pique,582,51,14,,,Centre-Back,33,30.06.2022,25.00,1.92,Spain,Barcelona
+1055,Jordi Alba,469,26,67,,,Left-Back,31,30.06.2024,50.00,1.70,Spain,Barcelona
+1056,Junior Firpo,104,8,8,,,Left-Back,23,30.06.2024,25.00,1.84,Spain,Barcelona
+1057,Sergi Roberto,350,16,36,,,Right-Back,28,30.06.2022,50.00,1.78,Spain,Barcelona
+1058,Nelson Semedo,239,9,31,,,Right-Back,26,30.06.2022,40.00,1.77,Portugal,Barcelona
+1059,Sergio Busquets,568,15,37,,,Defensive Midfield,31,30.06.2023,35.00,1.89,Spain,Barcelona
+1060,Frenkie De Jong,200,23,30,,,Central Midfield,22,30.06.2024,90.00,1.81,Netherlands,Barcelona
+1061,Arthur,117,6,9,,,Central Midfield,23,30.06.2024,70.00,1.72,Brazil,Barcelona
+1062,Ivan Rakitic,654,102,112,,,Central Midfield,32,30.06.2021,25.00,1.84,Croatia,Barcelona
+1063,Arturo Vidal,529,102,74,,,Central Midfield,32,30.06.2021,14.00,1.80,Chile,Barcelona
+1064,Riqui Puig,72,5,14,,,Central Midfield,20,30.06.2021,10.00,1.69,Spain,Barcelona
+1065,Antoine Griezmann,496,199,72,,,Left Winger,29,30.06.2024,120.00,1.76,France,Barcelona
+1066,Ansu Fati,33,9,4,,,Left Winger,17,30.06.2022,40.00,1.78,Spain,Barcelona
+1067,Arda Turan,478,85,125,,,Left Winger,33,30.06.2020,80,1.77,Turkey,Barcelona
+1068,Lionel Messi,718,627,261,,,Right Winger,32,30.06.2021,140.00,1.70,Argentina,Barcelona
+1069,Ousmane Dembele,153,41,44,,,Right Winger,22,30.06.2022,70.00,1.78,France,Barcelona
+1070,Luis Suarez,599,399,230,,,Centre-Forward,33,30.06.2021,35.00,1.82,Uruguay,Barcelona
+1071,Martin Braithwaite,351,85,38,,,Centre-Forward,28,30.06.2024,12.00,1.77,Denmark,Barcelona
+1072,Alex Collado,83,14,9,,,Right Winger,20,30.06.2021,5.00,1.77,Spain,Barcelona
+1073,Jan Oblak,356,,,277,178,Goalkeeper,27,30.06.2023,100.00,1.88,Slovenia,Atletico Madrid
+1074,Antonio Adan,272,,,367,86,Goalkeeper,32,30.06.2020,1.00,1.90,Spain,Atletico Madrid
+1075,Jose Gimenez,196,8,8,,,Centre-Back,25,30.06.2023,70.00,1.85,Uruguay,Atletico Madrid
+1076,Stefan Savic,334,9,7,,,Centre-Back,29,30.06.2022,32.00,1.87,Montenegro,Atletico Madrid
+1077,Felipe,276,17,9,,,Centre-Back,30,30.06.2022,32.00,1.91,Brazil,Atletico Madrid
+1078,Mario Hermoso,150,5,6,,,Centre-Back,24,30.06.2024,25.00,1.84,Spain,Atletico Madrid
+1079,Renan Lodi,83,5,11,,,Left-Back,21,30.06.2025,35.00,1.79,Brazil,Atletico Madrid
+1080,Kieran Trippier,380,10,71,,,Right-Back,29,30.06.2022,35.00,1.73,England,Atletico Madrid
+1081,Santiago Arias,275,12,31,,,Right-Back,28,30.06.2023,15.00,1.77,Colombia,Atletico Madrid
+1082,Sime Vrsaljko,269,2,36,,,Right-Back,28,30.06.2022,15.00,1.81,Croatia,Atletico Madrid
+1083,Thomas,277,28,14,,,Defensive Midfield,26,30.06.2023,50.00,1.85,Ghana,Atletico Madrid
+1084,Marcos Llorente,171,8,9,,,Defensive Midfield,25,30.06.2024,20.00,1.84,Spain,Atletico Madrid
+1085,Saul Niguez,358,46,19,,,Central Midfield,25,30.06.2026,90.00,1.84,Spain,Atletico Madrid
+1086,Koke,495,48,102,,,Central Midfield,28,30.06.2024,60.00,1.76,Spain,Atletico Madrid
+1087,Hector Herrera,329,38,38,,,Central Midfield,29,30.06.2022,20.00,1.80,Mexico,Atletico Madrid
+1088,Thomas Lemar,229,26,45,,,Left Winger,24,30.06.2023,30.00,1.71,France,Atletico Madrid
+1089,Yannick Carrasco,284,67,58,,,Left Winger,26,30.06.2020,28.00,1.80,Belgium,Atletico Madrid
+1090,Vitolo,359,61,57,,,Left Winger,30,30.06.2022,18.00,1.85,Spain,Atletico Madrid
+1091,Angel Correa,279,49,53,,,Right Winger,25,30.06.2024,40.00,1.71,Argentina,Atletico Madrid
+1092,Joao Felix,115,40,20,,,Second Striker,20,30.06.2026,90.00,1.80,Portugal,Atletico Madrid
+1093,Alvaro Morata,332,113,44,,,Centre-Forward,27,30.06.2020,45.00,1.87,Spain,Atletico Madrid
+1094,Diego Costa,456,176,69,,,Centre-Forward,31,30.06.2021,18.00,1.86,Spain,Atletico Madrid
+1095,Ivan Saponjic,151,32,7,,,Centre-Forward,22,30.06.2022,1.50,1.92,Serbia,Atletico Madrid
+1096,Jasper Cillessen,253,,,258,100,Goalkeeper,30,30.06.2023,18.00,1.87,Netherlands,Valencia
+1097,Jaume Domenech,133,,,159,43,Goalkeeper,29,30.06.2023,7.50,1.85,Spain,Valencia
+1098,Gabriel Paulista,307,3,3,,,Centre-Back,29,30.06.2022,22.00,1.87,Brazil,Valencia
+1099,Mouctar Diakhaby,123,10,2,,,Centre-Back,23,30.06.2023,22.00,1.92,France,Valencia
+1100,Eliaquim Mangala,321,19,13,,,Centre-Back,29,30.06.2021,7.50,1.87,France,Valencia
+1101,Ezequiel Garay,466,38,8,,,Centre-Back,33,30.06.2020,6.00,1.88,Argentina,Valencia
+1102,Jose Gaya,279,8,22,,,Left-Back,24,30.06.2023,50.00,1.72,Spain,Valencia
+1103,Jaume Costa,343,7,18,,,Left-Back,32,30.06.2020,4.00,1.71,Spain,Valencia
+1104,Alessandro Florenzi,396,70,34,,,Right-Back,29,30.06.2020,20.00,1.73,Italy,Valencia
+1105,Daniel Wass,470,56,53,,,Right-Back,30,30.06.2022,14.00,1.78,Denmark,Valencia
+1106,Cristiano Piccini,272,7,10,,,Right-Back,27,30.06.2022,7.50,1.89,Italy,Valencia
+1107,Thierry Correia,24,-,1,,,Right-Back,21,30.06.2024,3.00,1.79,Portugal,Valencia
+1108,Francis Coquelin,318,5,8,,,Defensive Midfield,28,30.06.2022,24.00,1.77,France,Valencia
+1109,Dani Parejo,509,84,75,,,Central Midfield,30,30.06.2022,35.00,1.82,Spain,Valencia
+1110,Geoffrey Kondogbia,288,14,16,,,Central Midfield,27,30.06.2022,28.00,1.88,Central African Republic,Valencia
+1111,Carlos Soler,188,17,17,,,Right Midfield,23,30.06.2023,50.00,1.80,Spain,Valencia
+1112,Kang In Lee,58,6,1,,,Attacking Midfield,19,30.06.2022,15.00,1.73,"Korea, South",Valencia
+1113,Goncalo Guedes,220,40,50,,,Left Winger,23,30.06.2023,28.00,1.79,Portugal,Valencia
+1114,Denis Cheryshev,221,36,30,,,Left Winger,29,30.06.2022,6.00,1.79,Russia,Valencia
+1115,Manu Vallejo,46,11,3,,,Left Winger,23,30.06.2024,6.00,1.67,Spain,Valencia
+1116,Ferran Torres,100,10,11,,,Right Winger,20,30.06.2021,50.00,1.84,Spain,Valencia
+1117,Rodrigo,375,110,59,,,Centre-Forward,29,30.06.2022,50.00,1.82,Spain,Valencia
+1118,Maxi Gomez,159,69,26,,,Centre-Forward,23,30.06.2024,40.00,1.86,Uruguay,Valencia
+1119,Kevin Gameiro,574,207,69,,,Centre-Forward,32,30.06.2021,8.00,1.72,France,Valencia
+1120,Ruben Sobrino,202,29,18,,,Centre-Forward,27,30.06.2022,3.00,1.85,Spain,Valencia
+1121,Hugo Guillamon,67,2,-,,,Centre-Back,20,30.06.2020,20,1.80,Spain,Valencia
+1122,Alex Remiro,127,,,133,41,Goalkeeper,25,30.06.2023,15.00,1.91,Spain,Real Sociedad San Sebastian
+1123,Miguel Angel Moya,319,,,388,96,Goalkeeper,36,30.06.2020,1.50,1.89,Spain,Real Sociedad San Sebastian
+1124,Diego Llorente,236,15,4,,,Centre-Back,26,30.06.2022,25.00,1.86,Spain,Real Sociedad San Sebastian
+1125,Robin Le Normand,118,6,3,,,Centre-Back,23,30.06.2022,15.00,1.87,France,Real Sociedad San Sebastian
+1126,Aritz Elustondo,178,12,8,,,Centre-Back,26,30.06.2022,10.00,1.82,Spain,Real Sociedad San Sebastian
+1127,Aihen Munoz,65,-,-,,,Left-Back,22,30.06.2022,5.00,1.75,Spain,Real Sociedad San Sebastian
+1128,Nacho Monreal,471,16,35,,,Left-Back,34,30.06.2021,4.00,1.80,Spain,Real Sociedad San Sebastian
+1129,Joseba Zaldua,228,4,13,,,Right-Back,27,30.06.2023,15.00,1.76,Spain,Real Sociedad San Sebastian
+1130,Andoni Gorosabel,81,3,8,,,Right-Back,23,30.06.2021,2.00,1.74,Spain,Real Sociedad San Sebastian
+1131,Igor Zubeldia,155,5,4,,,Defensive Midfield,23,30.06.2024,30.00,1.80,Spain,Real Sociedad San Sebastian
+1132,Asier Illarramendi,359,18,17,,,Defensive Midfield,30,30.06.2023,18.00,1.79,Spain,Real Sociedad San Sebastian
+1133,Mikel Merino,165,17,12,,,Central Midfield,23,30.06.2023,30.00,1.86,Spain,Real Sociedad San Sebastian
+1134,Ander Guevara,95,1,1,,,Central Midfield,22,30.06.2024,7.50,1.80,Spain,Real Sociedad San Sebastian
+1135,David Zurutuza,408,29,24,,,Central Midfield,33,30.06.2020,2.00,1.86,Spain,Real Sociedad San Sebastian
+1136,Martin Odegaard,199,31,39,,,Attacking Midfield,21,30.06.2020,50.00,1.78,Norway,Real Sociedad San Sebastian
+1137,Luca Sangalli,155,17,11,,,Attacking Midfield,25,30.06.2022,3.00,1.67,Spain,Real Sociedad San Sebastian
+1138,Mikel Oyarzabal,197,51,31,,,Left Winger,22,30.06.2024,60.00,1.81,Spain,Real Sociedad San Sebastian
+1139,Ander Barrenetxea,35,5,3,,,Left Winger,18,30.06.2025,10.00,1.78,Spain,Real Sociedad San Sebastian
+1140,Portu,289,50,31,,,Right Winger,27,30.06.2024,20.00,1.68,Spain,Real Sociedad San Sebastian
+1141,Adnan Januzaj,222,28,38,,,Right Winger,25,30.06.2022,12.00,1.86,Belgium,Real Sociedad San Sebastian
+1142,Willian Jose,316,93,21,,,Centre-Forward,28,30.06.2024,30.00,1.89,Brazil,Real Sociedad San Sebastian
+1143,Alexander Isak,117,52,14,,,Centre-Forward,20,30.06.2024,25.00,1.90,Sweden,Real Sociedad San Sebastian
+1144,Tomas Vaclik,416,,,457,138,Goalkeeper,31,30.06.2021,18.00,1.88,Czech Republic,Sevilla
+1145,Bono,186,,,229,62,Goalkeeper,29,30.06.2020,5.00,1.92,Morocco,Sevilla
+1146,Javi Diaz,20,,,19,7,Goalkeeper,22,30.06.2022,50,1.82,Spain,Sevilla
+1147,Diego Carlos,191,8,-,,,Centre-Back,27,30.06.2024,40.00,1.86,Brazil,Sevilla
+1148,Jules Kounde,97,6,2,,,Centre-Back,21,30.06.2024,25.00,1.84,France,Sevilla
+1149,Sergi Gomez,286,4,3,,,Centre-Back,28,30.06.2022,5.00,1.85,Spain,Sevilla
+1150,Sergio Reguilon,142,10,12,,,Left-Back,23,30.06.2020,25.00,1.78,Spain,Sevilla
+1151,Sergio Escudero,285,14,18,,,Left-Back,30,30.06.2021,6.00,1.76,Spain,Sevilla
+1152,Jesus Navas,688,44,137,,,Right-Back,34,30.06.2021,4.00,1.72,Spain,Sevilla
+1153,Fernando,451,17,18,,,Defensive Midfield,32,30.06.2022,10.00,1.83,Brazil,Sevilla
+1154,Nemanja Gudelj,344,39,35,,,Defensive Midfield,28,30.06.2023,7.00,1.87,Serbia,Sevilla
+1155,Joan Jordan,237,28,14,,,Central Midfield,25,30.06.2023,18.00,1.85,Spain,Sevilla
+1156,Oliver Torres,261,21,31,,,Central Midfield,25,30.06.2024,17.00,1.75,Spain,Sevilla
+1157,Ever Banega,528,46,73,,,Central Midfield,31,30.06.2020,9.00,1.74,Argentina,Sevilla
+1158,Franco Vazquez,373,64,44,,,Attacking Midfield,31,30.06.2021,12.00,1.87,Argentina,Sevilla
+1159,Nolito,338,96,56,,,Left Winger,33,30.06.2020,2.00,1.75,Spain,Sevilla
+1160,Lucas Ocampos,310,60,27,,,Right Winger,25,30.06.2024,40.00,1.87,Argentina,Sevilla
+1161,Suso,278,45,55,,,Right Winger,26,30.06.2021,22.00,1.77,Spain,Sevilla
+1162,Rony Lopes,217,49,43,,,Right Winger,24,30.06.2024,12.50,1.74,Portugal,Sevilla
+1163,Youssef En Nesyri,105,24,5,,,Centre-Forward,22,30.06.2025,15.00,1.89,Morocco,Sevilla
+1164,Luuk De Jong,431,188,103,,,Centre-Forward,29,30.06.2023,12.00,1.88,Netherlands,Sevilla
+1165,Munir El Haddadi,204,66,33,,,Centre-Forward,24,30.06.2023,11.00,1.75,Spain,Sevilla
+1166,Joel Robles,177,,,210,61,Goalkeeper,29,30.06.2022,7.50,1.97,Spain,Real Betis Sevilla
+1167,Dani Martin,51,,,65,12,Goalkeeper,21,30.06.2024,3.00,1.87,Spain,Real Betis Sevilla
+1168,Marc Bartra,293,17,12,,,Centre-Back,29,30.06.2023,22.00,1.84,Spain,Real Betis Sevilla
+1169,Aissa Mandi,303,19,13,,,Centre-Back,28,30.06.2021,20.00,1.84,Algeria,Real Betis Sevilla
+1170,Sidnei,315,16,9,,,Centre-Back,30,30.06.2022,10.00,1.85,Brazil,Real Betis Sevilla
+1171,Zouhair Feddal,188,10,8,,,Centre-Back,30,30.06.2021,5.00,1.92,Morocco,Real Betis Sevilla
+1172,Alfonso Pedraza,179,22,19,,,Left-Back,23,30.06.2020,12.00,1.84,Spain,Real Betis Sevilla
+1173,Alex Moreno,251,16,18,,,Left-Back,26,30.06.2024,7.00,1.79,Spain,Real Betis Sevilla
+1174,Emerson,56,4,6,,,Right-Back,21,30.06.2021,20.00,1.83,Brazil,Real Betis Sevilla
+1175,Antonio Barragan,322,5,19,,,Right-Back,32,30.06.2020,2.00,1.86,Spain,Real Betis Sevilla
+1176,William Carvalho,297,14,22,,,Defensive Midfield,28,30.06.2023,20.00,1.87,Portugal,Real Betis Sevilla
+1177,Guido Rodriguez,199,18,2,,,Defensive Midfield,25,30.06.2024,10.00,1.85,Argentina,Real Betis Sevilla
+1178,Javi Garcia,441,26,7,,,Defensive Midfield,33,30.06.2021,2.00,1.87,Spain,Real Betis Sevilla
+1179,Edgar Gonzalez,58,-,-,,,Defensive Midfield,23,30.06.2020,1.00,1.93,Spain,Real Betis Sevilla
+1180,Carles Alena,146,27,17,,,Central Midfield,22,30.06.2020,20.00,1.80,Spain,Real Betis Sevilla
+1181,Andres Guardado,454,37,69,,,Central Midfield,33,30.06.2022,4.00,1.69,Mexico,Real Betis Sevilla
+1182,Nabil Fekir,216,76,52,,,Attacking Midfield,26,30.06.2023,40.00,1.73,France,Real Betis Sevilla
+1183,Sergio Canales,374,42,43,,,Attacking Midfield,29,30.06.2023,25.00,1.80,Spain,Real Betis Sevilla
+1184,Diego Lainez,79,7,5,,,Left Winger,19,30.06.2024,10.00,1.67,Mexico,Real Betis Sevilla
+1185,Cristian Tello,334,58,51,,,Left Winger,28,30.06.2022,6.00,1.78,Spain,Real Betis Sevilla
+1186,Juanmi,256,52,15,,,Right Winger,26,30.06.2024,5.00,1.72,Spain,Real Betis Sevilla
+1187,Joaquin,735,104,87,,,Right Winger,38,30.06.2021,2.00,1.81,Spain,Real Betis Sevilla
+1188,Loren Moron,153,56,7,,,Centre-Forward,26,30.06.2022,20.00,1.85,Spain,Real Betis Sevilla
+1189,Borja Iglesias,263,125,14,,,Centre-Forward,27,30.06.2024,18.00,1.87,Spain,Real Betis Sevilla
+1190,Unai Simon,99,,,82,45,Goalkeeper,22,30.06.2023,20.00,1.90,Spain,Athletic Bilbao
+1191,Iago Herrerin,199,,,235,67,Goalkeeper,32,30.06.2021,3.50,1.87,Spain,Athletic Bilbao
+1192,Inigo Martinez,352,18,11,,,Centre-Back,28,30.06.2023,32.00,1.82,Spain,Athletic Bilbao
+1193,Yeray Alvarez,177,1,4,,,Centre-Back,25,30.06.2026,30.00,1.82,Spain,Athletic Bilbao
+1194,Unai Nunez,108,4,1,,,Centre-Back,23,30.06.2023,20.00,1.86,Spain,Athletic Bilbao
+1195,Yuri Berchiche,321,21,26,,,Left-Back,30,30.06.2022,20.00,1.81,Spain,Athletic Bilbao
+1196,Mikel Balenziaga,406,1,14,,,Left-Back,32,30.06.2021,2.00,1.77,Spain,Athletic Bilbao
+1197,Ander Capa,273,17,25,,,Right-Back,28,30.06.2022,7.50,1.75,Spain,Athletic Bilbao
+1198,Oscar De Marcos,409,35,43,,,Right-Back,30,30.06.2021,4.00,1.82,Spain,Athletic Bilbao
+1199,Inigo Lekue,195,5,14,,,Right-Back,26,30.06.2023,2.00,1.80,Spain,Athletic Bilbao
+1200,Mikel San Jose,397,37,12,,,Defensive Midfield,30,30.06.2020,6.00,1.87,Spain,Athletic Bilbao
+1201,Mikel Vesga,168,7,8,,,Defensive Midfield,26,30.06.2021,3.00,1.91,Spain,Athletic Bilbao
+1202,Dani Garcia,287,3,6,,,Central Midfield,29,30.06.2022,6.00,1.79,Spain,Athletic Bilbao
+1203,Benat Etxebarria,367,28,45,,,Central Midfield,33,30.06.2020,3.00,1.76,Spain,Athletic Bilbao
+1204,Unai Lopez,188,12,15,,,Central Midfield,24,30.06.2022,3.00,1.70,Spain,Athletic Bilbao
+1205,Raul Garcia,649,123,62,,,Attacking Midfield,33,30.06.2021,7.50,1.84,Spain,Athletic Bilbao
+1206,Oihan Sancet,34,7,2,,,Attacking Midfield,19,30.06.2022,2.50,1.88,Spain,Athletic Bilbao
+1207,Iker Muniain,413,59,42,,,Left Winger,27,30.06.2024,17.50,1.69,Spain,Athletic Bilbao
+1208,Inigo Cordoba,142,7,18,,,Left Winger,23,30.06.2022,4.00,1.80,Spain,Athletic Bilbao
+1209,Ibai Gomez,288,47,39,,,Right Winger,30,30.06.2022,4.00,1.78,Spain,Athletic Bilbao
+1210,Gaizka Larrazabal,104,14,16,,,Right Winger,22,30.06.2021,2.50,1.80,Spain,Athletic Bilbao
+1211,Inaki Williams,270,80,38,,,Centre-Forward,25,30.06.2028,50.00,1.86,Spain,Athletic Bilbao
+1212,Asier Villalibre,163,45,19,,,Centre-Forward,22,30.06.2023,4.00,1.84,Spain,Athletic Bilbao
+1213,Aritz Aduriz,573,219,63,,,Centre-Forward,39,30.06.2020,1.00,1.81,Spain,Athletic Bilbao
+1214,Kenan Kodro,227,47,7,,,Centre-Forward,26,30.06.2022,1.00,1.88,Bosnia-Herzegovina,Athletic Bilbao
+1215,Jon Sillero,96,2,2,,,Right-Back,21,30.06.2021,20,1.77,Spain,Athletic Bilbao
+1216,Sergio Asenjo,301,,,360,98,Goalkeeper,30,30.06.2022,12.00,1.89,Spain,Villarreal
+1217,Andres Fernandez,246,,,343,70,Goalkeeper,33,30.06.2021,1.00,1.85,Spain,Villarreal
+1218,Mariano Barbosa,275,,,350,81,Goalkeeper,35,30.06.2020,30,1.88,Argentina,Villarreal
+1219,Pau Torres,140,4,2,,,Centre-Back,23,30.06.2024,20.00,1.91,Spain,Villarreal
+1220,Ramiro Funes Mori,215,16,7,,,Centre-Back,29,30.06.2022,6.00,1.86,Argentina,Villarreal
+1221,Raul Albiol,573,16,11,,,Centre-Back,34,30.06.2022,4.00,1.90,Spain,Villarreal
+1222,Soufiane Chakla,109,4,-,,,Centre-Back,26,30.06.2020,1.00,1.88,Morocco,Villarreal
+1223,Alberto Moreno,222,8,17,,,Left-Back,27,30.06.2024,7.50,1.71,Spain,Villarreal
+1224,Xavi Quintilla,135,5,9,,,Left-Back,23,30.06.2023,5.00,1.79,Spain,Villarreal
+1225,Ruben Pena,224,19,15,,,Right-Back,28,30.06.2024,8.00,1.70,Spain,Villarreal
+1226,Mario Gaspar,406,11,22,,,Right-Back,29,30.06.2023,7.50,1.80,Spain,Villarreal
+1227,Andre Zambo Anguissa,159,1,3,,,Defensive Midfield,24,30.06.2020,25.00,1.84,Cameroon,Villarreal
+1228,Manu Trigueros,341,26,26,,,Central Midfield,28,30.06.2022,15.00,1.78,Spain,Villarreal
+1229,Vicente Iborra,450,52,23,,,Central Midfield,32,30.06.2023,7.50,1.90,Spain,Villarreal
+1230,Santi Cazorla,576,97,107,,,Central Midfield,35,30.06.2020,4.00,1.68,Spain,Villarreal
+1231,Manu Morlanes,69,3,3,,,Central Midfield,21,30.06.2023,2.00,1.78,Spain,Villarreal
+1232,Javi Ontiveros,119,11,14,,,Left Winger,22,30.06.2024,9.00,1.75,Spain,Villarreal
+1233,Moi Gomez,283,23,37,,,Left Winger,25,30.06.2023,6.00,1.76,Spain,Villarreal
+1234,Samu Chukwueze,88,16,9,,,Right Winger,20,30.06.2023,30.00,1.72,Nigeria,Villarreal
+1235,Paco Alcacer,252,90,32,,,Centre-Forward,26,30.06.2025,35.00,1.75,Spain,Villarreal
+1236,Gerard Moreno,308,109,30,,,Centre-Forward,28,30.06.2023,20.00,1.80,Spain,Villarreal
+1237,Carlos Bacca,438,198,78,,,Centre-Forward,33,30.06.2022,3.00,1.81,Colombia,Villarreal
+1238,David Soria,157,,,141,69,Goalkeeper,27,30.06.2022,18.00,1.92,Spain,Getafe
+1239,Leandro Chichizola,211,,,218,81,Goalkeeper,30,30.06.2021,1.50,1.82,Argentina,Getafe
+1240,Djene,202,2,3,,,Centre-Back,28,30.06.2023,30.00,1.78,Togo,Getafe
+1241,Erick Cabaco,123,6,3,,,Centre-Back,24,30.06.2024,5.00,1.85,Uruguay,Getafe
+1242,Xabi Etxeita,306,17,5,,,Centre-Back,32,30.06.2021,1.80,1.86,Spain,Getafe
+1243,Chema,161,12,1,,,Centre-Back,28,30.06.2023,1.50,1.89,Spain,Getafe
+1244,Vitorino Antunes,308,16,15,,,Left-Back,33,30.06.2020,2.00,1.75,Portugal,Getafe
+1245,Mathi Shy As Olivera,52,2,4,,,Left-Back,22,30.06.2023,2.00,1.83,Uruguay,Getafe
+1246,Allan Nyom,353,5,12,,,Right-Back,31,30.06.2021,4.00,1.89,Cameroon,Getafe
+1247,Damian Suarez,356,7,29,,,Right-Back,31,30.06.2022,4.00,1.73,Uruguay,Getafe
+1248,David Timor,264,25,18,,,Defensive Midfield,30,30.06.2022,2.00,1.85,Spain,Getafe
+1249,Mauro Arambarri,160,4,9,,,Central Midfield,24,30.06.2023,25.00,1.75,Uruguay,Getafe
+1250,Nemanja Maksimovic,198,20,8,,,Central Midfield,25,30.06.2024,25.00,1.84,Serbia,Getafe
+1251,Oghenekaro Etebo,125,11,8,,,Central Midfield,24,30.06.2020,5.00,1.74,Nigeria,Getafe
+1252,Faycal Fajr,282,30,48,,,Central Midfield,31,30.06.2021,4.00,1.79,Morocco,Getafe
+1253,Marc Cucurella,135,5,15,,,Left Midfield,21,30.06.2020,20.00,1.75,Spain,Getafe
+1254,Kenedy,125,11,17,,,Left Midfield,24,30.06.2020,12.00,1.80,Brazil,Getafe
+1255,Amath Ndiaye,106,20,11,,,Left Winger,23,30.06.2022,3.00,1.73,Senegal,Getafe
+1256,Jason,193,24,13,,,Right Winger,25,30.06.2020,6.00,1.78,Spain,Getafe
+1257,Francisco Portillo,264,14,31,,,Right Winger,29,30.06.2021,3.50,1.69,Spain,Getafe
+1258,Jaime Mata,309,122,33,,,Centre-Forward,31,30.06.2021,10.00,1.86,Spain,Getafe
+1259,Angel Rodriguez,387,119,15,,,Centre-Forward,32,30.06.2021,7.50,1.71,Spain,Getafe
+1260,Deyverson,233,62,12,,,Centre-Forward,28,30.06.2020,5.00,1.87,Brazil,Getafe
+1261,Jorge Molina,438,167,39,,,Centre-Forward,37,30.06.2021,2.00,1.88,Spain,Getafe
+1262,Ruben Blanco,143,,,211,39,Goalkeeper,24,30.06.2023,10.00,1.88,Spain,Celta Vigo
+1263,Sergio Alvarez,192,,,257,53,Goalkeeper,33,30.06.2020,1.50,1.79,Spain,Celta Vigo
+1264,Ivan Villar,87,,,109,29,Goalkeeper,22,30.06.2023,30,1.89,Spain,Celta Vigo
+1265,Joseph Aidoo,153,8,1,,,,24,30.06.2024,8.00,C.nt,"1,84 m",Celta Vigo
+1266,Jeison Murillo,208,8,4,,,Centre-Back,27,30.06.2020,8.00,1.82,Colombia,Celta Vigo
+1267,Nestor Araujo,276,10,7,,,Centre-Back,28,30.06.2023,7.00,1.88,Mexico,Celta Vigo
+1268,Jorge Saenz,119,6,3,,,Centre-Back,23,30.06.2021,2.00,1.90,Spain,Celta Vigo
+1269,Lucas Olaza,165,20,16,,,Left-Back,25,30.06.2020,4.00,1.76,Uruguay,Celta Vigo
+1270,David Junca,151,3,21,,,Left-Back,26,30.06.2023,1.50,1.78,Spain,Celta Vigo
+1271,Hugo Mallo,360,7,23,,,Right-Back,28,30.06.2023,9.00,1.74,Spain,Celta Vigo
+1272,Kevin Vazquez,167,1,1,,,Right-Back,27,30.06.2023,1.00,1.75,Spain,Celta Vigo
+1273,Okay Yokuslu,300,24,13,,,Defensive Midfield,26,30.06.2023,7.50,1.91,Turkey,Celta Vigo
+1274,Filip Bradaric,250,17,23,,,Defensive Midfield,28,30.06.2020,4.00,1.86,Croatia,Celta Vigo
+1275,Fran Beltran,128,2,1,,,Central Midfield,21,30.06.2023,15.00,1.72,Spain,Celta Vigo
+1276,Pape Cheikh,90,3,1,,,Central Midfield,22,30.06.2020,7.00,1.80,Spain,Celta Vigo
+1277,Rafinha,244,39,28,,,Attacking Midfield,27,30.06.2020,12.00,1.74,Brazil,Celta Vigo
+1278,Denis Suarez,249,33,48,,,Left Winger,26,30.06.2023,12.00,1.76,Spain,Celta Vigo
+1279,Pione Sisto,246,49,25,,,Left Winger,25,30.06.2021,6.00,1.72,Denmark,Celta Vigo
+1280,Brais Mendez,141,16,10,,,Right Winger,23,30.06.2021,15.00,1.84,Spain,Celta Vigo
+1281,Juan Hernandez,140,33,-,,,Right Winger,25,30.06.2020,80,1.77,Spain,Celta Vigo
+1282,Iago Aspas,383,159,38,,,Centre-Forward,32,30.06.2023,20.00,1.76,Spain,Celta Vigo
+1283,Santi Mina,233,60,25,,,Centre-Forward,24,30.06.2024,18.00,1.81,Spain,Celta Vigo
+1284,Fedor Smolov,310,92,35,,,Centre-Forward,30,30.06.2020,9.00,1.86,Russia,Celta Vigo
+1285,Gabriel Fernandez,137,36,15,,,Centre-Forward,25,30.06.2023,3.00,1.86,Uruguay,Celta Vigo
+1286,Oier Olazabal,136,,,211,38,Goalkeeper,30,30.06.2022,2.00,1.89,Spain,Espanyol Barcelona
+1287,Diego Lopez,477,,,595,139,Goalkeeper,38,30.06.2020,1.00,1.96,Spain,Espanyol Barcelona
+1288,Andres Prieto,98,,,128,29,Goalkeeper,26,30.06.2021,20,1.94,Spain,Espanyol Barcelona
+1289,Leandro Cabrera,319,11,7,,,Centre-Back,28,30.06.2024,10.00,1.88,Uruguay,Espanyol Barcelona
+1290,Bernardo Espinosa,281,15,13,,,Centre-Back,30,30.06.2020,6.00,1.92,Colombia,Espanyol Barcelona
+1291,Fernando Calero,127,4,-,,,Centre-Back,24,30.06.2024,5.00,1.84,Spain,Espanyol Barcelona
+1292,Naldo,240,6,2,,,Centre-Back,31,30.06.2020,2.00,1.88,Brazil,Espanyol Barcelona
+1293,Adria Pedrosa,57,6,6,,,Left-Back,21,30.06.2023,10.00,1.72,Spain,Espanyol Barcelona
+1294,Didac Vila,259,8,11,,,Left-Back,30,30.06.2020,4.00,1.85,Spain,Espanyol Barcelona
+1295,Victor Gomez,61,2,-,,,Right-Back,20,30.06.2025,2.50,1.69,Spain,Espanyol Barcelona
+1296,Sebastien Corchia,362,16,28,,,Right-Back,29,30.06.2020,2.00,1.75,France,Espanyol Barcelona
+1297,Javi Lopez,278,3,7,,,Right-Back,34,30.06.2020,1.00,1.80,Spain,Espanyol Barcelona
+1298,Pipa,58,-,3,,,Right-Back,22,30.06.2022,50,1.75,Spain,Espanyol Barcelona
+1299,Marc Roca,159,9,6,,,Defensive Midfield,23,30.06.2022,20.00,1.84,Spain,Espanyol Barcelona
+1300,David Lopez,290,16,10,,,Defensive Midfield,30,30.06.2023,7.50,1.85,Spain,Espanyol Barcelona
+1301,Ander Iturraspe,341,3,8,,,Defensive Midfield,31,30.06.2020,2.50,1.87,Spain,Espanyol Barcelona
+1302,Sergi Darder,254,20,19,,,Central Midfield,26,30.06.2023,14.00,1.80,Spain,Espanyol Barcelona
+1303,Victor Sanchez,359,16,28,,,Central Midfield,32,30.06.2021,3.00,1.74,Spain,Espanyol Barcelona
+1304,Matias Vargas,101,19,19,,,Left Winger,22,30.06.2024,11.00,1.68,Argentina,Espanyol Barcelona
+1305,Lei Wu,272,130,70,,,Left Winger,28,31.12.2020,10.00,1.74,China,Espanyol Barcelona
+1306,Oscar Melendo,122,4,10,,,Right Winger,22,30.06.2022,7.50,1.67,Spain,Espanyol Barcelona
+1307,Adrian Embarba,203,35,42,,,Right Winger,27,30.06.2024,7.00,1.73,Spain,Espanyol Barcelona
+1308,Raul De Tomas,234,89,16,,,Centre-Forward,25,30.06.2026,20.00,1.80,Spain,Espanyol Barcelona
+1309,Jonathan Calleri,225,66,22,,,Centre-Forward,26,30.06.2020,7.50,1.81,Argentina,Espanyol Barcelona
+1310,Facundo Ferreyra,249,103,20,,,Centre-Forward,29,30.06.2020,4.00,1.83,Argentina,Espanyol Barcelona
+1311,Victor Campuzano,102,29,3,,,Centre-Forward,22,30.06.2020,3.00,1.74,Spain,Espanyol Barcelona
+1312,Fernando Pacheco,230,,,270,75,Goalkeeper,27,30.06.2023,18.00,1.86,Spain,Deportivo Alaves
+1313,Roberto,340,,,424,110,Goalkeeper,34,30.06.2020,1.00,1.92,Spain,Deportivo Alaves
+1314,Victor Laguardia,275,13,7,,,Centre-Back,30,30.06.2022,9.00,1.85,Spain,Deportivo Alaves
+1315,Lisandro Magallan,126,4,1,,,Centre-Back,26,30.06.2020,6.00,1.85,Argentina,Deportivo Alaves
+1316,Ximo Navarro,260,5,7,,,Centre-Back,30,30.06.2021,2.50,1.76,Spain,Deportivo Alaves
+1317,Rodrigo Ely,211,7,5,,,Centre-Back,26,30.06.2021,2.00,1.88,Brazil,Deportivo Alaves
+1318,Tachi,74,3,-,,,Centre-Back,22,30.06.2023,1.00,1.84,Spain,Deportivo Alaves
+1319,Ruben Duarte,192,1,5,,,Left-Back,24,30.06.2023,6.00,1.80,Spain,Deportivo Alaves
+1320,Adrian Marin,80,1,1,,,Left-Back,23,30.06.2021,80,1.81,Spain,Deportivo Alaves
+1321,Martin Aguirregabiria,76,1,5,,,Right-Back,23,30.06.2022,6.00,1.78,Spain,Deportivo Alaves
+1322,Pere Pons,247,6,11,,,Defensive Midfield,27,30.06.2022,4.00,1.77,Spain,Deportivo Alaves
+1323,Ljubomir Fejsa,313,7,5,,,Defensive Midfield,31,30.06.2020,3.50,1.83,Serbia,Deportivo Alaves
+1324,Manu Garcia,440,48,12,,,Defensive Midfield,33,30.06.2020,1.80,1.83,Spain,Deportivo Alaves
+1325,Jeando Fuchs,123,5,7,,,Defensive Midfield,22,30.06.2023,1.50,1.74,Cameroon,Deportivo Alaves
+1326,Victor Camarasa,203,14,10,,,Central Midfield,25,30.06.2020,5.00,1.83,Spain,Deportivo Alaves
+1327,Tomas Pina,280,10,8,,,Central Midfield,32,30.06.2021,2.50,1.85,Spain,Deportivo Alaves
+1328,Ismael Gutierrez,4,-,-,,,,19,30.06.2021,1.00,C.nt,Spain,Deportivo Alaves
+1329,Luis Rioja,207,18,3,,,Left Winger,26,30.06.2023,2.50,1.76,Spain,Deportivo Alaves
+1330,Borja Sainz,19,1,-,,,,19,30.06.2023,30,L.ft,Spain,Deportivo Alaves
+1331,Oliver Burke,136,17,14,,,Right Winger,23,30.06.2022,6.00,1.88,Scotland,Deportivo Alaves
+1332,Aleix Vidal,284,31,44,,,Right Winger,30,30.06.2020,4.50,1.77,Spain,Deportivo Alaves
+1333,Edgar Mendez,231,32,19,,,Right Winger,30,30.06.2022,2.00,1.87,Spain,Deportivo Alaves
+1334,Lucas Perez,280,85,56,,,Centre-Forward,31,30.06.2022,15.00,1.80,Spain,Deportivo Alaves
+1335,Joselu,260,62,19,,,Centre-Forward,30,30.06.2022,7.50,1.92,Spain,Deportivo Alaves
+1336,Aitor Fernandez,257,,,275,85,Goalkeeper,28,30.06.2023,10.00,1.82,Spain,Ud Levante
+1337,Koke Vegas,75,,,91,23,Goalkeeper,24,30.06.2020,70,1.88,Spain,Ud Levante
+1338,Ruben Vezo,152,6,5,,,Centre-Back,25,30.06.2024,6.00,1.82,Portugal,Ud Levante
+1339,Sergio Postigo,266,12,7,,,Centre-Back,31,30.06.2021,2.00,1.85,Spain,Ud Levante
+1340,Bruno Gonzalez,229,7,1,,,Centre-Back,29,30.06.2020,1.50,1.84,Spain,Ud Levante
+1341,Oscar Duarte,244,15,6,,,Centre-Back,30,30.06.2021,90,1.86,Costa Rica,Ud Levante
+1342,Carlos Clerc,236,6,11,,,Left-Back,28,30.06.2022,2.50,1.81,Spain,Ud Levante
+1343,Tono,205,2,10,,,Left-Back,30,30.06.2023,90,1.80,Spain,Ud Levante
+1344,Jorge Miramon,283,13,11,,,Right-Back,30,30.06.2021,3.50,1.75,Spain,Ud Levante
+1345,Coke,361,42,15,,,Right-Back,32,30.06.2022,1.50,1.76,Spain,Ud Levante
+1346,Nemanja Radoja,233,4,9,,,Defensive Midfield,27,30.06.2022,4.00,1.86,Serbia,Ud Levante
+1347,Nikola Vukcevic,202,9,11,,,Defensive Midfield,28,30.06.2022,3.00,1.87,Montenegro,Ud Levante
+1348,Enis Bardhi,186,36,23,,,Central Midfield,24,30.06.2022,15.00,1.72,North Macedonia,Ud Levante
+1349,Jose Campana,235,16,35,,,Central Midfield,26,30.06.2023,15.00,1.79,Spain,Ud Levante
+1350,Gonzalo Melero,205,34,8,,,Central Midfield,26,30.06.2023,4.00,1.83,Spain,Ud Levante
+1351,Ruben Rochina,246,43,31,,,Attacking Midfield,29,30.06.2021,4.00,1.82,Spain,Ud Levante
+1352,Hernani,186,38,28,,,Right Winger,28,30.06.2022,2.50,1.80,Portugal,Ud Levante
+1353,Roger Marti,255,99,15,,,Centre-Forward,29,30.06.2023,10.00,1.79,Spain,Ud Levante
+1354,Jose Luis Morales,289,51,34,,,Centre-Forward,32,30.06.2021,8.00,1.80,Spain,Ud Levante
+1355,Borja Mayoral,162,52,13,,,Centre-Forward,23,30.06.2020,4.00,1.82,Spain,Ud Levante
+1356,Sergio Leon,251,88,10,,,Centre-Forward,31,30.06.2022,3.00,1.76,Spain,Ud Levante
+1357,Juan Soriano,71,,,94,18,Goalkeeper,22,30.06.2020,2.00,1.85,Spain,Cd Leganes
+1358,Ivan Cuellar,343,,,434,107,Goalkeeper,35,30.06.2021,80,1.87,Spain,Cd Leganes
+1359,Pablo Lombo,-,-,-,,,,20,30.06.2020,80,G.al,Spain,Cd Leganes
+1360,Dimitrios Siovas,298,10,8,,,Centre-Back,31,30.06.2021,6.00,1.91,Greece,Cd Leganes
+1361,Chidozie Awaziem,139,4,3,,,Centre-Back,23,30.06.2020,5.00,1.89,Nigeria,Cd Leganes
+1362,Unai Bustinza,200,8,10,,,Centre-Back,28,30.06.2021,4.00,1.75,Spain,Cd Leganes
+1363,Kenneth Omeruo,205,5,4,,,Centre-Back,26,30.06.2024,3.00,1.85,Nigeria,Cd Leganes
+1364,Rodrigo Tarin,94,2,1,,,Centre-Back,23,30.06.2021,1.50,1.83,Spain,Cd Leganes
+1365,Jonathan Silva,199,9,22,,,Left-Back,25,30.06.2023,4.00,1.81,Argentina,Cd Leganes
+1366,Kevin Rodrigues,113,8,11,,,Left-Back,26,30.06.2020,3.00,1.70,Portugal,Cd Leganes
+1367,Roberto Rosales,439,14,46,,,Right-Back,31,30.06.2021,2.00,1.74,Venezuela,Cd Leganes
+1368,Marc Navarro,91,10,4,,,Right-Back,24,30.06.2020,1.50,1.88,Spain,Cd Leganes
+1369,Ruben Perez,331,2,5,,,Defensive Midfield,30,30.06.2022,7.50,1.78,Spain,Cd Leganes
+1370,Ibrahim Amadou,210,5,3,,,Defensive Midfield,27,30.06.2020,7.00,1.83,France,Cd Leganes
+1371,Roque Mesa,296,20,19,,,Central Midfield,30,30.06.2020,7.00,1.72,Spain,Cd Leganes
+1372,Recio,240,14,14,,,Central Midfield,29,30.06.2022,3.00,1.83,Spain,Cd Leganes
+1373,Oscar Rodriguez,120,22,15,,,Attacking Midfield,21,30.06.2020,12.00,1.74,Spain,Cd Leganes
+1374,Javi Eraso,272,33,17,,,Attacking Midfield,30,30.06.2020,1.50,1.82,Spain,Cd Leganes
+1375,Bryan Gil,48,6,9,,,Left Winger,19,30.06.2020,10.00,1.75,Spain,Cd Leganes
+1376,Aitor Ruibal,124,27,5,,,Right Winger,24,30.06.2020,1.20,1.76,Spain,Cd Leganes
+1377,Roger Assale,162,52,35,,,Centre-Forward,26,30.06.2020,7.50,1.67,Cote d'Ivoire,Cd Leganes
+1378,Guido Carrillo,295,68,21,,,Centre-Forward,28,30.06.2020,6.00,1.91,Argentina,Cd Leganes
+1379,Miguel Angel Guerrero,238,58,15,,,Centre-Forward,29,30.06.2020,2.00,1.80,Spain,Cd Leganes
+1380,Jordi Masip,189,,,239,46,Goalkeeper,31,30.06.2022,6.00,1.80,Spain,Real Valladolid
+1381,Jose Antonio Caro,104,,,117,33,Goalkeeper,25,30.06.2021,60,1.94,Spain,Real Valladolid
+1382,Mohammed Salisu,69,2,1,,,Centre-Back,20,30.06.2022,12.00,1.91,Ghana,Real Valladolid
+1383,Kiko Olivas,387,19,7,,,Centre-Back,31,30.06.2022,2.50,1.84,Spain,Real Valladolid
+1384,Javi Sanchez,83,9,2,,,Centre-Back,23,30.06.2020,1.50,1.89,Spain,Real Valladolid
+1385,Nacho Martinez,183,5,13,,,Left-Back,31,30.06.2022,5.00,1.74,Spain,Real Valladolid
+1386,Raul Garcia,209,8,12,,,Left-Back,30,30.06.2020,1.00,1.79,Spain,Real Valladolid
+1387,Pedro Porro,55,4,4,,,Right-Back,20,30.06.2020,10.00,1.76,Spain,Real Valladolid
+1388,Antonito,237,8,16,,,Right-Back,32,30.06.2021,1.00,1.75,Spain,Real Valladolid
+1389,Javi Moyano,269,2,9,,,Right-Back,34,30.06.2020,80,1.80,Spain,Real Valladolid
+1390,Joaquin Fernandez,206,3,2,,,Defensive Midfield,23,30.06.2023,3.00,1.90,Spain,Real Valladolid
+1391,Ruben Alcaraz,251,38,5,,,Central Midfield,28,30.06.2023,10.00,1.83,Spain,Real Valladolid
+1392,Fede San Emeterio,199,8,2,,,Central Midfield,23,30.06.2021,4.00,1.76,Spain,Real Valladolid
+1393,Michel,348,39,33,,,Central Midfield,31,30.06.2020,2.00,1.82,Spain,Real Valladolid
+1394,Hatem Ben Arfa,390,73,58,,,Attacking Midfield,33,30.06.2020,5.00,1.79,France,Real Valladolid
+1395,Toni Villa,202,17,6,,,Left Winger,25,30.06.2023,4.00,1.72,Spain,Real Valladolid
+1396,Waldo Rubio,121,15,2,,,Left Winger,24,30.06.2022,1.00,1.81,Spain,Real Valladolid
+1397,Oscar Plano,304,41,35,,,Right Winger,29,30.06.2021,4.00,1.79,Spain,Real Valladolid
+1398,Pablo Hervias,265,24,27,,,Right Winger,27,30.06.2022,80,1.74,Spain,Real Valladolid
+1399,Sergi Guardiola,213,72,14,,,Centre-Forward,28,30.06.2023,6.00,1.85,Spain,Real Valladolid
+1400,Enes Unal,213,55,18,,,Centre-Forward,22,30.06.2020,5.00,1.87,Turkey,Real Valladolid
+1401,Sandro Ramirez,205,43,17,,,Centre-Forward,24,30.06.2020,4.00,1.75,Spain,Real Valladolid
+1402,Stiven Plaza,34,8,4,,,Centre-Forward,21,30.06.2023,1.00,1.88,Ecuador,Real Valladolid
+1403,Fabri,209,,,245,64,Goalkeeper,32,30.06.2020,1.50,1.84,Spain,Rcd Mallorca
+1404,Manolo Reina,353,,,386,119,Goalkeeper,35,30.06.2021,30,1.86,Spain,Rcd Mallorca
+1405,Miquel Parera,36,,,34,18,Goalkeeper,23,30.06.2021,30,1.82,Spain,Rcd Mallorca
+1406,Martin Valjent,228,7,1,,,Centre-Back,24,30.06.2022,3.00,1.87,Slovakia,Rcd Mallorca
+1407,Antonio Raillo,216,13,1,,,Centre-Back,28,30.06.2021,2.50,1.87,Spain,Rcd Mallorca
+1408,Aleksandar Sedlar,200,14,1,,,Centre-Back,28,30.06.2023,80,1.80,Serbia,Rcd Mallorca
+1409,Xisco Campos,373,10,1,,,Centre-Back,38,30.06.2020,10,1.80,Spain,Rcd Mallorca
+1410,Leonardo Koutris,140,3,16,,,Left-Back,24,30.06.2020,4.50,1.70,Greece,Rcd Mallorca
+1411,Abdul Rahman Baba,143,4,12,,,Left-Back,25,30.06.2020,3.00,1.79,Ghana,Rcd Mallorca
+1412,Lumor,145,3,4,,,Left-Back,23,30.06.2020,1.50,1.75,Ghana,Rcd Mallorca
+1413,Joan Sastre,112,3,3,,,Right-Back,22,30.06.2023,2.00,1.74,Spain,Rcd Mallorca
+1414,Fran Gamez,114,9,2,,,Right-Back,28,30.06.2022,80,1.74,Spain,Rcd Mallorca
+1415,Sung Yong Ki,358,33,43,,,Defensive Midfield,31,30.06.2020,3.00,1.89,"Korea, South",Rcd Mallorca
+1416,Aleix Febas,202,21,21,,,Central Midfield,24,30.06.2023,3.50,1.72,Spain,Rcd Mallorca
+1417,Iddrisu Baba,116,2,2,,,Central Midfield,24,30.06.2024,2.50,1.82,Ghana,Rcd Mallorca
+1418,Marc Pedraza,227,6,-,,,Central Midfield,33,30.06.2020,30,1.84,Spain,Rcd Mallorca
+1419,Salva Sevilla,378,47,30,,,Central Midfield,36,30.06.2021,20,1.78,Spain,Rcd Mallorca
+1420,Dani Rodriguez,278,33,13,,,Attacking Midfield,31,30.06.2021,1.50,1.78,Spain,Rcd Mallorca
+1421,Josep Sene,194,25,9,,,Attacking Midfield,28,30.06.2022,30,1.86,Spain,Rcd Mallorca
+1422,Lago Junior,347,66,12,,,Left Winger,29,30.06.2023,4.00,1.80,Cote d'Ivoire,Rcd Mallorca
+1423,Aleksandar Trajkovski,257,40,34,,,Left Winger,27,30.06.2023,1.50,1.79,North Macedonia,Rcd Mallorca
+1424,Takefusa Kubo,95,15,10,,,Right Winger,18,30.06.2020,15.00,1.73,Japan,Rcd Mallorca
+1425,Alejandro Pozo,127,9,11,,,Right Winger,21,30.06.2020,5.00,1.74,Spain,Rcd Mallorca
+1426,Yannis Salibur,243,34,24,,,Right Winger,29,30.06.2022,1.50,1.77,France,Rcd Mallorca
+1427,Ante Budimir,261,83,30,,,Centre-Forward,28,30.06.2023,7.50,1.90,Croatia,Rcd Mallorca
+1428,Cucho Hernandez,84,22,10,,,Centre-Forward,20,30.06.2020,7.50,1.76,Colombia,Rcd Mallorca
+1429,Pablo Chavarria,340,75,45,,,Centre-Forward,32,30.06.2021,1.50,1.85,Argentina,Rcd Mallorca
+1430,Abdon Prats,249,63,10,,,Centre-Forward,27,30.06.2021,80,1.81,Spain,Rcd Mallorca
+1431,Sergio Herrera,147,,,162,52,Goalkeeper,26,30.06.2021,1.50,1.92,Spain,Ca Osasuna
+1432,Ruben Martinez,251,,,364,74,Goalkeeper,35,30.06.2020,70,1.87,Spain,Ca Osasuna
+1433,Juan Perez,50,,,70,11,Goalkeeper,23,30.06.2022,50,1.91,Spain,Ca Osasuna
+1434,Aridane Hernandez,206,9,1,,,Centre-Back,31,30.06.2022,4.00,1.88,Spain,Ca Osasuna
+1435,David Garcia,171,9,2,,,Centre-Back,26,30.06.2021,3.00,1.85,Spain,Ca Osasuna
+1436,Facundo Roncaglia,366,13,3,,,Centre-Back,33,30.06.2020,1.80,1.79,Argentina,Ca Osasuna
+1437,Raul Navas,200,9,3,,,Centre-Back,31,30.06.2022,1.50,1.87,Spain,Ca Osasuna
+1438,Unai Garcia,190,17,1,,,Centre-Back,27,30.06.2021,1.00,1.86,Spain,Ca Osasuna
+1439,Pervis Estupinan,149,6,9,,,Left-Back,22,30.06.2021,7.50,1.75,Ecuador,Ca Osasuna
+1440,Toni Lato,98,2,6,,,Left-Back,22,30.06.2020,2.00,1.71,Spain,Ca Osasuna
+1441,Nacho Vidal,145,6,5,,,Right-Back,25,30.06.2022,3.00,1.80,Spain,Ca Osasuna
+1442,Oier,322,13,9,,,Defensive Midfield,33,30.06.2021,1.20,1.78,Spain,Ca Osasuna
+1443,Jon Moncayola,43,2,-,,,,21,30.06.2024,3.00,C.nt,Spain,Ca Osasuna
+1444,Darko Brasanac,245,17,22,,,Central Midfield,28,30.06.2022,2.00,1.78,Serbia,Ca Osasuna
+1445,Fran Merida,271,30,20,,,Central Midfield,30,30.06.2020,1.50,1.74,Spain,Ca Osasuna
+1446,Inigo Perez,282,10,25,,,Central Midfield,32,30.06.2022,60,1.78,Spain,Ca Osasuna
+1447,Ruben Garcia,257,31,31,,,Attacking Midfield,26,30.06.2023,7.50,1.71,Spain,Ca Osasuna
+1448,Roberto Torres,299,62,50,,,Attacking Midfield,31,30.06.2021,5.00,1.78,Spain,Ca Osasuna
+1449,Jose Manuel Arnaiz,132,35,8,,,Left Winger,24,30.06.2020,2.50,1.75,Spain,Ca Osasuna
+1450,Robert Ibanez,155,20,6,,,Right Winger,27,30.06.2023,1.00,1.81,Spain,Ca Osasuna
+1451,Kike Barja,112,19,7,,,Right Winger,23,30.06.2021,1.00,1.79,Spain,Ca Osasuna
+1452,Chimy Avila,134,30,9,,,Centre-Forward,26,30.06.2023,15.00,1.72,Argentina,Ca Osasuna
+1453,Adrian Lopez,437,75,46,,,Centre-Forward,32,30.06.2020,1.80,1.83,Spain,Ca Osasuna
+1454,Marc Cardona,97,29,15,,,Centre-Forward,24,30.06.2023,1.50,1.83,Spain,Ca Osasuna
+1455,Enric Gallego,207,81,2,,,Centre-Forward,33,30.06.2020,1.50,1.90,Spain,Ca Osasuna
+1456,Marko Dmitrovic,190,,,230,62,Goalkeeper,28,30.06.2021,12.00,1.94,Serbia,Sd Eibar
+1457,Yoel Rodriguez,186,,,236,54,Goalkeeper,31,30.06.2021,1.50,1.84,Spain,Sd Eibar
+1458,Paulo Oliveira,288,7,1,,,Centre-Back,28,30.06.2021,6.00,1.87,Portugal,Sd Eibar
+1459,Pedro Bigas,216,12,5,,,Centre-Back,29,30.06.2022,2.00,1.81,Spain,Sd Eibar
+1460,Anaitz Arbilla,281,9,8,,,Centre-Back,32,30.06.2021,2.00,1.78,Spain,Sd Eibar
+1461,Esteban Burgos,114,9,2,,,Centre-Back,28,30.06.2022,90,1.91,Argentina,Sd Eibar
+1462,Ivan Ramis,348,21,2,,,Centre-Back,35,30.06.2020,80,1.89,Spain,Sd Eibar
+1463,Jose Angel,270,4,24,,,Left-Back,30,30.06.2022,5.00,1.82,Spain,Sd Eibar
+1464,Rafa Soares,187,14,31,,,Left-Back,24,30.06.2021,3.00,1.78,Portugal,Sd Eibar
+1465,Alvaro Tejero,171,3,21,,,Right-Back,23,30.06.2024,3.00,1.74,Spain,Sd Eibar
+1466,Roberto Correa,192,3,4,,,Right-Back,27,30.06.2022,60,1.80,Spain,Sd Eibar
+1467,Pape Diop,367,20,10,,,Defensive Midfield,34,30.06.2021,1.50,1.80,Senegal,Sd Eibar
+1468,Gonzalo Escalante,189,11,8,,,Central Midfield,27,30.06.2020,4.00,1.82,Argentina,Sd Eibar
+1469,Edu Exposito,101,9,7,,,Central Midfield,23,30.06.2024,4.00,1.78,Spain,Sd Eibar
+1470,Sergio Alvarez,256,12,5,,,Central Midfield,28,30.06.2022,2.00,1.83,Spain,Sd Eibar
+1471,Sebastian Cristoforo,179,2,10,,,Central Midfield,26,30.06.2020,1.50,1.73,Uruguay,Sd Eibar
+1472,Takashi Inui,404,71,68,,,Left Winger,31,30.06.2022,3.00,1.69,Japan,Sd Eibar
+1473,Pablo De Blasis,291,42,43,,,Left Winger,32,30.06.2020,1.80,1.65,Argentina,Sd Eibar
+1474,Fabian Orellana,364,65,49,,,Right Winger,34,30.06.2020,2.00,1.71,Chile,Sd Eibar
+1475,Pedro Leon,349,50,63,,,Right Winger,33,30.06.2020,1.80,1.83,Spain,Sd Eibar
+1476,Sergi Enrich,297,71,34,,,Centre-Forward,30,30.06.2022,3.00,1.81,Spain,Sd Eibar
+1477,Kike,312,74,19,,,Centre-Forward,30,30.06.2021,3.00,1.86,Spain,Sd Eibar
+1478,Charles,336,121,18,,,Centre-Forward,36,30.06.2020,1.50,1.79,Brazil,Sd Eibar
+1479,Quique,271,84,18,,,Centre-Forward,29,30.06.2024,1.00,1.77,Spain,Sd Eibar
+1480,Rui Silva,128,,,148,42,Goalkeeper,26,30.06.2021,5.00,1.91,Portugal,Granada
+1481,Aaron Escandell,40,,,36,15,Goalkeeper,24,30.06.2020,30,1.85,Spain,Granada
+1482,Jesus Vallejo,113,3,3,,,Centre-Back,23,30.06.2020,7.50,1.84,Spain,Granada
+1483,Domingos Duarte,189,10,-,,,Centre-Back,25,30.06.2023,5.00,1.92,Portugal,Granada
+1484,Jose Antonio Martinez,162,3,1,,,Centre-Back,27,30.06.2020,1.50,1.91,Spain,Granada
+1485,German Sanchez,214,15,1,,,Centre-Back,33,30.06.2021,80,1.87,Spain,Granada
+1486,Carlos Neva,90,1,-,,,Left-Back,23,30.06.2021,1.00,1.74,Spain,Granada
+1487,Alex Martinez,179,7,13,,,Left-Back,29,30.06.2021,90,1.76,Spain,Granada
+1488,Ismail Koybasi,264,5,24,,,Left-Back,30,30.06.2020,40,1.79,Turkey,Granada
+1489,Dimitri Foulquier,187,5,9,,,Right-Back,27,30.06.2020,2.50,1.83,Guadeloupe,Granada
+1490,Victor Diaz,303,11,18,,,Right-Back,31,30.06.2022,1.50,1.83,Spain,Granada
+1491,Quini,175,1,4,,,Right-Back,30,30.06.2023,70,1.78,Spain,Granada
+1492,Yangel Herrera,110,6,10,,,Defensive Midfield,22,30.06.2020,10.00,1.84,Venezuela,Granada
+1493,Maxime Gonalons,394,15,15,,,Defensive Midfield,31,30.06.2020,3.50,1.87,France,Granada
+1494,Angel Montoro,268,21,26,,,Central Midfield,31,30.06.2020,1.50,1.80,Spain,Granada
+1495,Yan Brice,132,1,1,,,Central Midfield,22,30.06.2022,1.00,1.82,Cameroon,Granada
+1496,Ramon Azeez,196,12,5,,,Central Midfield,27,30.06.2022,1.00,1.70,Nigeria,Granada
+1497,Fede Vico,223,20,22,,,Attacking Midfield,25,30.06.2021,1.50,1.77,Spain,Granada
+1498,Darwin Machis,262,68,33,,,Left Winger,27,30.06.2023,4.00,1.71,Venezuela,Granada
+1499,Gil Dias,138,19,12,,,Right Winger,23,30.06.2020,4.00,1.86,Portugal,Granada
+1500,Alvaro Vadillo,189,17,28,,,Right Winger,25,30.06.2020,3.00,1.80,Spain,Granada
+1501,Antonio Puertas,207,43,10,,,Right Winger,28,30.06.2024,3.00,1.83,Spain,Granada
+1502,Carlos Fernandez,196,59,9,,,Centre-Forward,23,30.06.2020,4.00,1.85,Spain,Granada
+1503,Antonin,35,4,1,,,Centre-Forward,19,30.06.2024,1.50,1.82,Spain,Granada
+1504,Roberto Soldado,494,184,69,,,Centre-Forward,34,30.06.2020,1.00,1.80,Spain,Granada
