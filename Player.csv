@@ -1,0 +1,1025 @@
+S.No,Name,Games_Played,Goals,Assists,Goals Conceded,Clean Sheets,Position,Age,Contract,Market Value,Height,Country,Club
+1,Ederson,257,,,220,116,Goalkeeper,26,30.06.2025,70.00,1.88,Brazil,Manchester City
+2,Claudio Bravo,372,,,405,138,Goalkeeper,36,30.06.2020,1.50,1.84,Chile,Manchester City
+3,Scott Carson,520,,,657,153,Goalkeeper,34,31.05.2020,1.00,1.88,England,Manchester City
+4,Aymeric Laporte,302,15,10,,,Centre-Back,25,30.06.2025,75.00,1.90,France,Manchester City
+5,John Stones,264,7,3,,,Centre-Back,25,30.06.2022,45.00,1.88,England,Manchester City
+6,Nicolas Otamendi,432,28,12,,,Centre-Back,32,30.06.2022,18.00,1.83,Argentina,Manchester City
+7,Eric Garcia,64,6,2,,,Centre-Back,19,30.06.2022,7.00,1.83,Spain,Manchester City
+8,Benjamin Mendy,251,4,39,,,Left-Back,25,30.06.2023,35.00,1.85,France,Manchester City
+9,Oleksandr Zinchenko,125,5,24,,,Left-Back,23,30.06.2024,30.00,1.75,Ukraine,Manchester City
+10,Kyle Walker,442,9,43,,,Right-Back,29,30.06.2024,50.00,1.83,England,Manchester City
+11,Joao Cancelo,230,9,37,,,Right-Back,25,30.06.2025,45.00,1.82,Portugal,Manchester City
+12,Rodri,212,11,8,,,Defensive Midfield,23,30.06.2024,80.00,1.91,Spain,Manchester City
+13,Fernandinho,585,75,75,,,Defensive Midfield,34,30.06.2021,10.00,1.79,Brazil,Manchester City
+14,Ilkay Gundogan,407,72,49,,,Central Midfield,29,30.06.2023,50.00,1.80,Germany,Manchester City
+15,Phil Foden,104,31,23,,,Central Midfield,19,30.06.2024,30.00,1.71,England,Manchester City
+16,Kevin De Bruyne,438,97,170,,,Attacking Midfield,28,30.06.2023,150.00,1.81,Belgium,Manchester City
+17,David Silva,624,109,170,,,Attacking Midfield,34,30.06.2020,15.00,1.70,Spain,Manchester City
+18,Raheem Sterling,381,120,107,,,Left Winger,25,30.06.2023,160.00,1.70,England,Manchester City
+19,Leroy Sane,275,72,73,,,Left Winger,24,30.06.2021,100.00,1.84,Germany,Manchester City
+20,Bernardo Silva,332,64,59,,,Right Winger,25,30.06.2025,100.00,1.73,Portugal,Manchester City
+21,Riyad Mahrez,328,80,76,,,Right Winger,29,30.06.2023,60.00,1.79,Algeria,Manchester City
+22,Gabriel Jesus,191,84,31,,,Centre-Forward,23,30.06.2023,70.00,1.75,Brazil,Manchester City
+23,Sergio Aguero,634,372,118,,,Centre-Forward,31,30.06.2021,65.00,1.73,Argentina,Manchester City
+24,Alisson,199,,,176,90,Goalkeeper,27,30.06.2024,90.00,1.91,Brazil,Liverpool
+25,Adrian,200,,,285,57,Goalkeeper,33,30.06.2021,5.00,1.90,Spain,Liverpool
+26,Caoimhin Kelleher,49,,,75,11,Goalkeeper,21,30.06.2022,1.00,1.88,Ireland,Liverpool
+27,Andy Lonergan,405,,,577,91,Goalkeeper,36,30.06.2020,250,1.93,England,Liverpool
+28,Virgil Van Dijk,378,41,18,,,Centre-Back,28,30.06.2023,100.00,1.93,Netherlands,Liverpool
+29,Joe Gomez,133,1,4,,,Centre-Back,22,30.06.2024,42.00,1.88,England,Liverpool
+30,Joel Matip,409,39,20,,,Centre-Back,28,30.06.2024,40.00,1.95,Cameroon,Liverpool
+31,Dejan Lovren,402,17,11,,,Centre-Back,30,30.06.2021,20.00,1.88,Croatia,Liverpool
+32,Andrew Robertson,321,15,44,,,Left-Back,26,30.06.2024,80.00,1.78,Scotland,Liverpool
+33,Trent Alexander Arnold,144,10,38,,,Right-Back,21,30.06.2024,110.00,1.80,England,Liverpool
+34,Fabinho,336,35,27,,,Defensive Midfield,26,30.06.2023,70.00,1.88,Brazil,Liverpool
+35,Georginio Wijnaldum,508,112,56,,,Central Midfield,29,30.06.2021,50.00,1.75,Netherlands,Liverpool
+36,Naby Keita,226,47,37,,,Central Midfield,25,30.06.2023,42.00,1.72,Guinea,Liverpool
+37,Jordan Henderson,451,34,63,,,Central Midfield,29,30.06.2023,35.00,1.87,England,Liverpool
+38,Alex Oxlade Chamberlain,325,42,50,,,Central Midfield,26,30.06.2023,35.00,1.75,England,Liverpool
+39,James Milner,727,85,123,,,Central Midfield,34,30.06.2022,8.00,1.75,England,Liverpool
+40,Curtis Jones,89,43,17,,,Central Midfield,19,30.06.2024,2.00,1.85,England,Liverpool
+41,Adam Lallana,443,81,70,,,Attacking Midfield,31,30.06.2020,12.00,1.72,England,Liverpool
+42,Sadio Mane,344,148,81,,,Left Winger,27,30.06.2023,150.00,1.74,Senegal,Liverpool
+43,Takumi Minamino,291,81,53,,,Left Winger,25,30.06.2024,12.50,1.74,Japan,Liverpool
+44,Mohamed Salah,395,168,90,,,Right Winger,27,30.06.2023,150.00,1.75,Egypt,Liverpool
+45,Xherdan Shaqiri,382,73,68,,,Right Winger,28,30.06.2023,20.00,1.69,Switzerland,Liverpool
+46,Roberto Firmino,426,134,95,,,Centre-Forward,28,30.06.2023,90.00,1.81,Brazil,Liverpool
+47,Divock Origi,261,57,21,,,Centre-Forward,24,30.06.2024,20.00,1.85,Belgium,Liverpool
+48,Hugo Lloris,596,,,637,204,Goalkeeper,33,30.06.2022,18.00,1.88,France,Tottenham Hotspur
+49,Paulo Gazzaniga,154,,,188,46,Goalkeeper,28,30.06.2022,3.50,1.95,Argentina,Tottenham Hotspur
+50,Michel Vorm,304,,,365,111,Goalkeeper,36,30.06.2020,1.00,1.83,Netherlands,Tottenham Hotspur
+51,Alfie Whiteman,41,,,84,4,Goalkeeper,21,30.06.2022,1.00,1.88,England,Tottenham Hotspur
+52,Davinson Sanchez,188,9,3,,,Centre-Back,23,30.06.2024,60.00,1.87,Colombia,Tottenham Hotspur
+53,Toby Alderweireld,431,25,17,,,Centre-Back,31,30.06.2023,30.00,1.86,Belgium,Tottenham Hotspur
+54,Jan Vertonghen,547,45,18,,,Centre-Back,32,30.06.2020,18.00,1.89,Belgium,Tottenham Hotspur
+55,Juan Foyth,41,1,-,,,Centre-Back,22,30.06.2022,15.00,1.87,Argentina,Tottenham Hotspur
+56,Japhet Tanganga,89,6,3,,,Centre-Back,21,30.06.2020,8.00,1.84,England,Tottenham Hotspur
+57,Ben Davies,276,7,20,,,Left-Back,26,30.06.2024,22.00,1.81,Wales,Tottenham Hotspur
+58,Serge Aurier,290,19,41,,,Right-Back,27,30.06.2022,20.00,1.76,Cote d'Ivoire,Tottenham Hotspur
+59,Eric Dier,297,14,16,,,Defensive Midfield,26,30.06.2021,25.00,1.88,England,Tottenham Hotspur
+60,Oliver Skipp,89,1,10,,,Defensive Midfield,19,30.06.2021,8.00,1.75,England,Tottenham Hotspur
+61,Tanguy Ndombele,157,8,27,,,Central Midfield,23,30.06.2025,65.00,1.81,France,Tottenham Hotspur
+62,Giovani Lo Celso,172,27,27,,,Central Midfield,23,30.06.2025,50.00,1.77,Argentina,Tottenham Hotspur
+63,Harry Winks,167,5,2,,,Central Midfield,24,30.06.2024,40.00,1.78,England,Tottenham Hotspur
+64,Moussa Sissoko,504,40,49,,,Central Midfield,30,30.06.2023,25.00,1.87,France,Tottenham Hotspur
+65,Gedson Fernandes,122,9,16,,,Central Midfield,21,30.06.2021,15.00,1.84,Portugal,Tottenham Hotspur
+66,Ryan Sessegnon,133,26,20,,,Left Midfield,19,30.06.2025,35.00,1.78,England,Tottenham Hotspur
+67,Dele Alli,307,86,69,,,Attacking Midfield,23,30.06.2024,80.00,1.88,England,Tottenham Hotspur
+68,Heung Min Son,418,148,58,,,Left Winger,27,30.06.2023,80.00,1.84,"Korea, South",Tottenham Hotspur
+69,Steven Bergwijn,200,49,48,,,Left Winger,22,30.06.2025,35.00,1.78,Netherlands,Tottenham Hotspur
+70,Lucas Moura,414,91,76,,,Right Winger,27,30.06.2024,40.00,1.72,Brazil,Tottenham Hotspur
+71,Erik Lamela,318,58,66,,,Right Winger,28,30.06.2022,20.00,1.84,Argentina,Tottenham Hotspur
+72,Harry Kane,357,208,46,,,Centre-Forward,26,30.06.2024,150.00,1.88,England,Tottenham Hotspur
+73,Malachi Walcott,43,2,1,,,,18,-,150.00,C.nt,England,Tottenham Hotspur
+74,Troy Parrott,41,31,6,,,Centre-Forward,18,30.06.2023,4.00,1.85,Ireland,Tottenham Hotspur
+75,Kepa,251,,,271,84,Goalkeeper,25,30.06.2025,40.00,1.86,Spain,Chelsea
+76,Willy Caballero,368,,,421,130,Goalkeeper,38,30.06.2020,750,1.86,Argentina,Chelsea
+77,Antonio Rudiger,328,18,8,,,Centre-Back,27,30.06.2022,50.00,1.90,Germany,Chelsea
+78,Kurt Zouma,255,12,9,,,Centre-Back,25,30.06.2023,35.00,1.90,France,Chelsea
+79,Andreas Christensen,239,11,9,,,Centre-Back,23,30.06.2022,30.00,1.88,Denmark,Chelsea
+80,Fikayo Tomori,177,11,5,,,Centre-Back,22,30.06.2024,20.00,1.84,England,Chelsea
+81,Emerson,128,4,9,,,Left-Back,25,30.06.2022,30.00,1.75,Italy,Chelsea
+82,Marcos Alonso,341,35,28,,,Left-Back,29,30.06.2023,25.00,1.88,Spain,Chelsea
+83,Cesar Azpilicueta,547,15,54,,,Right-Back,30,30.06.2022,30.00,1.78,Spain,Chelsea
+84,Reece James,151,11,20,,,Right-Back,20,30.06.2025,25.00,1.82,England,Chelsea
+85,Jorginho,348,26,24,,,Defensive Midfield,28,30.06.2023,65.00,1.80,Italy,Chelsea
+86,Ngolo Kante,288,18,20,,,Central Midfield,29,30.06.2023,100.00,1.68,France,Chelsea
+87,Mateo Kovacic,358,20,35,,,Central Midfield,25,30.06.2024,45.00,1.77,Croatia,Chelsea
+88,Ruben Loftus Cheek,158,17,21,,,Central Midfield,24,30.06.2024,30.00,1.91,England,Chelsea
+89,Ross Barkley,297,46,42,,,Central Midfield,26,30.06.2023,27.00,1.85,England,Chelsea
+90,Billy Gilmour,83,19,14,,,Central Midfield,18,30.06.2023,6.00,1.70,Scotland,Chelsea
+91,Lewis Baker,206,50,31,,,Central Midfield,24,30.06.2022,3.50,1.82,England,Chelsea
+92,Danilo Pantic,162,20,22,,,Central Midfield,23,30.06.2021,1.80,1.80,Serbia,Chelsea
+93,Mason Mount,171,37,30,,,Attacking Midfield,21,30.06.2024,45.00,1.78,England,Chelsea
+94,Callum Hudson Odoi,114,39,28,,,Left Winger,19,30.06.2024,35.00,1.77,England,Chelsea
+95,Christian Pulisic,175,39,45,,,Right Winger,21,30.06.2024,60.00,1.72,United States,Chelsea
+96,Willian,584,99,130,,,Right Winger,31,30.06.2020,28.00,1.75,Brazil,Chelsea
+97,Pedro,522,142,90,,,Right Winger,32,30.06.2020,12.00,1.67,Spain,Chelsea
+98,Tammy Abraham,222,110,26,,,Centre-Forward,22,30.06.2022,50.00,1.91,England,Chelsea
+99,Michy Batshuayi,328,126,32,,,Centre-Forward,26,30.06.2021,22.00,1.84,Belgium,Chelsea
+100,Olivier Giroud,507,203,80,,,Centre-Forward,33,30.06.2020,9.00,1.93,France,Chelsea
+101,Faustino Anjorin,67,29,14,,,Attacking Midfield,18,30.06.2021,2.50,1.86,England,Chelsea
+102,Armando Broja,54,21,5,,,Centre-Forward,18,30.06.2022,2.50,1.83,Albania,Chelsea
+103,David De Gea,509,,,555,168,Goalkeeper,29,30.06.2023,50.00,1.89,Spain,Manchester United
+104,Sergio Romero,264,,,235,120,Goalkeeper,33,30.06.2021,3.50,1.92,Argentina,Manchester United
+105,Lee Grant,510,,,670,133,Goalkeeper,37,30.06.2021,750,1.93,England,Manchester United
+106,Harry Maguire,374,23,21,,,Centre-Back,27,30.06.2025,70.00,1.94,England,Manchester United
+107,Victor Lindelof,313,7,7,,,Centre-Back,25,30.06.2024,35.00,1.87,Sweden,Manchester United
+108,Eric Bailly,154,2,1,,,Centre-Back,25,30.06.2022,22.00,1.87,Cote d'Ivoire,Manchester United
+109,Axel Tuanzebe,93,2,1,,,Centre-Back,22,30.06.2022,10.00,1.84,England,Manchester United
+110,Phil Jones,280,6,11,,,Centre-Back,28,30.06.2023,9.00,1.85,England,Manchester United
+111,Luke Shaw,207,2,14,,,Left-Back,24,30.06.2023,22.00,1.81,England,Manchester United
+112,Brandon Williams,81,4,15,,,Left-Back,19,30.06.2022,12.00,1.82,England,Manchester United
+113,Aaron Wan Bissaka,80,-,6,,,Right-Back,22,30.06.2024,40.00,1.83,England,Manchester United
+114,Diogo Dalot,80,5,13,,,Right-Back,21,30.06.2023,20.00,1.83,Portugal,Manchester United
+115,Timothy Fosu Mensah,80,1,3,,,Right-Back,22,30.06.2020,7.00,1.90,Netherlands,Manchester United
+116,Nemanja Matic,457,26,30,,,Defensive Midfield,31,30.06.2021,20.00,1.94,Serbia,Manchester United
+117,Paul Pogba,349,68,78,,,Central Midfield,27,30.06.2021,100.00,1.91,France,Manchester United
+118,Scott Mctominay,104,10,1,,,Central Midfield,23,30.06.2023,28.00,1.90,Scotland,Manchester United
+119,Fred,252,25,27,,,Central Midfield,27,30.06.2023,22.00,1.69,Brazil,Manchester United
+120,Bruno Fernandes,310,91,74,,,Attacking Midfield,25,30.06.2025,60.00,1.83,Portugal,Manchester United
+121,Andreas Pereira,192,21,21,,,Attacking Midfield,24,30.06.2023,20.00,1.78,Brazil,Manchester United
+122,Juan Mata,560,127,152,,,Attacking Midfield,31,30.06.2021,12.00,1.70,Spain,Manchester United
+123,Daniel James,127,18,29,,,Left Winger,22,30.06.2024,28.00,1.70,Wales,Manchester United
+124,Jesse Lingard,311,60,49,,,Right Winger,27,30.06.2021,22.00,1.74,England,Manchester United
+125,Tahith Chong,80,26,20,,,Right Winger,20,30.06.2022,7.00,1.85,Netherlands,Manchester United
+126,Marcus Rashford,215,69,31,,,Centre-Forward,22,30.06.2023,80.00,1.85,England,Manchester United
+127,Anthony Martial,282,79,42,,,Centre-Forward,24,30.06.2024,60.00,1.83,France,Manchester United
+128,Mason Greenwood,87,56,16,,,Centre-Forward,18,30.06.2023,32.00,1.81,England,Manchester United
+129,Odion Ighalo,330,135,27,,,Centre-Forward,30,30.06.2020,6.50,1.83,Nigeria,Manchester United
+130,Bernd Leno,465,,,560,146,Goalkeeper,28,30.06.2023,35.00,1.89,Germany,Arsenal
+131,Emiliano Martinez,125,,,153,39,Goalkeeper,27,30.06.2022,3.50,1.90,Argentina,Arsenal
+132,Matt Macey,123,,,192,27,Goalkeeper,25,30.06.2020,250,1.99,England,Arsenal
+133,Sokratis,461,22,7,,,Centre-Back,31,30.06.2021,18.00,1.86,Greece,Arsenal
+134,Shkodran Mustafi,343,21,11,,,Centre-Back,27,30.06.2021,15.00,1.84,Germany,Arsenal
+135,David Luiz,499,34,26,,,Centre-Back,32,30.06.2021,15.00,1.89,Brazil,Arsenal
+136,Rob Holding,135,7,2,,,Centre-Back,24,30.06.2023,12.00,1.88,England,Arsenal
+137,Pablo Mari,230,15,2,,,Centre-Back,26,30.06.2020,6.00,1.93,Spain,Arsenal
+138,Kieran Tierney,183,8,39,,,Left-Back,22,30.06.2024,25.00,1.78,Scotland,Arsenal
+139,Sead Kolasinac,313,27,38,,,Left-Back,26,30.06.2022,20.00,1.83,Bosnia-Herzegovina,Arsenal
+140,Hector Bellerin,240,13,32,,,Right-Back,25,30.06.2023,40.00,1.78,Spain,Arsenal
+141,Calum Chambers,214,10,12,,,Right-Back,25,30.06.2022,18.00,1.83,England,Arsenal
+142,Cedric Soares,272,5,25,,,Right-Back,28,31.05.2020,10.00,1.71,Portugal,Arsenal
+143,Lucas Torreira,222,17,8,,,Defensive Midfield,24,30.06.2023,45.00,1.66,Uruguay,Arsenal
+144,Granit Xhaka,407,34,32,,,Defensive Midfield,27,30.06.2023,30.00,1.86,Switzerland,Arsenal
+145,Matteo Guendouzi,110,1,6,,,Central Midfield,20,30.06.2022,45.00,1.84,France,Arsenal
+146,Dani Ceballos,189,13,13,,,Central Midfield,23,30.06.2020,40.00,1.79,Spain,Arsenal
+147,Joe Willock,104,25,17,,,Central Midfield,20,-,18.00,1.79,England,Arsenal
+148,Ainsley Maitland Niles,193,9,17,,,Right Midfield,22,30.06.2023,18.00,1.80,England,Arsenal
+149,Bukayo Saka,84,25,26,,,Left Midfield,18,30.06.2021,22.00,1.78,England,Arsenal
+150,Mesut Ozil,600,105,216,,,Attacking Midfield,31,30.06.2021,22.00,1.80,Germany,Arsenal
+151,Nicolas Pepe,188,53,29,,,Right Winger,24,30.06.2024,65.00,1.83,Cote d'Ivoire,Arsenal
+152,Reiss Nelson,122,32,15,,,Right Winger,20,30.06.2023,14.00,1.75,England,Arsenal
+153,Pierre Emerick Aubameyang,500,257,81,,,Centre-Forward,30,30.06.2021,70.00,1.87,Gabon,Arsenal
+154,Alexandre Lacazette,389,174,64,,,Centre-Forward,28,30.06.2022,60.00,1.76,France,Arsenal
+155,Gabriel Martinelli,26,10,4,,,Centre-Forward,18,30.06.2024,28.00,1.80,Brazil,Arsenal
+156,Eddie Nketiah,103,57,12,,,Centre-Forward,20,30.06.2022,12.00,1.80,England,Arsenal
+157,Jordan Pickford,301,,,416,90,Goalkeeper,26,30.06.2024,35.00,1.85,England,Everton
+158,Maarten Stekelenburg,417,,,478,144,Goalkeeper,37,30.06.2020,700,1.97,Netherlands,Everton
+159,Michael Keane,305,23,11,,,Centre-Back,27,30.06.2022,25.00,1.88,England,Everton
+160,Yerry Mina,177,22,5,,,Centre-Back,25,30.06.2023,25.00,1.95,Colombia,Everton
+161,Mason Holgate,145,6,9,,,Centre-Back,23,30.06.2025,17.00,1.87,England,Everton
+162,Lucas Digne,261,13,25,,,Left-Back,26,30.06.2023,35.00,1.78,France,Everton
+163,Leighton Baines,570,43,69,,,Left-Back,35,30.06.2020,2.00,1.70,England,Everton
+164,Djibril Sidibe,300,18,35,,,Right-Back,27,30.06.2020,12.00,1.82,France,Everton
+165,Seamus Coleman,358,29,34,,,Right-Back,31,30.06.2022,12.00,1.77,Ireland,Everton
+166,Cuco Martina,294,5,9,,,Right-Back,30,30.06.2020,1.50,1.85,Curacao,Everton
+167,Jean Philippe Gbamin,195,7,6,,,Defensive Midfield,24,30.06.2024,28.00,1.86,Cote d'Ivoire,Everton
+168,Morgan Schneiderlin,397,17,14,,,Defensive Midfield,30,30.06.2021,12.00,1.86,France,Everton
+169,Andre Gomes,255,24,23,,,Central Midfield,26,30.06.2024,28.00,1.88,Portugal,Everton
+170,Tom Davies,144,7,9,,,Central Midfield,21,30.06.2023,18.00,1.80,England,Everton
+171,Fabian Delph,302,19,12,,,Central Midfield,30,30.06.2022,15.00,1.74,England,Everton
+172,Beni Baningime,68,1,3,,,,21,30.06.2022,1.50,C.nt,DR Congo,Everton
+173,Gylfi Sigurdsson,427,108,68,,,Attacking Midfield,30,30.06.2022,28.00,1.86,Iceland,Everton
+174,Richarlison,181,51,22,,,Left Winger,22,30.06.2024,65.00,1.79,Brazil,Everton
+175,Alex Iwobi,227,33,35,,,Left Winger,23,30.06.2024,32.00,1.83,Nigeria,Everton
+176,Bernard,288,49,60,,,Left Winger,27,30.06.2022,20.00,1.64,Brazil,Everton
+177,Theo Walcott,501,123,86,,,Right Winger,31,30.06.2021,15.00,1.75,England,Everton
+178,Dominic Calvert Lewin,172,44,14,,,Centre-Forward,23,30.06.2025,30.00,1.87,England,Everton
+179,Moise Kean,128,56,7,,,Centre-Forward,20,30.06.2024,28.00,1.83,Italy,Everton
+180,Cenk Tosun,392,162,43,,,Centre-Forward,28,30.06.2022,15.00,1.83,Turkey,Everton
+181,Oumar Niasse,170,60,27,,,Centre-Forward,29,30.06.2020,4.00,1.82,Senegal,Everton
+182,Anthony Gordon,62,24,9,,,,19,30.06.2023,1.50,A.ta,England,Everton
+183,Kasper Schmeichel,533,,,607,180,Goalkeeper,33,30.06.2023,12.00,1.89,Denmark,Leicester City
+184,Danny Ward,134,,,163,37,Goalkeeper,26,30.06.2022,8.00,1.91,Wales,Leicester City
+185,Eldin Jakupovic,272,,,331,94,Goalkeeper,35,30.06.2020,750,1.91,Switzerland,Leicester City
+186,Caglar Soyuncu,141,4,2,,,Centre-Back,23,30.06.2023,40.00,1.87,Turkey,Leicester City
+187,Jonny Evans,410,19,13,,,Centre-Back,32,30.06.2021,15.00,1.88,Northern Ireland,Leicester City
+188,Ryan Bennett,426,19,6,,,Centre-Back,30,31.05.2020,5.00,1.88,England,Leicester City
+189,Wes Morgan,690,27,7,,,Centre-Back,36,30.06.2020,1.50,1.85,Jamaica,Leicester City
+190,Ben Chilwell,158,5,16,,,Left-Back,23,30.06.2024,50.00,1.78,England,Leicester City
+191,Christian Fuchs,514,32,83,,,Left-Back,33,30.06.2020,2.00,1.87,Austria,Leicester City
+192,Ricardo Pereira,260,20,30,,,Right-Back,26,30.06.2023,40.00,1.75,Portugal,Leicester City
+193,James Justin,124,7,15,,,Right-Back,22,30.06.2024,4.00,1.83,England,Leicester City
+194,Wilfred Ndidi,213,15,10,,,Defensive Midfield,23,30.06.2024,45.00,1.83,Nigeria,Leicester City
+195,Hamza Choudhury,131,2,6,,,Defensive Midfield,22,30.06.2023,10.00,1.78,England,Leicester City
+196,Daniel Amartey,174,8,6,,,Defensive Midfield,25,30.06.2022,7.00,1.86,Ghana,Leicester City
+197,Nampalys Mendy,269,1,5,,,Defensive Midfield,27,30.06.2020,7.00,1.67,France,Leicester City
+198,Youri Tielemans,297,49,46,,,Central Midfield,22,30.06.2023,55.00,1.76,Belgium,Leicester City
+199,Dennis Praet,320,32,48,,,Central Midfield,25,30.06.2024,24.00,1.81,Belgium,Leicester City
+200,Matty James,195,9,19,,,Central Midfield,28,30.06.2022,1.50,1.81,England,Leicester City
+201,Marc Albrighton,338,29,63,,,Right Midfield,30,30.06.2022,10.00,1.75,England,Leicester City
+202,Harvey Barnes,168,40,31,,,Left Midfield,22,30.06.2024,22.00,1.80,England,Leicester City
+203,James Maddison,186,40,36,,,Attacking Midfield,23,30.06.2023,60.00,1.75,England,Leicester City
+204,Bartosz Kapustka,115,16,15,,,Attacking Midfield,23,30.06.2021,1.50,1.79,Poland,Leicester City
+205,Demarai Gray,241,21,21,,,Left Winger,23,30.06.2021,18.00,1.80,England,Leicester City
+206,Ayoze Perez,277,72,29,,,Second Striker,26,30.06.2023,30.00,1.78,Spain,Leicester City
+207,Jamie Vardy,340,160,68,,,Centre-Forward,33,30.06.2022,20.00,1.79,England,Leicester City
+208,Kelechi Iheanacho,154,44,24,,,Centre-Forward,23,30.06.2022,15.00,1.85,Nigeria,Leicester City
+209,Rui Patricio,539,,,538,200,Goalkeeper,32,30.06.2022,20.00,1.90,Portugal,Wolverhampton Wanderers
+210,John Ruddy,445,,,559,140,Goalkeeper,33,30.06.2020,2.50,1.92,England,Wolverhampton Wanderers
+211,Willy Boly,283,14,5,,,Centre-Back,29,30.06.2021,18.00,1.95,France,Wolverhampton Wanderers
+212,Conor Coady,373,19,15,,,Centre-Back,27,30.06.2023,18.00,1.85,England,Wolverhampton Wanderers
+213,Max Kilman,67,3,-,,,Centre-Back,22,30.06.2020,1.00,1.92,England,Wolverhampton Wanderers
+214,Jonny Otto,299,7,16,,,Left-Back,26,30.06.2023,20.00,1.75,Spain,Wolverhampton Wanderers
+215,Ruben Vinagre,64,3,2,,,Left-Back,20,30.06.2024,10.00,1.74,Portugal,Wolverhampton Wanderers
+216,Matt Doherty,363,37,46,,,Right-Back,28,30.06.2023,20.00,1.86,Ireland,Wolverhampton Wanderers
+217,Ruben Neves,218,19,10,,,Defensive Midfield,23,30.06.2023,50.00,1.80,Portugal,Wolverhampton Wanderers
+218,Leander Dendoncker,262,18,5,,,Defensive Midfield,24,-,28.00,1.88,Belgium,Wolverhampton Wanderers
+219,Romain Saiss,284,15,11,,,Defensive Midfield,30,30.06.2021,5.00,1.88,Morocco,Wolverhampton Wanderers
+220,Joao Moutinho,677,50,117,,,Central Midfield,33,30.06.2022,10.00,1.70,Portugal,Wolverhampton Wanderers
+221,Morgan Gibbs White,84,3,6,,,Central Midfield,20,30.06.2022,8.00,1.71,England,Wolverhampton Wanderers
+222,Enzo Loiodice,26,-,1,,,Central Midfield,19,30.06.2020,4.50,1.76,France,Wolverhampton Wanderers
+223,Bruno Jordao,38,5,1,,,Central Midfield,21,30.06.2024,2.50,1.80,Portugal,Wolverhampton Wanderers
+224,Ming Yang Yang,142,2,3,,,Central Midfield,24,-,250,1.72,Switzerland,Wolverhampton Wanderers
+225,Diogo Jota,205,70,40,,,Left Winger,23,30.06.2022,35.00,1.78,Portugal,Wolverhampton Wanderers
+226,Daniel Podence,213,26,39,,,Left Winger,24,30.06.2024,15.00,1.65,Portugal,Wolverhampton Wanderers
+227,Adama Traore,241,24,48,,,Right Winger,24,30.06.2023,32.00,1.78,Spain,Wolverhampton Wanderers
+228,Pedro Neto,54,6,5,,,Second Striker,20,30.06.2024,13.00,1.72,Portugal,Wolverhampton Wanderers
+229,Raul Jimenez,320,102,51,,,Centre-Forward,28,30.06.2023,50.00,1.88,Mexico,Wolverhampton Wanderers
+230,Leonardo Campana,21,4,3,,,Centre-Forward,19,30.06.2023,2.00,1.87,Ecuador,Wolverhampton Wanderers
+231,Bright Enobakhare,104,18,8,,,,22,30.06.2020,500,C.nt,"1,80 m",Wolverhampton Wanderers
+232,Oskar Buur,67,3,9,,,Right-Back,22,30.06.2023,100,1.78,Denmark,Wolverhampton Wanderers
+233,Lukasz Fabianski,353,,,466,104,Goalkeeper,34,30.06.2021,4.00,1.90,Poland,West Ham United
+234,Darren Randolph,436,,,546,127,Goalkeeper,32,30.06.2023,3.50,1.87,Ireland,West Ham United
+235,David Martin,403,,,479,135,Goalkeeper,34,30.06.2021,250,1.88,England,West Ham United
+236,Issa Diop,159,11,3,,,Centre-Back,23,30.06.2023,35.00,1.94,France,West Ham United
+237,Fabian Balbuena,148,8,3,,,Centre-Back,28,30.06.2021,12.00,1.88,Paraguay,West Ham United
+238,Angelo Ogbonna,392,10,4,,,Centre-Back,31,30.06.2022,8.00,1.91,Italy,West Ham United
+239,Goncalo Cardoso,34,1,2,,,Centre-Back,19,30.06.2024,2.50,1.89,Portugal,West Ham United
+240,Aaron Cresswell,419,21,51,,,Left-Back,30,30.06.2023,8.00,1.70,England,West Ham United
+241,Arthur Masuaku,196,4,20,,,Left-Back,26,30.06.2024,8.00,1.79,DR Congo,West Ham United
+242,Ryan Fredericks,222,3,20,,,Right-Back,27,30.06.2022,5.00,1.81,England,West Ham United
+243,Pablo Zabaleta,514,14,31,,,Right-Back,35,30.06.2020,1.00,1.76,Argentina,West Ham United
+244,Declan Rice,133,2,4,,,Defensive Midfield,21,30.06.2024,55.00,1.85,England,West Ham United
+245,Tomas Soucek,189,40,16,,,Defensive Midfield,25,30.06.2020,15.00,1.92,Czech Republic,West Ham United
+246,Carlos Sanchez,363,13,11,,,Defensive Midfield,34,30.06.2020,1.50,1.82,Colombia,West Ham United
+247,Mark Noble,513,61,61,,,Central Midfield,32,30.06.2021,6.00,1.80,England,West Ham United
+248,Jack Wilshere,267,17,38,,,Central Midfield,28,30.06.2021,6.00,1.72,England,West Ham United
+249,Manuel Lanzini,278,46,48,,,Attacking Midfield,27,30.06.2023,20.00,1.67,Argentina,West Ham United
+250,Pablo Fornals,189,19,27,,,Attacking Midfield,24,30.06.2024,20.00,1.78,Spain,West Ham United
+251,Felipe Anderson,309,52,60,,,Left Winger,26,30.06.2022,40.00,1.75,Brazil,West Ham United
+252,Jarrod Bowen,143,56,15,,,Right Winger,23,30.06.2025,20.00,1.75,England,West Ham United
+253,Michail Antonio,377,77,62,,,Right Winger,30,30.06.2021,12.00,1.80,England,West Ham United
+254,Robert Snodgrass,494,96,93,,,Right Winger,32,30.06.2021,6.00,1.82,Scotland,West Ham United
+255,Sebastien Haller,261,99,41,,,Centre-Forward,25,30.06.2024,45.00,1.90,France,West Ham United
+256,Albian Ajeti,212,87,29,,,Centre-Forward,23,30.06.2023,6.00,1.83,Switzerland,West Ham United
+257,Aaron Ramsdale,72,,,111,14,Goalkeeper,21,-,14.00,1.88,England,Afc Bournemouth
+258,Artur Boruc,514,,,552,192,Goalkeeper,40,30.06.2020,500,1.93,Poland,Afc Bournemouth
+259,Mark Travers,7,,,12,3,Goalkeeper,20,-,250,1.91,Ireland,Afc Bournemouth
+260,Nathan Ake,213,16,11,,,Centre-Back,25,30.06.2022,35.00,1.80,Netherlands,Afc Bournemouth
+261,Steve Cook,341,21,9,,,Centre-Back,28,30.06.2021,12.00,1.85,England,Afc Bournemouth
+262,Chris Mepham,75,2,2,,,Centre-Back,22,30.06.2023,10.00,1.91,Wales,Afc Bournemouth
+263,Jack Simpson,23,1,1,,,Centre-Back,23,30.06.2020,1.50,1.90,England,Afc Bournemouth
+264,Diego Rico,217,9,13,,,Left-Back,27,30.06.2022,10.00,1.83,Spain,Afc Bournemouth
+265,Lloyd Kelly,49,2,2,,,Left-Back,21,-,9.00,1.78,England,Afc Bournemouth
+266,Charlie Daniels,440,22,47,,,Left-Back,33,30.06.2020,2.00,1.78,England,Afc Bournemouth
+267,Adam Smith,324,9,28,,,Right-Back,28,30.06.2021,9.00,1.74,England,Afc Bournemouth
+268,Jack Stacey,205,18,29,,,Right-Back,24,30.06.2023,4.00,1.80,England,Afc Bournemouth
+269,Simon Francis,629,10,54,,,Right-Back,35,30.06.2020,1.00,1.91,England,Afc Bournemouth
+270,Jefferson Lerma,198,10,10,,,Defensive Midfield,25,30.06.2023,25.00,1.79,Colombia,Afc Bournemouth
+271,Lewis Cook,163,2,8,,,Central Midfield,23,30.06.2022,20.00,1.75,England,Afc Bournemouth
+272,Philip Billing,120,9,3,,,Central Midfield,23,30.06.2024,18.00,1.98,Denmark,Afc Bournemouth
+273,Dan Gosling,295,39,20,,,Central Midfield,30,30.06.2021,2.50,1.80,England,Afc Bournemouth
+274,Andrew Surman,461,39,41,,,Central Midfield,33,30.06.2020,2.00,1.78,England,Afc Bournemouth
+275,Kyle Taylor,10,-,-,,,,20,30.06.2022,2.00,C.nt,"1,67 m",Afc Bournemouth
+276,Ryan Fraser,252,30,45,,,Left Winger,26,30.06.2020,22.00,1.63,Scotland,Afc Bournemouth
+277,Arnaut Danjuma,124,34,24,,,Left Winger,23,30.06.2024,12.00,1.78,Netherlands,Afc Bournemouth
+278,Junior Stanislas,286,46,44,,,Left Winger,30,30.06.2021,2.50,1.83,England,Afc Bournemouth
+279,Harry Wilson,166,64,30,,,Right Winger,23,31.05.2020,22.00,1.73,Wales,Afc Bournemouth
+280,Jordon Ibe,216,19,26,,,Right Winger,24,30.06.2020,6.00,1.76,England,Afc Bournemouth
+281,Joshua King,300,67,37,,,Second Striker,28,30.06.2021,20.00,1.81,Norway,Afc Bournemouth
+282,Callum Wilson,238,91,37,,,Centre-Forward,28,30.06.2023,30.00,1.80,England,Afc Bournemouth
+283,Dominic Solanke,143,47,9,,,Centre-Forward,22,30.06.2022,15.00,1.86,England,Afc Bournemouth
+284,Sam Surridge,100,30,10,,,Centre-Forward,21,30.06.2024,500,1.90,England,Afc Bournemouth
+285,Martin Dubravka,333,,,375,113,Goalkeeper,31,30.06.2025,7.00,1.91,Slovakia,Newcastle United
+286,Karl Darlow,197,,,241,63,Goalkeeper,29,30.06.2020,3.00,1.90,England,Newcastle United
+287,Rob Elliot,198,,,279,51,Goalkeeper,33,30.06.2020,750,1.90,Ireland,Newcastle United
+288,Jamaal Lascelles,237,14,4,,,Centre-Back,26,30.06.2024,18.00,1.88,England,Newcastle United
+289,Fabian Schar,280,33,12,,,Centre-Back,28,30.06.2021,16.00,1.86,Switzerland,Newcastle United
+290,Federico Fernandez,333,13,10,,,Centre-Back,31,30.06.2021,7.00,1.90,Argentina,Newcastle United
+291,Ciaran Clark,273,25,10,,,Centre-Back,30,30.06.2021,6.00,1.88,Ireland,Newcastle United
+292,Florian Lejeune,275,16,6,,,Centre-Back,28,30.06.2022,6.00,1.90,France,Newcastle United
+293,Danny Rose,280,11,32,,,Left-Back,29,30.06.2020,20.00,1.73,England,Newcastle United
+294,Paul Dummett,254,7,2,,,Left-Back,28,30.06.2022,7.00,1.83,Wales,Newcastle United
+295,Jetro Willems,297,15,46,,,Left-Back,26,30.06.2020,7.00,1.69,Netherlands,Newcastle United
+296,Deandre Yedlin,208,6,18,,,Right-Back,26,30.06.2021,8.00,1.73,United States,Newcastle United
+297,Emil Krafth,218,5,13,,,Right-Back,25,30.06.2023,5.00,1.84,Sweden,Newcastle United
+298,Javier Manquillo,195,1,11,,,Right-Back,25,30.06.2020,5.00,1.78,Spain,Newcastle United
+299,Jamie Sterry,111,5,9,,,Right-Back,24,30.06.2020,75,1.80,England,Newcastle United
+300,Isaac Hayden,185,8,15,,,Defensive Midfield,25,30.06.2021,10.00,1.86,England,Newcastle United
+301,Matthew Longstaff,85,9,11,,,Defensive Midfield,20,30.06.2020,4.00,1.71,England,Newcastle United
+302,Sean Longstaff,149,24,18,,,Central Midfield,22,30.06.2022,22.00,1.81,England,Newcastle United
+303,Jonjo Shelvey,367,50,51,,,Central Midfield,28,30.06.2023,18.00,1.84,England,Newcastle United
+304,Nabil Bentaleb,198,26,19,,,Central Midfield,25,30.06.2020,5.00,1.87,Algeria,Newcastle United
+305,Valentino Lazaro,206,22,39,,,Right Midfield,24,30.06.2020,19.00,1.80,Austria,Newcastle United
+306,Matt Ritchie,484,98,90,,,Right Midfield,30,30.06.2023,12.00,1.73,Scotland,Newcastle United
+307,Miguel Almiron,155,32,26,,,Attacking Midfield,26,30.06.2024,20.00,1.74,Paraguay,Newcastle United
+308,Allan Saint Maximin,168,18,23,,,Left Winger,23,30.06.2025,25.00,1.73,France,Newcastle United
+309,Christian Atsu,238,22,27,,,Left Winger,28,30.06.2021,6.00,1.65,Ghana,Newcastle United
+310,Joelinton,161,38,26,,,Centre-Forward,23,30.06.2025,25.00,1.86,Brazil,Newcastle United
+311,Dwight Gayle,249,98,28,,,Centre-Forward,29,30.06.2021,12.00,1.77,England,Newcastle United
+312,Yoshinori Muto,160,51,16,,,Centre-Forward,27,30.06.2022,7.00,1.78,Japan,Newcastle United
+313,Andy Carroll,317,79,49,,,Centre-Forward,31,30.06.2020,4.00,1.93,England,Newcastle United
+314,Tom Heaton,372,,,471,104,Goalkeeper,33,-,6.00,1.88,England,Aston Villa
+315,Jed Steer,173,,,224,49,Goalkeeper,27,30.06.2023,1.50,1.82,England,Aston Villa
+316,Orjan Nyland,238,,,308,69,Goalkeeper,29,30.06.2021,1.50,1.92,Norway,Aston Villa
+317,Pepe Reina,794,,,758,323,Goalkeeper,37,30.06.2020,800,1.88,Spain,Aston Villa
+318,Matija Sarkic,76,,,103,24,Goalkeeper,22,30.06.2020,100,1.95,Montenegro,Aston Villa
+319,Tyrone Mings,131,5,9,,,Centre-Back,27,-,28.00,1.95,England,Aston Villa
+320,Bjorn Engels,175,17,8,,,Centre-Back,25,30.06.2024,12.00,1.94,Belgium,Aston Villa
+321,Ezri Konsa,154,2,3,,,Centre-Back,22,-,8.00,1.83,England,Aston Villa
+322,Kortney Hause,169,7,4,,,Centre-Back,24,-,8.00,1.91,England,Aston Villa
+323,Matt Targett,164,8,13,,,Left-Back,24,-,13.00,1.83,England,Aston Villa
+324,Neil Taylor,306,-,14,,,Left-Back,31,30.06.2021,3.50,1.76,Wales,Aston Villa
+325,Frederic Guilbert,179,4,9,,,Right-Back,25,30.06.2023,9.00,1.78,France,Aston Villa
+326,Ahmed Elmohamady,458,28,67,,,Right-Back,32,30.06.2021,2.50,1.82,Egypt,Aston Villa
+327,Marvelous Nakamba,190,4,5,,,Defensive Midfield,26,30.06.2024,10.00,1.77,Zimbabwe,Aston Villa
+328,Douglas Luiz,103,6,2,,,Central Midfield,21,30.06.2023,20.00,1.78,Brazil,Aston Villa
+329,John Mcginn,299,32,48,,,Central Midfield,25,30.06.2024,20.00,1.78,Scotland,Aston Villa
+330,Conor Hourihane,424,75,74,,,Central Midfield,29,-,7.50,1.81,Ireland,Aston Villa
+331,Danny Drinkwater,329,20,37,,,Central Midfield,30,30.06.2020,6.00,1.77,England,Aston Villa
+332,Henri Lansbury,314,51,41,,,Central Midfield,29,30.06.2021,1.50,1.83,England,Aston Villa
+333,Jack Grealish,259,35,47,,,Attacking Midfield,24,30.06.2023,38.00,1.75,England,Aston Villa
+334,Trezeguet,228,43,36,,,Left Winger,25,30.06.2023,10.00,1.79,Egypt,Aston Villa
+335,Anwar El Ghazi,226,56,34,,,Right Winger,24,30.06.2023,10.00,1.89,Netherlands,Aston Villa
+336,Jota,232,43,27,,,Right Winger,28,30.06.2021,4.50,1.80,Spain,Aston Villa
+337,Wesley,174,52,20,,,Centre-Forward,23,30.06.2024,30.00,1.91,Brazil,Aston Villa
+338,Mbwana Samatta,239,98,27,,,Centre-Forward,27,30.06.2024,12.00,1.83,Tanzania,Aston Villa
+339,Borja Baston,284,90,10,,,Centre-Forward,27,30.06.2020,4.00,1.86,Spain,Aston Villa
+340,Keinan Davis,90,11,13,,,Centre-Forward,22,30.06.2020,2.50,1.89,England,Aston Villa
+341,Ben Foster,460,,,624,123,Goalkeeper,37,30.06.2020,1.50,1.93,England,Watford
+342,Heurelho Gomes,482,,,513,185,Goalkeeper,39,30.06.2020,500,1.91,Brazil,Watford
+343,Daniel Bachmann,97,,,147,29,Goalkeeper,25,30.06.2020,500,1.91,Austria,Watford
+344,Christian Kabasele,258,22,6,,,Centre-Back,29,30.06.2021,8.00,1.87,Belgium,Watford
+345,Craig Dawson,362,41,13,,,Centre-Back,29,30.06.2023,6.00,1.88,England,Watford
+346,Craig Cathcart,338,14,4,,,Centre-Back,31,30.06.2023,5.00,1.89,Northern Ireland,Watford
+347,Adrian Mariappa,415,7,7,,,Centre-Back,33,30.06.2020,2.00,1.79,Jamaica,Watford
+348,Jorge Segura,63,3,-,,,Centre-Back,23,-,1.00,1.95,Colombia,Watford
+349,Adam Masina,192,9,10,,,Left-Back,26,30.06.2023,7.00,1.91,Italy,Watford
+350,Jose Holebas,419,36,52,,,Left-Back,35,30.06.2020,1.50,1.84,Greece,Watford
+351,Kiko Femenia,315,17,15,,,Right-Back,29,30.06.2021,6.00,1.71,Spain,Watford
+352,Daryl Janmaat,363,25,34,,,Right-Back,30,30.06.2022,5.00,1.85,Netherlands,Watford
+353,Etienne Capoue,398,29,20,,,Defensive Midfield,31,30.06.2022,6.50,1.89,France,Watford
+354,Nathaniel Chalobah,191,17,6,,,Defensive Midfield,25,30.06.2022,6.00,1.85,England,Watford
+355,Abdoulaye Doucoure,239,33,29,,,Central Midfield,27,30.06.2023,25.00,1.83,France,Watford
+356,Will Hughes,269,18,28,,,Central Midfield,24,30.06.2022,18.00,1.85,England,Watford
+357,Tom Cleverley,306,30,29,,,Central Midfield,30,30.06.2022,6.00,1.75,England,Watford
+358,Domingos Quina,60,5,3,,,Central Midfield,20,30.06.2022,3.50,1.73,Portugal,Watford
+359,Tom Dele Bashiru,80,8,15,,,Central Midfield,20,30.06.2025,500,1.79,Nigeria,Watford
+360,Roberto Pereyra,328,32,30,,,Attacking Midfield,29,30.06.2021,11.00,1.82,Argentina,Watford
+361,Gerard Deulofeu,282,61,49,,,Left Winger,26,30.06.2023,25.00,1.77,Spain,Watford
+362,Isaac Success,147,21,15,,,Left Winger,24,30.06.2023,4.00,1.82,Nigeria,Watford
+363,Ismaila Sarr,131,29,25,,,Right Winger,22,30.06.2024,27.00,1.85,Senegal,Watford
+364,Ignacio Pussetto,145,21,19,,,Right Winger,24,30.06.2024,8.00,1.80,Argentina,Watford
+365,Joao Pedro,30,7,2,,,Centre-Forward,18,30.06.2025,20.00,1.82,Brazil,Watford
+366,Andre Gray,333,125,53,,,Centre-Forward,28,30.06.2022,12.00,1.78,England,Watford
+367,Troy Deeney,519,156,68,,,Centre-Forward,31,30.06.2021,8.00,1.84,England,Watford
+368,Danny Welbeck,322,71,40,,,Centre-Forward,29,30.06.2022,7.00,1.85,England,Watford
+369,Adalberto Penaranda,70,9,5,,,Centre-Forward,22,30.06.2023,1.30,1.86,Venezuela,Watford
+370,Mathew Ryan,346,,,397,113,Goalkeeper,27,30.06.2022,10.00,1.84,Australia,Brighton Amp Hove Albion
+371,David Button,317,,,403,82,Goalkeeper,31,30.06.2021,1.50,1.91,England,Brighton Amp Hove Albion
+372,Jason Steele,306,,,393,74,Goalkeeper,29,30.06.2021,750,1.88,England,Brighton Amp Hove Albion
+373,Lewis Dunk,300,18,14,,,Centre-Back,28,30.06.2023,20.00,1.92,England,Brighton Amp Hove Albion
+374,Adam Webster,230,12,10,,,Centre-Back,25,30.06.2023,15.00,1.90,England,Brighton Amp Hove Albion
+375,Shane Duffy,326,25,13,,,Centre-Back,28,30.06.2023,12.00,1.93,Ireland,Brighton Amp Hove Albion
+376,Dan Burn,306,13,5,,,Centre-Back,27,30.06.2023,5.00,2.01,England,Brighton Amp Hove Albion
+377,Bernardo,115,4,4,,,Left-Back,24,30.06.2022,6.00,1.86,Brazil,Brighton Amp Hove Albion
+378,Martin Montoya,249,4,22,,,Right-Back,28,30.06.2022,8.00,1.75,Spain,Brighton Amp Hove Albion
+379,Tariq Lamptey,85,5,12,,,,19,30.06.2023,3.50,R.gh,England,Brighton Amp Hove Albion
+380,Ezequiel Schelotto,286,17,23,,,Right-Back,30,30.06.2020,1.50,1.87,Italy,Brighton Amp Hove Albion
+381,Davy Propper,369,46,46,,,Central Midfield,28,30.06.2023,17.00,1.85,Netherlands,Brighton Amp Hove Albion
+382,Yves Bissouma,103,5,3,,,Central Midfield,23,30.06.2023,12.00,1.82,Mali,Brighton Amp Hove Albion
+383,Pascal Gross,379,66,69,,,Central Midfield,28,30.06.2022,12.00,1.81,Germany,Brighton Amp Hove Albion
+384,Aaron Mooy,292,38,36,,,Central Midfield,29,30.06.2023,12.00,1.79,Australia,Brighton Amp Hove Albion
+385,Dale Stephens,390,39,37,,,Central Midfield,30,30.06.2021,6.00,1.85,England,Brighton Amp Hove Albion
+386,Beram Kayal,379,16,19,,,Central Midfield,31,30.06.2020,1.50,1.78,Israel,Brighton Amp Hove Albion
+387,Solly March,184,13,20,,,Left Midfield,25,30.06.2022,8.00,1.80,England,Brighton Amp Hove Albion
+388,Alexis Mac Allister,98,12,13,,,Attacking Midfield,21,30.06.2023,12.50,1.74,Argentina,Brighton Amp Hove Albion
+389,Steven Alzate,85,7,8,,,Attacking Midfield,21,30.06.2023,2.50,1.80,Colombia,Brighton Amp Hove Albion
+390,Leandro Trossard,247,79,33,,,Left Winger,25,30.06.2023,16.00,1.72,Belgium,Brighton Amp Hove Albion
+391,Alireza Jahanbakhsh,260,71,54,,,Right Winger,26,30.06.2023,8.00,1.80,Iran,Brighton Amp Hove Albion
+392,Neal Maupay,230,72,22,,,Centre-Forward,23,30.06.2023,22.00,1.73,France,Brighton Amp Hove Albion
+393,Aaron Connolly,83,37,4,,,Centre-Forward,20,30.06.2022,4.50,1.75,Ireland,Brighton Amp Hove Albion
+394,Glenn Murray,543,202,45,,,Centre-Forward,36,30.06.2021,2.00,1.86,England,Brighton Amp Hove Albion
+395,Angus Gunn,136,,,188,35,Goalkeeper,24,30.06.2023,8.00,1.96,England,Southampton
+396,Alex Mccarthy,240,,,324,66,Goalkeeper,30,30.06.2022,5.00,1.93,England,Southampton
+397,Jannik Vestergaard,287,23,5,,,Centre-Back,27,30.06.2022,15.00,1.99,Denmark,Southampton
+398,Jan Bednarek,132,3,4,,,Centre-Back,23,30.06.2022,15.00,1.89,Poland,Southampton
+399,Jack Stephens,232,10,12,,,Centre-Back,26,30.06.2022,7.00,1.85,England,Southampton
+400,Kevin Danso,79,10,6,,,Centre-Back,21,30.06.2020,7.00,1.90,Austria,Southampton
+401,Ryan Bertrand,442,12,29,,,Left-Back,30,30.06.2021,13.00,1.79,England,Southampton
+402,Kyle Walker Peters,83,4,8,,,Right-Back,22,31.05.2020,10.00,1.73,England,Southampton
+403,Yan Valery,86,3,5,,,Right-Back,21,30.06.2023,7.00,1.80,France,Southampton
+404,Oriol Romeu,281,7,2,,,Defensive Midfield,28,30.06.2021,10.00,1.83,Spain,Southampton
+405,James Ward Prowse,281,25,34,,,Central Midfield,25,30.06.2022,18.00,1.77,England,Southampton
+406,Pierre Emile Hojbjerg,251,19,14,,,Central Midfield,24,30.06.2021,15.00,1.85,Denmark,Southampton
+407,Stuart Armstrong,351,56,58,,,Central Midfield,28,30.06.2022,8.00,1.83,Scotland,Southampton
+408,Nathan Redmond,366,45,46,,,Left Winger,26,30.06.2023,20.00,1.73,England,Southampton
+409,Moussa Djenepo,81,14,9,,,Left Winger,21,30.06.2023,12.00,1.77,Mali,Southampton
+410,Sofiane Boufal,221,27,24,,,Left Winger,26,30.06.2021,10.00,1.75,Morocco,Southampton
+411,Danny Ings,255,86,24,,,Centre-Forward,27,30.06.2022,22.00,1.78,England,Southampton
+412,Che Adams,206,54,22,,,Centre-Forward,23,30.06.2024,12.00,1.79,England,Southampton
+413,Michael Obafemi,80,27,9,,,Centre-Forward,19,30.06.2022,5.00,1.70,Ireland,Southampton
+414,Shane Long,508,115,64,,,Centre-Forward,33,30.06.2020,3.50,1.80,Ireland,Southampton
+415,Vicente Guaita,308,,,366,96,Goalkeeper,33,30.06.2021,5.00,1.90,Spain,Crystal Palace
+416,Wayne Hennessey,334,,,488,89,Goalkeeper,33,30.06.2021,3.00,1.97,Wales,Crystal Palace
+417,Stephen Henderson,180,,,248,50,Goalkeeper,31,30.06.2020,500,1.88,Ireland,Crystal Palace
+418,Mamadou Sakho,352,12,4,,,Centre-Back,30,30.06.2021,12.00,1.87,France,Crystal Palace
+419,James Tomkins,361,19,12,,,Centre-Back,31,30.06.2022,5.00,1.92,England,Crystal Palace
+420,Gary Cahill,538,44,16,,,Centre-Back,34,30.06.2021,5.00,1.93,England,Crystal Palace
+421,Jairo Riedewald,160,5,7,,,Centre-Back,23,30.06.2022,4.00,1.82,Netherlands,Crystal Palace
+422,Scott Dann,441,37,18,,,Centre-Back,33,30.06.2020,3.50,1.94,England,Crystal Palace
+423,Patrick Van Aanholt,348,33,29,,,Left-Back,29,30.06.2021,12.00,1.76,Netherlands,Crystal Palace
+424,Joel Ward,364,12,14,,,Right-Back,30,30.06.2021,4.00,1.86,England,Crystal Palace
+425,Martin Kelly,221,4,8,,,Right-Back,29,30.06.2021,3.50,1.91,England,Crystal Palace
+426,Luka Milivojevic,337,51,26,,,Defensive Midfield,29,30.06.2023,25.00,1.86,Serbia,Crystal Palace
+427,Cheikhou Kouyate,458,25,21,,,Defensive Midfield,30,30.06.2022,10.00,1.89,Senegal,Crystal Palace
+428,James Mcarthur,509,41,35,,,Central Midfield,32,30.06.2021,6.00,1.78,Scotland,Crystal Palace
+429,James Mccarthy,397,28,22,,,Central Midfield,29,30.06.2022,3.50,1.80,Ireland,Crystal Palace
+430,Jeffrey Schlupp,262,32,20,,,Left Midfield,27,30.06.2021,12.00,1.78,Ghana,Crystal Palace
+431,Max Meyer,319,65,52,,,Attacking Midfield,24,30.06.2021,10.00,1.73,Germany,Crystal Palace
+432,Wilfried Zaha,373,57,71,,,Right Winger,27,30.06.2023,55.00,1.80,Cote d'Ivoire,Crystal Palace
+433,Andros Townsend,368,47,67,,,Right Winger,28,30.06.2021,15.00,1.81,England,Crystal Palace
+434,Christian Benteke,388,128,54,,,Centre-Forward,29,30.06.2021,13.00,1.90,Belgium,Crystal Palace
+435,Jordan Ayew,369,72,40,,,Centre-Forward,28,30.06.2022,8.00,1.82,Ghana,Crystal Palace
+436,Nick Pope,172,,,176,73,Goalkeeper,27,30.06.2023,12.00,1.97,England,Burnley
+437,Joe Hart,538,,,625,182,Goalkeeper,32,30.06.2020,3.00,1.96,England,Burnley
+438,Bailey Peacock Farrell,41,,,53,11,Goalkeeper,23,30.06.2023,1.50,1.94,Northern Ireland,Burnley
+439,James Tarkowski,297,14,7,,,Centre-Back,27,30.06.2022,25.00,1.85,England,Burnley
+440,Ben Mee,352,8,14,,,Centre-Back,30,30.06.2021,10.00,1.80,England,Burnley
+441,Ben Gibson,270,7,6,,,Centre-Back,27,30.06.2022,8.00,1.85,England,Burnley
+442,Kevin Long,172,10,7,,,Centre-Back,29,30.06.2021,2.00,1.88,Ireland,Burnley
+443,Charlie Taylor,241,3,22,,,Left-Back,26,30.06.2021,5.00,1.76,England,Burnley
+444,Erik Pieters,444,10,29,,,Left-Back,31,30.06.2021,5.00,1.83,Netherlands,Burnley
+445,Matthew Lowton,309,13,24,,,Right-Back,30,30.06.2021,5.00,1.80,England,Burnley
+446,Phil Bardsley,386,14,12,,,Right-Back,34,30.06.2020,1.00,1.80,Scotland,Burnley
+447,Jack Cork,496,18,23,,,Defensive Midfield,30,30.06.2021,15.00,1.85,England,Burnley
+448,Ashley Westwood,409,24,47,,,Defensive Midfield,30,30.06.2020,7.00,1.74,England,Burnley
+449,Jeff Hendrick,354,36,26,,,Central Midfield,28,30.06.2020,11.00,1.85,Ireland,Burnley
+450,Josh Brownhill,252,26,17,,,Central Midfield,24,30.06.2024,7.00,1.79,England,Burnley
+451,Robbie Brady,271,28,38,,,Left Midfield,28,30.06.2020,6.00,1.76,Ireland,Burnley
+452,Dwight Mcneil,58,5,10,,,Left Winger,20,30.06.2023,20.00,1.83,England,Burnley
+453,Johann Berg Gudmundsson,390,55,50,,,Right Winger,29,30.06.2021,10.00,1.86,Iceland,Burnley
+454,Aaron Lennon,537,41,91,,,Right Winger,32,30.06.2020,3.00,1.65,England,Burnley
+455,Chris Wood,404,143,39,,,Centre-Forward,28,30.06.2023,18.00,1.91,New Zealand,Burnley
+456,Ashley Barnes,399,98,31,,,Centre-Forward,30,30.06.2022,10.00,1.86,England,Burnley
+457,Jay Rodriguez,406,127,37,,,Centre-Forward,30,30.06.2021,6.00,1.85,England,Burnley
+458,Matej Vydra,342,104,34,,,Centre-Forward,27,30.06.2021,5.00,1.80,Czech Republic,Burnley
+459,Dean Henderson,140,,,123,58,Goalkeeper,23,31.05.2020,18.00,1.88,England,Sheffield United
+460,Michael Verrips,105,,,152,34,Goalkeeper,23,30.06.2023,1.00,1.96,Netherlands,Sheffield United
+461,Simon Moore,182,,,215,47,Goalkeeper,29,30.06.2021,500,1.91,England,Sheffield United
+462,Jack Oconnell,305,15,14,,,Centre-Back,26,30.06.2023,12.00,1.91,England,Sheffield United
+463,John Egan,288,22,8,,,Centre-Back,27,30.06.2022,12.00,1.85,Ireland,Sheffield United
+464,Panagiotis Retsos,82,1,3,,,Centre-Back,21,30.06.2020,9.00,1.86,Greece,Sheffield United
+465,Chris Basham,419,21,15,,,Centre-Back,31,30.06.2021,3.00,1.90,England,Sheffield United
+466,Phil Jagielka,643,38,16,,,Centre-Back,37,30.06.2020,1.00,1.80,England,Sheffield United
+467,Enda Stevens,398,10,41,,,Left-Back,29,30.06.2023,7.00,1.83,Ireland,Sheffield United
+468,Jack Robinson,219,7,12,,,Left-Back,26,30.06.2022,2.50,1.80,England,Sheffield United
+469,George Baldock,307,11,20,,,Right-Back,27,30.06.2022,6.00,1.78,England,Sheffield United
+470,Kieron Freeman,232,18,21,,,Right-Back,28,30.06.2020,1.50,1.78,Wales,Sheffield United
+471,Sander Berge,162,7,5,,,Defensive Midfield,22,30.06.2024,22.00,1.95,Norway,Sheffield United
+472,Muhamed Besic,269,11,11,,,Defensive Midfield,27,31.05.2020,3.00,1.80,Bosnia-Herzegovina,Sheffield United
+473,Jack Rodwell,244,18,10,,,Defensive Midfield,29,30.06.2020,1.50,1.88,England,Sheffield United
+474,John Lundstram,298,19,22,,,Central Midfield,26,30.06.2020,10.00,1.81,England,Sheffield United
+475,John Fleck,410,24,70,,,Central Midfield,28,30.06.2023,8.00,1.69,Scotland,Sheffield United
+476,Oliver Norwood,410,30,58,,,Central Midfield,28,30.06.2021,8.00,1.75,Northern Ireland,Sheffield United
+477,Ben Osborn,242,16,32,,,Left Midfield,25,30.06.2022,2.50,1.76,England,Sheffield United
+478,Luke Freeman,420,53,80,,,Attacking Midfield,28,30.06.2022,3.50,1.76,England,Sheffield United
+479,Lys Mousset,132,24,8,,,Centre-Forward,24,30.06.2022,12.00,1.84,France,Sheffield United
+480,Oliver Mcburnie,186,81,16,,,Centre-Forward,23,30.06.2023,10.00,1.88,Scotland,Sheffield United
+481,Billy Sharp,568,242,66,,,Centre-Forward,34,30.06.2021,2.00,1.75,England,Sheffield United
+482,David Mcgoldrick,441,111,45,,,Centre-Forward,32,30.06.2021,2.00,1.84,Ireland,Sheffield United
+483,Richairo Zivkovic,254,94,17,,,Centre-Forward,23,30.06.2020,800,1.87,Netherlands,Sheffield United
+484,Leon Clarke,490,148,34,,,Centre-Forward,35,30.06.2020,300,1.88,England,Sheffield United
+485,Tim Krul,332,,,496,90,Goalkeeper,32,30.06.2022,5.00,1.93,Netherlands,Norwich City
+486,Michael Mcgovern,349,,,445,104,Goalkeeper,35,30.06.2021,350,1.90,Northern Ireland,Norwich City
+487,Ben Godfrey,156,7,2,,,Centre-Back,22,30.06.2023,13.00,1.83,England,Norwich City
+488,Christoph Zimmermann,311,15,8,,,Centre-Back,27,30.06.2023,3.50,1.94,Germany,Norwich City
+489,Grant Hanley,303,14,7,,,Centre-Back,28,30.06.2023,2.50,1.88,Scotland,Norwich City
+490,Timm Klose,331,26,5,,,Centre-Back,31,30.06.2022,2.50,1.95,Switzerland,Norwich City
+491,Jamal Lewis,116,4,5,,,Left-Back,22,30.06.2023,12.00,1.78,Northern Ireland,Norwich City
+492,Max Aarons,130,5,9,,,Right-Back,20,30.06.2024,22.00,1.78,England,Norwich City
+493,Sam Byram,212,10,15,,,Right-Back,26,30.06.2023,3.50,1.83,England,Norwich City
+494,Tom Trybull,288,12,17,,,Defensive Midfield,27,30.06.2022,4.00,1.81,Germany,Norwich City
+495,Alexander Tettey,441,26,16,,,Defensive Midfield,34,30.06.2021,2.00,1.81,Norway,Norwich City
+496,Kenny Mclean,386,53,35,,,Central Midfield,28,30.06.2021,4.50,1.80,Scotland,Norwich City
+497,Lukas Rupp,286,38,26,,,Central Midfield,29,30.06.2022,3.00,1.78,Germany,Norwich City
+498,Moritz Leitner,237,9,24,,,Central Midfield,27,30.06.2022,3.00,1.74,Germany,Norwich City
+499,Mario Vrancic,366,70,50,,,Central Midfield,30,30.06.2021,2.50,1.87,Bosnia-Herzegovina,Norwich City
+500,Todd Cantwell,110,15,12,,,Left Midfield,22,30.06.2022,22.00,1.77,England,Norwich City
+501,Ondrej Duda,219,35,32,,,Attacking Midfield,25,30.06.2020,13.00,1.81,Slovakia,Norwich City
+502,Marco Stiepermann,399,83,66,,,Attacking Midfield,29,30.06.2022,4.00,1.90,Germany,Norwich City
+503,Onel Hernandez,314,47,53,,,Left Winger,27,30.06.2023,4.00,1.72,Cuba,Norwich City
+504,Emiliano Buendia,186,25,38,,,Right Winger,23,30.06.2024,18.00,1.72,Argentina,Norwich City
+505,Teemu Pukki,404,154,58,,,Centre-Forward,30,30.06.2022,10.00,1.80,Finland,Norwich City
+506,Josip Drmic,255,79,20,,,Centre-Forward,27,30.06.2022,2.00,1.84,Switzerland,Norwich City
+507,Adam Idah,57,26,6,,,Centre-Forward,19,30.06.2023,1.00,1.90,Ireland,Norwich City
+508,Wojciech Szczesny,384,,,393,149,Goalkeeper,29,30.06.2024,40.00,1.96,Poland,Juventus
+509,Gianluigi Buffon,912,,,762,408,Goalkeeper,42,30.06.2020,1.00,1.92,Italy,Juventus
+510,Carlo Pinsoglio,270,,,303,84,Goalkeeper,30,30.06.2021,500,1.94,Italy,Juventus
+511,Matthijs De Ligt,202,23,8,,,Centre-Back,20,30.06.2024,75.00,1.89,Netherlands,Juventus
+512,Merih Demiral,72,4,1,,,Centre-Back,22,30.06.2024,30.00,1.90,Turkey,Juventus
+513,Leonardo Bonucci,549,36,12,,,Centre-Back,32,30.06.2024,25.00,1.90,Italy,Juventus
+514,Daniele Rugani,222,14,3,,,Centre-Back,25,30.06.2024,15.00,1.90,Italy,Juventus
+515,Giorgio Chiellini,613,43,22,,,Centre-Back,35,30.06.2020,5.00,1.87,Italy,Juventus
+516,Alex Sandro,383,14,42,,,Left-Back,29,30.06.2023,50.00,1.81,Brazil,Juventus
+517,Danilo,347,30,32,,,Right-Back,28,30.06.2024,20.00,1.84,Brazil,Juventus
+518,Mattia De Sciglio,244,3,4,,,Right-Back,27,30.06.2022,12.00,1.83,Italy,Juventus
+519,Miralem Pjanic,511,73,103,,,Central Midfield,30,30.06.2023,65.00,1.80,Bosnia-Herzegovina,Juventus
+520,Rodrigo Bentancur,153,4,12,,,Central Midfield,22,30.06.2024,50.00,1.87,Uruguay,Juventus
+521,Aaron Ramsey,429,72,69,,,Central Midfield,29,30.06.2023,35.00,1.82,Wales,Juventus
+522,Adrien Rabiot,264,25,17,,,Central Midfield,25,30.06.2023,32.00,1.88,France,Juventus
+523,Blaise Matuidi,637,48,43,,,Central Midfield,32,30.06.2021,13.00,1.75,France,Juventus
+524,Sami Khedira,472,50,46,,,Central Midfield,33,30.06.2021,7.00,1.89,Germany,Juventus
+525,Cristiano Ronaldo,836,626,215,,,Left Winger,35,30.06.2022,75.00,1.87,Portugal,Juventus
+526,Federico Bernardeschi,264,67,31,,,Right Winger,26,30.06.2022,35.00,1.83,Italy,Juventus
+527,Douglas Costa,399,63,91,,,Right Winger,29,30.06.2022,30.00,1.72,Brazil,Juventus
+528,Juan Cuadrado,349,45,56,,,Right Winger,31,30.06.2022,18.00,1.79,Colombia,Juventus
+529,Paulo Dybala,323,120,52,,,Second Striker,26,30.06.2022,90.00,1.77,Argentina,Juventus
+530,Gonzalo Higuain,623,305,101,,,Centre-Forward,32,30.06.2021,32.00,1.84,Argentina,Juventus
+531,Samir Handanovic,588,,,661,202,Goalkeeper,35,30.06.2021,6.00,1.93,Slovenia,Inter Milan
+532,Daniele Padelli,202,,,253,53,Goalkeeper,34,30.06.2020,800,1.91,Italy,Inter Milan
+533,Tommaso Berni,120,,,142,36,Goalkeeper,37,30.06.2020,100,1.85,Italy,Inter Milan
+534,Stefan De Vrij,340,20,13,,,Centre-Back,28,30.06.2023,60.00,1.89,Netherlands,Inter Milan
+535,Milan Skriniar,258,17,5,,,Centre-Back,25,30.06.2023,60.00,1.88,Slovakia,Inter Milan
+536,Alessandro Bastoni,106,14,-,,,Centre-Back,20,30.06.2023,35.00,1.90,Italy,Inter Milan
+537,Diego Godin,533,32,21,,,Centre-Back,34,30.06.2022,10.00,1.87,Uruguay,Inter Milan
+538,Andrea Ranocchia,343,21,7,,,Centre-Back,32,30.06.2021,3.00,1.95,Italy,Inter Milan
+539,Danilo Dambrosio,362,25,25,,,Right-Back,31,30.06.2021,13.00,1.80,Italy,Inter Milan
+540,Marcelo Brozovic,337,42,40,,,Defensive Midfield,27,30.06.2022,60.00,1.81,Croatia,Inter Milan
+541,Lucien Agoume,26,1,3,,,Defensive Midfield,18,30.06.2022,3.50,1.85,France,Inter Milan
+542,Nicolo Barella,198,14,13,,,Central Midfield,23,30.06.2024,45.00,1.72,Italy,Inter Milan
+543,Stefano Sensi,211,29,16,,,Central Midfield,24,30.06.2020,30.00,1.68,Italy,Inter Milan
+544,Matias Vecino,281,28,21,,,Central Midfield,28,30.06.2022,23.00,1.87,Uruguay,Inter Milan
+545,Roberto Gagliardini,194,16,7,,,Central Midfield,26,30.06.2023,15.00,1.88,Italy,Inter Milan
+546,Borja Valero,517,41,81,,,Central Midfield,35,30.06.2020,1.50,1.75,Spain,Inter Milan
+547,Victor Moses,380,51,42,,,Right Midfield,29,30.06.2020,8.50,1.77,Nigeria,Inter Milan
+548,Antonio Candreva,520,75,87,,,Right Midfield,33,30.06.2021,7.00,1.80,Italy,Inter Milan
+549,Cristiano Biraghi,308,6,24,,,Left Midfield,27,30.06.2020,12.00,1.85,Italy,Inter Milan
+550,Kwadwo Asamoah,348,13,32,,,Left Midfield,31,30.06.2021,8.00,1.73,Ghana,Inter Milan
+551,Ashley Young,566,78,113,,,Left Midfield,34,30.06.2020,4.00,1.75,England,Inter Milan
+552,Christian Eriksen,479,107,155,,,Attacking Midfield,28,30.06.2024,85.00,1.82,Denmark,Inter Milan
+553,Alexis Sanchez,515,162,116,,,Left Winger,31,30.06.2020,20.00,1.68,Chile,Inter Milan
+554,Romelu Lukaku,457,217,74,,,Centre-Forward,26,30.06.2024,85.00,1.91,Belgium,Inter Milan
+555,Lautaro Martinez,125,52,11,,,Centre-Forward,22,30.06.2023,80.00,1.74,Argentina,Inter Milan
+556,Sebastiano Esposito,74,45,3,,,Centre-Forward,17,30.06.2022,10.00,1.86,Italy,Inter Milan
+557,Alex Meret,131,,,140,45,Goalkeeper,23,30.06.2023,35.00,1.90,Italy,SSC Napoli
+558,David Ospina,319,,,360,110,Goalkeeper,31,30.06.2022,3.50,1.83,Colombia,SSC Napoli
+559,Orestis Karnezis,213,,,268,66,Goalkeeper,34,30.06.2021,1.00,1.90,Greece,SSC Napoli
+560,Kalidou Koulibaly,367,14,10,,,Centre-Back,28,30.06.2023,70.00,1.87,Senegal,SSC Napoli
+561,Konstantinos Manolas,396,23,8,,,Centre-Back,28,30.06.2024,40.00,1.89,Greece,SSC Napoli
+562,Nikola Maksimovic,249,6,9,,,Centre-Back,28,30.06.2021,17.00,1.93,Serbia,SSC Napoli
+563,Sebastiano Luperto,167,6,2,,,Centre-Back,23,30.06.2023,5.00,1.91,Italy,SSC Napoli
+564,Mario Rui,282,6,13,,,Left-Back,28,30.06.2022,15.00,1.70,Portugal,SSC Napoli
+565,Faouzi Ghoulam,276,4,34,,,Left-Back,29,30.06.2022,12.00,1.84,Algeria,SSC Napoli
+566,Giovanni Di Lorenzo,323,13,24,,,Right-Back,26,30.06.2024,20.00,1.83,Italy,SSC Napoli
+567,Elseid Hysaj,321,2,9,,,Right-Back,26,30.06.2021,16.00,1.82,Albania,SSC Napoli
+568,Kevin Malcuit,148,2,17,,,Right-Back,28,30.06.2022,15.00,1.78,France,SSC Napoli
+569,Stanislav Lobotka,271,6,13,,,Defensive Midfield,25,30.06.2024,20.00,1.72,Slovakia,SSC Napoli
+570,Diego Demme,380,7,21,,,Defensive Midfield,28,30.06.2024,17.00,1.70,Germany,SSC Napoli
+571,Fabian Ruiz,172,17,14,,,Central Midfield,24,30.06.2023,60.00,1.89,Spain,SSC Napoli
+572,Allan,382,13,33,,,Central Midfield,29,30.06.2023,40.00,1.75,Brazil,SSC Napoli
+573,Piotr Zielinski,290,37,23,,,Central Midfield,25,30.06.2021,40.00,1.80,Poland,SSC Napoli
+574,Eljif Elmas,116,13,9,,,Central Midfield,20,30.06.2024,17.00,1.82,North Macedonia,SSC Napoli
+575,Lorenzo Insigne,453,143,87,,,Left Winger,28,30.06.2022,60.00,1.63,Italy,SSC Napoli
+576,Hirving Lozano,242,84,53,,,Left Winger,24,30.06.2024,35.00,1.75,Mexico,SSC Napoli
+577,Amin Younes,264,40,38,,,Left Winger,26,30.06.2023,7.50,1.68,Germany,SSC Napoli
+578,Matteo Politano,344,61,30,,,Right Winger,26,30.06.2021,28.00,1.71,Italy,SSC Napoli
+579,Jose Callejon,554,133,99,,,Right Winger,33,30.06.2020,12.00,1.78,Spain,SSC Napoli
+580,Arkadiusz Milik,258,112,35,,,Centre-Forward,26,30.06.2021,40.00,1.86,Poland,SSC Napoli
+581,Dries Mertens,562,216,164,,,Centre-Forward,32,30.06.2020,25.00,1.69,Belgium,SSC Napoli
+582,Fernando Llorente,582,177,59,,,Centre-Forward,35,30.06.2021,5.00,1.93,Spain,SSC Napoli
+583,Pau Lopez,189,,,250,55,Goalkeeper,25,30.06.2024,24.00,1.89,Spain,Roma
+584,Antonio Mirante,425,,,558,129,Goalkeeper,36,30.06.2021,800,1.93,Italy,Roma
+585,Daniel Fuzato,4,,,5,1,Goalkeeper,22,30.06.2022,500,1.90,Brazil,Roma
+586,Gianluca Mancini,162,12,2,,,Centre-Back,23,30.06.2024,28.00,1.90,Italy,Roma
+587,Chris Smalling,374,21,5,,,Centre-Back,30,30.06.2020,20.00,1.94,England,Roma
+588,Juan Jesus,259,2,4,,,Centre-Back,28,30.06.2021,5.00,1.85,Brazil,Roma
+589,Federico Fazio,395,26,8,,,Centre-Back,33,30.06.2021,4.00,1.95,Argentina,Roma
+590,Mert Cetin,68,2,-,,,Centre-Back,23,30.06.2024,2.00,1.89,Turkey,Roma
+591,Roger Ibanez,23,-,-,,,Centre-Back,21,30.06.2021,2.00,1.86,Brazil,Roma
+592,Leonardo Spinazzola,232,15,17,,,Left-Back,27,30.06.2024,18.00,1.86,Italy,Roma
+593,Aleksandar Kolarov,480,51,67,,,Left-Back,34,30.06.2021,8.00,1.87,Serbia,Roma
+594,Davide Zappacosta,246,13,12,,,Right-Back,27,30.06.2020,15.00,1.82,Italy,Roma
+595,Davide Santon,272,2,12,,,Right-Back,29,30.06.2022,5.00,1.87,Italy,Roma
+596,Bruno Peres,228,14,20,,,Right-Back,30,30.06.2021,2.50,1.78,Brazil,Roma
+597,Amadou Diawara,144,2,2,,,Defensive Midfield,22,30.06.2024,23.00,1.83,Guinea,Roma
+598,Lorenzo Pellegrini,215,35,32,,,Central Midfield,23,30.06.2022,40.00,1.86,Italy,Roma
+599,Bryan Cristante,230,29,13,,,Central Midfield,25,30.06.2024,25.00,1.86,Italy,Roma
+600,Jordan Veretout,324,37,38,,,Central Midfield,27,30.06.2024,25.00,1.77,France,Roma
+601,Gonzalo Villar,83,4,1,,,Central Midfield,22,30.06.2024,3.00,1.81,Spain,Roma
+602,Nicolo Zaniolo,146,40,17,,,Attacking Midfield,20,30.06.2024,50.00,1.90,Italy,Roma
+603,Henrikh Mkhitaryan,441,140,111,,,Attacking Midfield,31,30.06.2020,25.00,1.77,Armenia,Roma
+604,Javier Pastore,412,73,86,,,Attacking Midfield,30,30.06.2023,10.00,1.87,Argentina,Roma
+605,Justin Kluivert,146,30,36,,,Left Winger,20,30.06.2023,25.00,1.71,Netherlands,Roma
+606,Diego Perotti,388,54,56,,,Left Winger,31,30.06.2021,8.00,1.79,Argentina,Roma
+607,Cengiz Under,186,37,28,,,Right Winger,22,30.06.2023,30.00,1.73,Turkey,Roma
+608,Carles Perez,99,26,15,,,Right Winger,22,30.06.2024,10.00,1.73,Spain,Roma
+609,Edin Dzeko,588,275,120,,,Centre-Forward,34,30.06.2022,14.00,1.93,Bosnia-Herzegovina,Roma
+610,Nikola Kalinic,414,145,47,,,Centre-Forward,32,30.06.2020,8.50,1.87,Croatia,Roma
+611,Gianluigi Donnarumma,200,,,213,72,Goalkeeper,21,30.06.2021,55.00,1.96,Italy,Milan
+612,Asmir Begovic,343,,,454,92,Goalkeeper,32,30.06.2020,3.00,1.98,Bosnia-Herzegovina,Milan
+613,Antonio Donnarumma,134,,,181,40,Goalkeeper,29,30.06.2021,500,1.92,Italy,Milan
+614,Alessio Romagnoli,241,12,3,,,Centre-Back,25,30.06.2022,45.00,1.88,Italy,Milan
+615,Mateo Musacchio,355,12,12,,,Centre-Back,29,30.06.2021,11.00,1.82,Argentina,Milan
+616,Leo Duarte,68,2,-,,,Centre-Back,23,30.06.2024,7.50,1.83,Brazil,Milan
+617,Simon Kjaer,415,20,7,,,Centre-Back,31,30.06.2020,6.50,1.91,Denmark,Milan
+618,Matteo Gabbia,102,6,3,,,Centre-Back,20,30.06.2024,3.00,1.85,Italy,Milan
+619,Theo Hernandez,125,11,12,,,Left-Back,22,30.06.2024,40.00,1.84,France,Milan
+620,Andrea Conti,173,18,10,,,Right-Back,26,30.06.2022,15.00,1.84,Italy,Milan
+621,Davide Calabria,152,7,7,,,Right-Back,23,30.06.2022,12.00,1.76,Italy,Milan
+622,Ismael Bennacer,156,6,11,,,Defensive Midfield,22,30.06.2024,22.00,1.75,Algeria,Milan
+623,Lucas Biglia,537,34,67,,,Defensive Midfield,34,30.06.2020,3.50,1.78,Argentina,Milan
+624,Franck Kessie,196,24,10,,,Central Midfield,23,30.06.2022,25.00,1.83,Cote d'Ivoire,Milan
+625,Giacomo Bonaventura,352,65,30,,,Central Midfield,30,30.06.2020,12.00,1.80,Italy,Milan
+626,Rade Krunic,197,20,26,,,Central Midfield,26,30.06.2024,8.00,1.84,Bosnia-Herzegovina,Milan
+627,Alexis Saelemaekers,73,2,11,,,Right Midfield,20,30.06.2020,7.00,1.80,Belgium,Milan
+628,Diego Laxalt,202,12,13,,,Left Midfield,27,30.06.2022,7.00,1.78,Uruguay,Milan
+629,Lucas Paqueta,101,14,8,,,Attacking Midfield,22,30.06.2023,28.00,1.80,Brazil,Milan
+630,Hakan Calhanoglu,372,79,77,,,Left Winger,26,30.06.2021,18.00,1.78,Turkey,Milan
+631,Samu Castillejo,225,17,27,,,Right Winger,25,30.06.2023,14.00,1.82,Spain,Milan
+632,Ante Rebic,208,51,19,,,Second Striker,26,30.06.2021,30.00,1.85,Croatia,Milan
+633,Rafael Leao,76,25,9,,,Centre-Forward,20,30.06.2024,22.00,1.88,Portugal,Milan
+634,Zlatan Ibrahimovic,751,460,179,,,Centre-Forward,38,30.06.2020,3.50,1.95,Sweden,Milan
+635,Matteo Soncin,73,,,103,18,Goalkeeper,19,-,3.50,1.90,Italy,Milan
+636,Marco Brescianini,88,12,4,,,,20,30.06.2024,50,C.nt,Italy,Milan
+637,Thomas Strakosha,207,,,237,64,Goalkeeper,25,30.06.2022,25.00,1.93,Albania,Lazio
+638,Silvio Proto,598,,,661,208,Goalkeeper,36,30.06.2021,400,1.84,Belgium,Lazio
+639,Guido Guerrieri,74,,,79,25,Goalkeeper,24,30.06.2021,300,1.84,Italy,Lazio
+640,Luiz Felipe,87,3,3,,,Centre-Back,23,30.06.2022,20.00,1.87,Brazil,Lazio
+641,Francesco Acerbi,357,21,3,,,Centre-Back,32,30.06.2023,15.00,1.92,Italy,Lazio
+642,Patric,171,5,9,,,Centre-Back,26,30.06.2022,8.00,1.84,Spain,Lazio
+643,Denis Vavro,207,16,3,,,Centre-Back,23,30.06.2024,8.00,1.89,Slovakia,Lazio
+644,Stefan Radu,447,9,18,,,Centre-Back,33,30.06.2021,5.00,1.83,Romania,Lazio
+645,Bastos,168,13,1,,,Centre-Back,29,30.06.2021,4.00,1.80,Angola,Lazio
+646,Nicolo Armini,81,2,1,,,Centre-Back,19,30.06.2020,200,1.85,Italy,Lazio
+647,Jorge Silva,46,2,3,,,Centre-Back,21,30.06.2022,50,1.84,Portugal,Lazio
+648,Jordan Lukaku,178,5,17,,,Left-Back,25,30.06.2022,5.00,1.77,Belgium,Lazio
+649,Lucas Leiva,475,11,31,,,Defensive Midfield,33,30.06.2022,7.50,1.79,Brazil,Lazio
+650,Sergej Milinkovic Savic,234,45,28,,,Central Midfield,25,30.06.2024,80.00,1.91,Serbia,Lazio
+651,Danilo Cataldi,228,26,17,,,Central Midfield,25,30.06.2020,4.00,1.80,Italy,Lazio
+652,Marco Parolo,563,70,33,,,Central Midfield,35,30.06.2020,2.00,1.84,Italy,Lazio
+653,Manuel Lazzari,211,5,27,,,Right Midfield,26,30.06.2024,18.00,1.74,Italy,Lazio
+654,Adam Marusic,250,30,17,,,Right Midfield,27,30.06.2022,7.00,1.85,Montenegro,Lazio
+655,Djavan Anderson,120,7,4,,,Right Midfield,24,30.06.2023,300,1.74,Netherlands,Lazio
+656,Jony,257,36,44,,,Left Midfield,28,30.06.2023,8.50,1.79,Spain,Lazio
+657,Senad Lulic,523,70,64,,,Left Midfield,34,30.06.2020,3.50,1.83,Bosnia-Herzegovina,Lazio
+658,Luis Alberto,236,47,70,,,Attacking Midfield,27,30.06.2022,55.00,1.83,Spain,Lazio
+659,Andre Anderson,23,2,1,,,Attacking Midfield,20,30.06.2023,800,1.80,Italy,Lazio
+660,Bobby Adekanye,61,9,9,,,Right Winger,21,30.06.2022,600,1.75,Netherlands,Lazio
+661,Joaquin Correa,233,40,26,,,Second Striker,25,30.06.2024,38.00,1.88,Argentina,Lazio
+662,Ciro Immobile,408,229,52,,,Centre-Forward,30,30.06.2023,50.00,1.85,Italy,Lazio
+663,Felipe Caicedo,436,108,32,,,Centre-Forward,31,30.06.2022,6.00,1.83,Ecuador,Lazio
+664,Pierluigi Gollini,133,,,159,37,Goalkeeper,25,30.06.2023,16.00,1.94,Italy,Atlanta
+665,Marco Sportiello,210,,,269,67,Goalkeeper,27,30.06.2021,2.50,1.92,Italy,Atlanta
+666,Francesco Rossi,184,,,220,53,Goalkeeper,28,30.06.2021,100,1.93,Italy,Atlanta
+667,Rafael Toloi,360,18,19,,,Centre-Back,29,30.06.2023,15.00,1.85,Brazil,Atlanta
+668,Berat Djimsiti,305,14,7,,,Centre-Back,27,30.06.2022,15.00,1.90,Albania,Atlanta
+669,Mattia Caldara,193,20,2,,,Centre-Back,25,30.06.2021,14.00,1.87,Italy,Atlanta
+670,Jose Luis Palomino,261,10,4,,,Centre-Back,30,30.06.2020,10.00,1.88,Argentina,Atlanta
+671,Bosko Sutalo,44,1,-,,,Centre-Back,20,30.06.2024,3.50,1.88,Croatia,Atlanta
+672,Robin Gosens,237,21,19,,,Left-Back,25,30.06.2022,25.00,1.83,Germany,Atlanta
+673,Lennart Czyborra,143,8,21,,,Left-Back,20,30.06.2024,3.50,1.81,Germany,Atlanta
+674,Timothy Castagne,181,11,13,,,Right-Back,24,30.06.2021,20.00,1.80,Belgium,Atlanta
+675,Hans Hateboer,272,14,27,,,Right-Back,26,30.06.2022,15.00,1.85,Netherlands,Atlanta
+676,Raoul Bellanova,112,6,6,,,Right-Back,19,30.06.2021,1.00,1.88,Italy,Atlanta
+677,Marten De Roon,368,23,19,,,Defensive Midfield,29,30.06.2021,24.00,1.85,Netherlands,Atlanta
+678,Adrien Tameze,150,3,7,,,Defensive Midfield,26,30.06.2020,6.00,1.80,France,Atlanta
+679,Remo Freuler,362,50,31,,,Central Midfield,27,30.06.2022,25.00,1.80,Switzerland,Atlanta
+680,Mario Pasalic,235,46,20,,,Central Midfield,25,30.06.2020,20.00,1.88,Croatia,Atlanta
+681,Ruslan Malinovskyi,242,49,43,,,Central Midfield,26,30.06.2024,14.00,1.81,Ukraine,Atlanta
+682,Josip Ilicic,427,129,70,,,Second Striker,32,30.06.2022,22.00,1.90,Slovenia,Atlanta
+683,Papu Gomez,512,98,95,,,Second Striker,32,30.06.2022,16.00,1.67,Argentina,Atlanta
+684,Duvan Zapata,296,111,36,,,Centre-Forward,29,30.06.2023,45.00,1.89,Colombia,Atlanta
+685,Luis Muriel,315,97,43,,,Centre-Forward,28,30.06.2024,19.00,1.79,Colombia,Atlanta
+686,Bartlomiej Dragowski,127,,,178,37,Goalkeeper,22,30.06.2023,14.00,1.91,Poland,Fiorentina
+687,Pietro Terracciano,111,,,146,29,Goalkeeper,30,30.06.2021,500,1.93,Italy,Fiorentina
+688,Federico Brancolini,42,,,66,7,Goalkeeper,18,30.06.2021,300,1.92,Italy,Fiorentina
+689,Nikola Milenkovic,128,10,1,,,Centre-Back,22,30.06.2022,30.00,1.95,Serbia,Fiorentina
+690,German Pezzella,220,13,4,,,Centre-Back,28,30.06.2022,18.00,1.87,Argentina,Fiorentina
+691,Igor,117,2,2,,,Centre-Back,22,30.06.2021,5.00,1.85,Brazil,Fiorentina
+692,Federico Ceccherini,273,8,1,,,Centre-Back,27,30.06.2023,3.50,1.87,Italy,Fiorentina
+693,Martin Caceres,293,18,13,,,Centre-Back,33,30.06.2020,1.50,1.80,Uruguay,Fiorentina
+694,Dalbert,173,3,14,,,Left-Back,26,30.06.2020,12.00,1.81,Brazil,Fiorentina
+695,Aleksa Terzic,10,-,2,,,Left-Back,20,30.06.2023,1.50,1.84,Serbia,Fiorentina
+696,Pol Lirola,164,8,22,,,Right-Back,22,30.06.2024,12.00,1.83,Spain,Fiorentina
+697,Lorenzo Venuti,205,4,9,,,Right-Back,24,30.06.2024,2.00,1.79,Italy,Fiorentina
+698,Erick Pulgar,180,23,12,,,Defensive Midfield,26,30.06.2023,15.00,1.87,Chile,Fiorentina
+699,Milan Badelj,421,40,38,,,Defensive Midfield,31,30.06.2020,3.00,1.86,Croatia,Fiorentina
+700,Gaetano Castrovilli,174,31,26,,,Central Midfield,23,30.06.2024,25.00,1.87,Italy,Fiorentina
+701,Alfred Duncan,254,16,20,,,Central Midfield,27,30.06.2020,17.00,1.78,Ghana,Fiorentina
+702,Marco Benassi,249,34,19,,,Central Midfield,25,30.06.2022,14.00,1.84,Italy,Fiorentina
+703,Kevin Agudelo,45,4,2,,,Central Midfield,21,30.06.2021,3.00,1.78,Colombia,Fiorentina
+704,Franck Ribery,567,148,212,,,Left Winger,37,30.06.2021,4.00,1.70,France,Fiorentina
+705,Riccardo Sottil,129,44,18,,,Left Winger,20,30.06.2024,4.00,1.80,Italy,Fiorentina
+706,Federico Chiesa,179,40,24,,,Right Winger,22,30.06.2022,60.00,1.80,Italy,Fiorentina
+707,Rachid Ghezzal,189,19,25,,,Right Winger,27,30.06.2020,7.00,1.82,Algeria,Fiorentina
+708,Christian Kouame,171,31,27,,,Centre-Forward,22,30.06.2020,22.00,1.85,Cote d'Ivoire,Fiorentina
+709,Dusan Vlahovic,85,31,4,,,Centre-Forward,20,30.06.2023,18.00,1.90,Serbia,Fiorentina
+710,Patrick Cutrone,194,78,18,,,Centre-Forward,22,30.06.2021,17.00,1.83,Italy,Fiorentina
+711,Christian Dalle Mura,36,-,-,,,,18,30.06.2021,17.00,C.nt,Italy,Fiorentina
+712,Alessio Cragno,209,,,273,54,Goalkeeper,25,30.06.2024,20.00,1.84,Italy,Cagliari
+713,Robin Olsen,255,,,283,92,Goalkeeper,30,30.06.2020,8.00,1.96,Sweden,Cagliari
+714,Rafael,349,,,394,119,Goalkeeper,38,30.06.2020,200,1.87,Brazil,Cagliari
+715,Sebastian Walukiewicz,72,3,2,,,Centre-Back,20,30.06.2023,4.00,1.88,Poland,Cagliari
+716,Luca Ceppitelli,299,24,4,,,Centre-Back,30,30.06.2021,3.50,1.86,Italy,Cagliari
+717,Ragnar Klavan,496,17,9,,,Centre-Back,34,30.06.2020,1.50,1.87,Estonia,Cagliari
+718,Fabio Pisacane,410,14,4,,,Centre-Back,34,30.06.2021,1.50,1.78,Italy,Cagliari
+719,Luca Pellegrini,96,2,12,,,Left-Back,21,30.06.2020,15.00,1.78,Italy,Cagliari
+720,Charalampos Lykogiannis,171,7,11,,,Left-Back,26,30.06.2022,1.50,1.90,Greece,Cagliari
+721,Paolo Farago,248,34,18,,,Right-Back,27,30.06.2022,5.00,1.87,Italy,Cagliari
+722,Federico Mattiello,122,6,7,,,Right-Back,24,30.06.2020,2.00,1.84,Italy,Cagliari
+723,Fabrizio Cacciatore,344,16,22,,,Right-Back,33,30.06.2020,1.00,1.82,Italy,Cagliari
+724,Christian Oliva,56,5,3,,,Defensive Midfield,23,30.06.2023,5.00,1.78,Uruguay,Cagliari
+725,Luca Cigarini,428,27,38,,,Defensive Midfield,33,30.06.2020,1.00,1.75,Italy,Cagliari
+726,Nahitan Nandez,176,15,22,,,Central Midfield,24,30.06.2024,26.00,1.72,Uruguay,Cagliari
+727,Marko Rog,208,24,15,,,Central Midfield,24,30.06.2024,15.00,1.80,Croatia,Cagliari
+728,Artur Ionita,325,30,14,,,Central Midfield,29,30.06.2021,4.50,1.84,Moldova,Cagliari
+729,Radja Nainggolan,485,58,48,,,Attacking Midfield,31,30.06.2020,20.00,1.76,Belgium,Cagliari
+730,Gaston Pereiro,203,62,30,,,Attacking Midfield,24,30.06.2024,10.00,1.88,Uruguay,Cagliari
+731,Valter Birsa,474,70,49,,,Attacking Midfield,33,30.06.2020,1.50,1.84,Slovenia,Cagliari
+732,Joao Pedro,289,79,31,,,Second Striker,28,30.06.2023,15.00,1.84,Brazil,Cagliari
+733,Daniele Ragatzu,273,70,38,,,Second Striker,28,30.06.2021,400,1.72,Italy,Cagliari
+734,Giovanni Simeone,205,58,17,,,Centre-Forward,24,30.06.2020,17.00,1.81,Argentina,Cagliari
+735,Leonardo Pavoletti,258,107,16,,,Centre-Forward,31,30.06.2022,6.00,1.88,Italy,Cagliari
+736,Alberto Paloschi,344,85,21,,,Centre-Forward,30,30.06.2020,1.50,1.83,Italy,Cagliari
+737,Andrea Carboni,76,5,-,,,Centre-Back,19,30.06.2022,1.50,1.85,Italy,Cagliari
+738,Riccardo Ladinetti,93,12,13,,,Defensive Midfield,19,30.06.2022,150,1.82,Italy,Cagliari
+739,Salvatore Sirigu,438,,,512,148,Goalkeeper,33,30.06.2022,8.00,1.92,Italy,Torino
+740,Samir Ujkani,235,,,240,75,Goalkeeper,31,30.06.2020,200,1.86,Kosovo,Torino
+741,Antonio Rosati,234,,,298,76,Goalkeeper,36,30.06.2021,200,1.95,Italy,Torino
+742,Armando Izzo,283,15,3,,,Centre-Back,28,30.06.2024,20.00,1.83,Italy,Torino
+743,Nicolas Nkoulou,418,9,1,,,Centre-Back,30,30.06.2021,14.00,1.84,Cameroon,Torino
+744,Lyanco,58,2,-,,,Centre-Back,23,30.06.2024,8.00,1.87,Brazil,Torino
+745,Bremer,55,4,3,,,Centre-Back,23,30.06.2023,4.50,1.88,Brazil,Torino
+746,Koffi Djidji,143,1,-,,,Centre-Back,27,30.06.2021,4.00,1.84,Cote d'Ivoire,Torino
+747,Wilfried Stephane Singo,34,3,3,,,Centre-Back,19,30.06.2022,150,1.90,Cote d'Ivoire,Torino
+748,Cristian Ansaldi,346,15,39,,,Left-Back,33,30.06.2021,5.00,1.81,Argentina,Torino
+749,Ola Aina,194,4,11,,,Right-Back,23,30.06.2023,10.00,1.84,Nigeria,Torino
+750,Lorenzo De Silvestri,387,26,27,,,Right-Back,31,30.06.2020,3.50,1.86,Italy,Torino
+751,Tomas Rincon,334,9,14,,,Defensive Midfield,32,30.06.2021,7.00,1.77,Venezuela,Torino
+752,Daniele Baselli,304,28,23,,,Central Midfield,28,30.06.2022,9.50,1.82,Italy,Torino
+753,Soualiho Meite,211,7,10,,,Central Midfield,26,30.06.2023,9.00,1.87,France,Torino
+754,Sasa Lukic,139,7,3,,,Central Midfield,23,30.06.2023,4.00,1.83,Serbia,Torino
+755,Alex Berenguer,167,14,23,,,Left Winger,24,30.06.2022,6.00,1.75,Spain,Torino
+756,Simone Verdi,298,53,38,,,Right Winger,27,30.06.2024,16.00,1.74,Italy,Torino
+757,Simone Edera,110,23,8,,,Right Winger,23,30.06.2023,1.00,1.74,Italy,Torino
+758,Vincenzo Millico,120,61,15,,,Second Striker,19,30.06.2023,2.00,1.74,Italy,Torino
+759,Andrea Belotti,318,130,25,,,Centre-Forward,26,30.06.2022,40.00,1.81,Italy,Torino
+760,Simone Zaza,320,104,26,,,Centre-Forward,28,30.06.2023,9.00,1.86,Italy,Torino
+761,Michel Ndary Adopo,49,2,7,,,Central Midfield,19,30.06.2023,150,1.87,France,Torino
+762,Andrea Consigli,485,,,623,148,Goalkeeper,33,30.06.2022,3.50,1.89,Italy,Sassuolo
+763,Alessandro Russo,66,,,84,17,Goalkeeper,19,30.06.2023,200,1.93,Italy,Sassuolo
+764,Gianluca Pegolo,344,,,431,105,Goalkeeper,39,30.06.2020,150,1.83,Italy,Sassuolo
+765,Gian Marco Ferrari,221,12,4,,,Centre-Back,27,30.06.2023,10.00,1.89,Italy,Sassuolo
+766,Marlon,136,1,1,,,Centre-Back,24,30.06.2023,8.00,1.82,Brazil,Sassuolo
+767,Filippo Romagna,166,3,-,,,Centre-Back,22,30.06.2020,6.00,1.86,Italy,Sassuolo
+768,Vlad Chiriches,214,10,4,,,Centre-Back,30,30.06.2020,6.00,1.84,Romania,Sassuolo
+769,Giangiacomo Magnani,105,2,4,,,Centre-Back,24,30.06.2023,4.00,1.91,Italy,Sassuolo
+770,Rogerio,91,2,6,,,Left-Back,22,30.06.2023,7.00,1.78,Brazil,Sassuolo
+771,Georgios Kyriakopoulos,119,6,8,,,Left-Back,24,30.06.2020,3.00,1.82,Greece,Sassuolo
+772,Federico Peluso,455,16,16,,,Left-Back,36,30.06.2021,500,1.88,Italy,Sassuolo
+773,Alessandro Tripaldelli,81,4,7,,,Left-Back,21,30.06.2022,500,1.82,Italy,Sassuolo
+774,Mert Muldur,60,2,7,,,Right-Back,21,30.06.2024,5.00,1.88,Turkey,Sassuolo
+775,Jeremy Toljan,231,11,8,,,Right-Back,25,30.06.2020,4.50,1.82,Germany,Sassuolo
+776,Francesco Magnanelli,458,9,22,,,Defensive Midfield,35,30.06.2021,800,1.81,Italy,Sassuolo
+777,Manuel Locatelli,148,10,10,,,Central Midfield,22,30.06.2023,17.00,1.80,Italy,Sassuolo
+778,Pedro Obiang,327,10,14,,,Central Midfield,28,30.06.2022,7.00,1.86,Equatorial Guinea,Sassuolo
+779,Mehdi Bourabia,173,13,14,,,Central Midfield,28,30.06.2021,3.50,1.83,Morocco,Sassuolo
+780,Hamed Junior Traore,132,24,15,,,Attacking Midfield,20,30.06.2021,15.00,1.77,Cote d'Ivoire,Sassuolo
+781,Filip Djuricic,259,35,43,,,Attacking Midfield,28,30.06.2022,2.50,1.81,Serbia,Sassuolo
+782,Jeremie Boga,205,32,18,,,Left Winger,23,30.06.2022,20.00,1.74,Cote d'Ivoire,Sassuolo
+783,Lukas Haraslin,155,29,22,,,Left Winger,23,30.06.2020,2.00,1.82,Slovakia,Sassuolo
+784,Domenico Berardi,278,90,55,,,Right Winger,25,30.06.2024,24.00,1.83,Italy,Sassuolo
+785,Gregoire Defrel,326,66,29,,,Centre-Forward,28,30.06.2020,12.00,1.79,Martinique,Sassuolo
+786,Francesco Caputo,387,150,39,,,Centre-Forward,32,30.06.2022,7.00,1.81,Italy,Sassuolo
+787,Giacomo Raspadori,103,43,8,,,Centre-Forward,20,30.06.2022,700,1.72,Italy,Sassuolo
+788,Andrea Ghion,98,3,4,,,Defensive Midfield,20,-,100,1.80,Italy,Sassuolo
+789,Ionut Radu,135,,,162,39,Goalkeeper,22,30.06.2020,12.00,1.88,Romania,Parma
+790,Luigi Sepe,252,,,307,75,Goalkeeper,28,30.06.2020,5.00,1.85,Italy,Parma
+791,Simone Colombi,251,,,307,73,Goalkeeper,28,30.06.2022,800,1.88,Italy,Parma
+792,Simone Iacoponi,376,21,6,,,Centre-Back,32,30.06.2022,1.50,1.80,Italy,Parma
+793,Kastriot Dermaku,211,8,5,,,Centre-Back,28,30.06.2023,1.00,1.94,Albania,Parma
+794,Bruno Alves,558,33,18,,,Centre-Back,38,30.06.2021,1.00,1.89,Portugal,Parma
+795,Riccardo Gagliolo,249,18,8,,,Left-Back,29,30.06.2022,3.00,1.80,Sweden,Parma
+796,Giuseppe Pezzella,105,4,3,,,Left-Back,22,30.06.2020,3.00,1.87,Italy,Parma
+797,Vasco Regini,316,5,11,,,Left-Back,29,30.06.2020,900,1.85,Italy,Parma
+798,Matteo Darmian,334,9,16,,,Right-Back,30,30.06.2023,8.00,1.83,Italy,Parma
+799,Vincent Laurini,225,1,5,,,Right-Back,30,30.06.2022,1.40,1.73,France,Parma
+800,Hernani,167,15,8,,,Defensive Midfield,26,30.06.2020,4.00,1.88,Brazil,Parma
+801,Gaston Brugman,276,32,23,,,Defensive Midfield,27,30.06.2022,2.50,1.75,Uruguay,Parma
+802,Matteo Scozzarella,302,15,40,,,Defensive Midfield,31,30.06.2021,1.00,1.70,Italy,Parma
+803,Alberto Grassi,135,10,-,,,Central Midfield,25,30.06.2020,7.00,1.83,Italy,Parma
+804,Juraj Kucka,376,46,28,,,Central Midfield,33,30.06.2022,5.00,1.86,Slovakia,Parma
+805,Jasmin Kurtic,356,28,24,,,Central Midfield,31,30.06.2020,4.50,1.86,Slovenia,Parma
+806,Antonino Barilla,395,34,24,,,Central Midfield,32,30.06.2022,1.50,1.80,Italy,Parma
+807,Gervinho,456,124,83,,,Left Winger,32,30.06.2022,7.00,1.79,Cote d'Ivoire,Parma
+808,Dejan Kulusevski,110,39,33,,,Right Winger,19,30.06.2020,35.00,1.86,Sweden,Parma
+809,Yann Karamoh,94,10,8,,,Right Winger,21,30.06.2023,10.00,1.85,France,Parma
+810,Mattia Sprocati,200,29,11,,,Right Winger,26,30.06.2023,1.80,1.78,Italy,Parma
+811,Luca Siligardi,280,57,32,,,Right Winger,32,30.06.2022,700,1.80,Italy,Parma
+812,Gianluca Caprari,291,65,23,,,Second Striker,26,30.06.2020,8.00,1.71,Italy,Parma
+813,Roberto Inglese,268,69,15,,,Centre-Forward,28,30.06.2024,15.00,1.86,Italy,Parma
+814,Andreas Cornelius,270,79,22,,,Centre-Forward,27,30.06.2021,10.00,1.93,Denmark,Parma
+815,Andrea Adorante,78,30,3,,,Centre-Forward,20,30.06.2023,500,1.84,Italy,Parma
+816,Edoardo Corvi,59,112,4,,,,19,-,500,G.al,Italy,Parma
+817,Lukasz Skorupski,220,,,287,59,Goalkeeper,28,30.06.2023,7.00,1.87,Poland,Bologna
+818,Angelo Da Costa,184,,,243,42,Goalkeeper,36,30.06.2020,200,1.86,Brazil,Bologna
+819,Mouhamadou Sarr,95,,,111,32,Goalkeeper,23,30.06.2020,100,1.90,Senegal,Bologna
+820,Sebastian Breza,61,,,51,31,Goalkeeper,22,30.06.2020,75,1.96,Canada,Bologna
+821,Stefano Denswil,299,18,9,,,Centre-Back,26,30.06.2022,6.00,1.88,Netherlands,Bologna
+822,Mattia Bani,231,9,2,,,Centre-Back,26,30.06.2023,3.00,1.88,Italy,Bologna
+823,Gabriele Corbo,85,5,1,,,Centre-Back,20,30.06.2023,800,1.86,Italy,Bologna
+824,Danilo,500,25,3,,,Centre-Back,35,30.06.2020,700,1.85,Brazil,Bologna
+825,Mitchell Dijks,226,3,10,,,Left-Back,27,30.06.2023,5.00,1.94,Netherlands,Bologna
+826,Takehiro Tomiyasu,118,2,3,,,Right-Back,21,30.06.2024,15.00,1.88,Japan,Bologna
+827,Ibrahima Mbaye,185,12,7,,,Right-Back,25,30.06.2023,3.00,1.88,Senegal,Bologna
+828,Gary Medel,392,19,16,,,Defensive Midfield,32,30.06.2022,3.00,1.71,Chile,Bologna
+829,Nicolas Dominguez,84,9,6,,,Central Midfield,21,30.06.2024,17.50,1.79,Argentina,Bologna
+830,Roberto Soriano,351,45,28,,,Central Midfield,29,30.06.2023,8.00,1.82,Italy,Bologna
+831,Mattias Svanberg,146,23,17,,,Central Midfield,21,30.06.2023,5.50,1.85,Sweden,Bologna
+832,Jerdy Schouten,114,10,6,,,Central Midfield,23,30.06.2024,4.00,1.85,Netherlands,Bologna
+833,Andrea Poli,371,28,20,,,Central Midfield,30,30.06.2021,3.00,1.82,Italy,Bologna
+834,Nicola Sansone,351,82,41,,,Left Winger,28,30.06.2023,7.50,1.73,Italy,Bologna
+835,Ladislav Krejci,289,44,50,,,Left Winger,27,30.06.2020,2.75,1.78,Czech Republic,Bologna
+836,Riccardo Orsolini,159,48,27,,,Right Winger,23,30.06.2022,25.00,1.83,Italy,Bologna
+837,Andreas Skov Olsen,89,46,10,,,Right Winger,20,30.06.2024,7.50,1.87,Denmark,Bologna
+838,Musa Barrow,96,50,14,,,Centre-Forward,21,30.06.2024,12.00,1.84,The Gambia,Bologna
+839,Federico Santander,254,73,25,,,Centre-Forward,28,30.06.2022,5.00,1.87,Paraguay,Bologna
+840,Rodrigo Palacio,503,180,90,,,Centre-Forward,38,30.06.2020,500,1.76,Argentina,Bologna
+841,Federico Bonini,34,3,-,,,Centre-Back,18,30.06.2020,150,1.85,Italy,Bologna
+842,Emil Audero,178,,,224,55,Goalkeeper,23,30.06.2023,15.00,1.92,Italy,Sampdoria
+843,Andrea Seculin,149,,,170,46,Goalkeeper,29,30.06.2020,300,1.90,Italy,Sampdoria
+844,Wladimiro Falcone,155,,,164,61,Goalkeeper,24,30.06.2020,150,1.95,Italy,Sampdoria
+845,Omar Colley,264,17,2,,,Centre-Back,27,30.06.2022,7.00,1.91,The Gambia,Sampdoria
+846,Maya Yoshida,359,25,9,,,Centre-Back,31,30.06.2020,5.00,1.89,Japan,Sampdoria
+847,Julian Chabot,131,10,3,,,Centre-Back,22,30.06.2024,3.50,1.95,Germany,Sampdoria
+848,Lorenzo Tonelli,265,25,2,,,Centre-Back,30,30.06.2022,3.50,1.83,Italy,Sampdoria
+849,Alex Ferrari,152,2,1,,,Centre-Back,25,30.06.2023,2.50,1.91,Italy,Sampdoria
+850,Nicola Murru,229,-,15,,,Left-Back,25,30.06.2024,6.50,1.80,Italy,Sampdoria
+851,Tommaso Augello,179,2,16,,,Left-Back,25,30.06.2020,1.00,1.80,Italy,Sampdoria
+852,Bartosz Bereszynski,243,3,17,,,Right-Back,27,30.06.2023,8.00,1.83,Poland,Sampdoria
+853,Fabio Depaoli,150,9,11,,,Right-Back,22,30.06.2024,5.00,1.82,Italy,Sampdoria
+854,Albin Ekdal,319,11,12,,,Defensive Midfield,30,30.06.2021,4.00,1.86,Sweden,Sampdoria
+855,Karol Linetty,233,20,28,,,Central Midfield,25,30.06.2021,14.00,1.76,Poland,Sampdoria
+856,Jakub Jankto,179,23,22,,,Central Midfield,24,30.06.2023,12.00,1.84,Czech Republic,Sampdoria
+857,Ronaldo Vieira,110,2,7,,,Central Midfield,21,30.06.2023,7.00,1.78,England,Sampdoria
+858,Andrea Bertolacci,252,25,21,,,Central Midfield,29,30.06.2020,3.00,1.79,Italy,Sampdoria
+859,Morten Thorsby,194,18,10,,,Central Midfield,23,30.06.2023,2.50,1.89,Norway,Sampdoria
+860,Mehdi Leris,116,27,9,,,Central Midfield,21,30.06.2024,2.50,1.86,France,Sampdoria
+861,Edgar Barreto,438,29,44,,,Central Midfield,35,30.06.2020,500,1.80,Paraguay,Sampdoria
+862,Gaston Ramirez,289,53,46,,,Attacking Midfield,29,30.06.2021,8.00,1.83,Uruguay,Sampdoria
+863,Gonzalo Maroni,36,4,1,,,Attacking Midfield,21,30.06.2020,5.00,1.77,Argentina,Sampdoria
+864,Manolo Gabbiadini,354,89,22,,,Centre-Forward,28,30.06.2023,12.00,1.86,Italy,Sampdoria
+865,Antonino La Gumina,160,66,7,,,Centre-Forward,24,30.06.2021,4.80,1.82,Italy,Sampdoria
+866,Federico Bonazzoli,154,39,5,,,Centre-Forward,22,30.06.2021,2.00,1.82,Italy,Sampdoria
+867,Fabio Quagliarella,605,215,58,,,Centre-Forward,37,30.06.2021,2.00,1.80,Italy,Sampdoria
+868,Marco Silvestri,263,,,338,64,Goalkeeper,29,30.06.2021,6.00,1.91,Italy,Hellas Verona
+869,Boris Radunovi%c4%87,108,,,119,37,Goalkeeper,23,30.06.2020,600,1.94,Serbia,Hellas Verona
+870,Alessandro Berardi,136,,,151,47,Goalkeeper,29,30.06.2021,50,1.85,Italy,Hellas Verona
+871,Marash Kumbulla,89,6,1,,,Centre-Back,20,30.06.2022,25.00,1.85,Albania,Hellas Verona
+872,Amir Rrahmani,221,9,5,,,Centre-Back,26,30.06.2020,12.00,1.92,Kosovo,Hellas Verona
+873,Koray Gunter,186,4,-,,,Centre-Back,25,30.06.2020,3.00,1.84,Germany,Hellas Verona
+874,Pawel Dawidowicz,196,6,3,,,Centre-Back,24,30.06.2022,2.00,1.89,Poland,Hellas Verona
+875,Salvatore Bocchetti,357,22,4,,,Centre-Back,33,30.06.2021,1.00,1.86,Italy,Hellas Verona
+876,Alan Empereur,192,8,3,,,Centre-Back,26,30.06.2021,500,1.86,Brazil,Hellas Verona
+877,Matteo Lovato,54,2,-,,,Centre-Back,20,30.06.2024,150,1.88,Italy,Hellas Verona
+878,Federico Dimarco,95,6,10,,,Left-Back,22,30.06.2020,5.00,1.75,Italy,Hellas Verona
+879,Davide Faraoni,287,18,23,,,Right-Back,28,30.06.2022,4.00,1.80,Italy,Hellas Verona
+880,Claud Adjapong,91,12,3,,,Right-Back,21,30.06.2020,3.00,1.80,Italy,Hellas Verona
+881,Miguel Veloso,419,33,49,,,Defensive Midfield,33,30.06.2020,1.00,1.80,Portugal,Hellas Verona
+882,Andrea Danzi,95,4,7,,,Defensive Midfield,21,30.06.2022,500,1.75,Italy,Hellas Verona
+883,Sofyan Amrabat,183,7,17,,,Central Midfield,23,30.06.2020,18.00,1.85,Morocco,Hellas Verona
+884,Matteo Pessina,150,20,9,,,Central Midfield,22,30.06.2020,8.00,1.87,Italy,Hellas Verona
+885,Mattia Zaccagni,176,13,20,,,Central Midfield,24,30.06.2022,7.00,1.77,Italy,Hellas Verona
+886,Emmanuel Badu,216,11,12,,,Central Midfield,29,30.06.2020,1.20,1.73,Ghana,Hellas Verona
+887,Lucas Felippe,59,19,6,,,Central Midfield,19,30.06.2022,75,1.78,Brazil,Hellas Verona
+888,Darko Lazovic,323,45,47,,,Left Midfield,29,30.06.2022,5.00,1.81,Serbia,Hellas Verona
+889,Valerio Verre,261,31,23,,,Attacking Midfield,26,30.06.2020,4.00,1.81,Italy,Hellas Verona
+890,Valentin Eysseric,238,29,33,,,Attacking Midfield,28,30.06.2020,1.50,1.81,France,Hellas Verona
+891,Fabio Borini,280,65,25,,,Left Winger,29,30.06.2020,5.00,1.80,Italy,Hellas Verona
+892,Eddie Salcedo,83,24,6,,,Centre-Forward,18,30.06.2020,9.00,1.78,Italy,Hellas Verona
+893,Mariusz Stepinski,227,51,20,,,Centre-Forward,24,30.06.2024,3.80,1.83,Poland,Hellas Verona
+894,Samuel Di Carmine,402,106,43,,,Centre-Forward,31,30.06.2021,1.70,1.87,Italy,Hellas Verona
+895,Giampaolo Pazzini,563,191,27,,,Centre-Forward,35,30.06.2020,400,1.80,Italy,Hellas Verona
+896,Mattia Perin,274,,,349,85,Goalkeeper,27,30.06.2020,10.00,1.88,Italy,Genoa
+897,Salvador Ichazo,91,,,116,27,Goalkeeper,28,30.06.2020,300,1.88,Uruguay,Genoa
+898,Federico Marchetti,327,,,386,118,Goalkeeper,37,30.06.2020,200,1.88,Italy,Genoa
+899,Cristian Romero,75,2,2,,,Centre-Back,21,30.06.2020,15.00,1.85,Argentina,Genoa
+900,Adama Soumaoro,123,5,1,,,Centre-Back,27,30.06.2020,10.00,1.86,France,Genoa
+901,Davide Biraschi,197,3,4,,,Centre-Back,25,30.06.2022,4.00,1.82,Italy,Genoa
+902,Cristian Zapata,393,11,14,,,Centre-Back,33,30.06.2021,2.00,1.87,Colombia,Genoa
+903,Edoardo Goldaniga,190,18,1,,,Centre-Back,26,30.06.2020,2.00,1.93,Italy,Genoa
+904,Andrea Masiello,396,16,10,,,Centre-Back,34,30.06.2022,1.50,1.84,Italy,Genoa
+905,Antonio Barreca,167,3,16,,,Left-Back,25,30.06.2020,4.00,1.83,Italy,Genoa
+906,Domenico Criscito,457,41,41,,,Left-Back,33,30.06.2022,3.00,1.83,Italy,Genoa
+907,Paolo Ghiglione,127,13,15,,,Right-Back,23,30.06.2021,4.00,1.91,Italy,Genoa
+908,Peter Ankersen,356,22,60,,,Right-Back,29,30.06.2021,2.50,1.80,Denmark,Genoa
+909,Lasse Schone,506,110,83,,,Defensive Midfield,33,30.06.2021,2.50,1.78,Denmark,Genoa
+910,Ivan Radovanovic,338,6,5,,,Defensive Midfield,31,30.06.2021,2.50,1.87,Serbia,Genoa
+911,Sebastian Eriksson,275,17,15,,,Defensive Midfield,31,-,800,1.84,Sweden,Genoa
+912,Valon Behrami,441,15,11,,,Defensive Midfield,34,30.06.2020,600,1.84,Switzerland,Genoa
+913,Stefano Sturaro,199,8,12,,,Central Midfield,27,30.06.2022,10.00,1.81,Italy,Genoa
+914,Lukas Lerager,256,15,11,,,Central Midfield,26,30.06.2023,5.00,1.88,Denmark,Genoa
+915,Francesco Cassata,150,17,13,,,Central Midfield,22,30.06.2020,3.00,1.83,Italy,Genoa
+916,Filip Jagiello,109,7,11,,,Central Midfield,22,30.06.2023,1.50,1.80,Poland,Genoa
+917,Marko Pajac,158,13,15,,,Left Midfield,26,30.06.2020,1.50,1.85,Croatia,Genoa
+918,Iago Falque,324,93,44,,,Right Winger,30,30.06.2020,8.00,1.74,Spain,Genoa
+919,Goran Pandev,569,129,66,,,Second Striker,36,30.06.2020,400,1.84,North Macedonia,Genoa
+920,Andrea Pinamonti,128,52,10,,,Centre-Forward,20,30.06.2021,15.00,1.85,Italy,Genoa
+921,Antonio Sanabria,155,49,8,,,Centre-Forward,24,30.06.2020,8.00,1.81,Paraguay,Genoa
+922,Andrea Favilli,128,48,12,,,Centre-Forward,22,30.06.2023,5.50,1.91,Italy,Genoa
+923,Mattia Destro,298,111,19,,,Centre-Forward,29,30.06.2020,3.00,1.82,Italy,Genoa
+924,Juan Musso,90,,,117,24,Goalkeeper,25,30.06.2023,15.00,1.91,Argentina,Udinese
+925,Nicolas,171,,,220,53,Goalkeeper,31,30.06.2021,500,1.90,Brazil,Udinese
+926,Samuele Perisan,69,,,88,19,Goalkeeper,22,30.06.2020,150,1.92,Italy,Udinese
+927,Rodrigo Becao,68,1,-,,,Centre-Back,24,30.06.2024,6.00,1.91,Brazil,Udinese
+928,Samir,144,6,4,,,Centre-Back,25,30.06.2023,5.00,1.88,Brazil,Udinese
+929,William Troost Ekong,190,8,2,,,Centre-Back,26,30.06.2023,4.00,1.91,Nigeria,Udinese
+930,Bram Nuytinck,309,13,6,,,Centre-Back,29,30.06.2021,3.50,1.90,Netherlands,Udinese
+931,Sebastian Prodl,306,20,10,,,Centre-Back,32,30.06.2021,1.50,1.94,Austria,Udinese
+932,Sebastien De Maio,309,14,3,,,Centre-Back,33,30.06.2022,900,1.90,France,Udinese
+933,Marvin Zeegelaar,184,5,16,,,Left-Back,29,30.06.2022,1.50,1.86,Netherlands,Udinese
+934,Jens Stryger Larsen,322,15,22,,,Right-Back,29,30.06.2022,3.50,1.80,Denmark,Udinese
+935,Hidde Ter Avest,135,6,4,,,Right-Back,22,30.06.2022,2.00,1.82,Netherlands,Udinese
+936,Rolando Mandragora,150,8,7,,,Defensive Midfield,22,30.06.2023,15.00,1.83,Italy,Udinese
+937,Walace,151,5,5,,,Defensive Midfield,25,30.06.2024,6.00,1.88,Brazil,Udinese
+938,Mato Jajalo,410,24,39,,,Defensive Midfield,31,30.06.2022,1.00,1.82,Bosnia-Herzegovina,Udinese
+939,Seko Fofana,207,24,17,,,Central Midfield,24,30.06.2022,12.00,1.83,Cote d'Ivoire,Udinese
+940,Ken Sema,245,40,48,,,Left Midfield,26,30.06.2020,5.00,1.80,Sweden,Udinese
+941,Rodrigo De Paul,249,32,32,,,Attacking Midfield,25,30.06.2024,25.00,1.80,Argentina,Udinese
+942,Kevin Lasagna,213,50,19,,,Centre-Forward,27,30.06.2023,7.00,1.81,Italy,Udinese
+943,Stefano Okaka,365,73,27,,,Centre-Forward,30,30.06.2022,4.00,1.86,Italy,Udinese
+944,Ilija Nestorovski,279,116,19,,,Centre-Forward,30,30.06.2022,3.50,1.82,North Macedonia,Udinese
+945,Lukasz Teodorczyk,250,100,32,,,Centre-Forward,28,30.06.2022,2.20,1.88,Poland,Udinese
+946,Jesse Joronen,154,,,216,36,Goalkeeper,27,30.06.2022,5.00,1.97,Finland,Brescia
+947,Enrico Alfonso,310,,,345,89,Goalkeeper,31,30.06.2021,600,1.91,Italy,Brescia
+948,Lorenzo Andrenacci,59,,,80,17,Goalkeeper,25,30.06.2021,100,1.88,Italy,Brescia
+949,Andrea Cistana,125,3,-,,,Centre-Back,23,30.06.2021,8.00,1.85,Italy,Brescia
+950,Jhon Chancellor,143,11,-,,,Centre-Back,28,30.06.2022,1.80,1.97,Venezuela,Brescia
+951,Daniele Gastaldello,501,22,10,,,Centre-Back,36,30.06.2020,300,1.87,Italy,Brescia
+952,Massimiliano Mangraviti,100,3,1,,,Centre-Back,22,30.06.2022,200,1.88,Italy,Brescia
+953,Ales Mateju,131,3,5,,,Left-Back,23,-,1.90,1.85,Czech Republic,Brescia
+954,Bruno Martella,257,14,21,,,Left-Back,27,30.06.2022,1.60,1.83,Italy,Brescia
+955,Stefano Sabelli,297,5,18,,,Right-Back,27,30.06.2021,2.00,1.76,Italy,Brescia
+956,Alessandro Semprini,78,5,1,,,Right-Back,22,30.06.2021,200,1.83,Italy,Brescia
+957,Sandro Tonali,131,18,16,,,Defensive Midfield,19,30.06.2021,35.00,1.81,Italy,Brescia
+958,Mattia Viviani,70,4,-,,,Defensive Midfield,19,30.06.2021,400,1.83,Italy,Brescia
+959,Dimitri Bisoli,257,20,19,,,Central Midfield,26,30.06.2024,3.50,1.80,Italy,Brescia
+960,Emanuele Ndoj,159,13,11,,,Central Midfield,23,30.06.2022,3.00,1.89,Albania,Brescia
+961,Romulo,262,19,38,,,Central Midfield,32,30.06.2020,2.00,1.78,Italy,Brescia
+962,Birkir Bjarnason,361,60,24,,,Central Midfield,31,30.06.2021,1.00,1.84,Iceland,Brescia
+963,Daniele Dessena,408,24,15,,,Central Midfield,32,30.06.2021,500,1.82,Italy,Brescia
+964,Jaromir Zmrhal,242,30,34,,,Left Midfield,26,30.06.2023,3.00,1.89,Czech Republic,Brescia
+965,Nikolas Spalek,209,31,33,,,Attacking Midfield,23,30.06.2022,2.50,1.71,Slovakia,Brescia
+966,Mario Balotelli,396,161,33,,,Centre-Forward,29,30.06.2022,7.00,1.89,Italy,Brescia
+967,Alfredo Donnarumma,356,147,28,,,Centre-Forward,29,30.06.2022,6.00,1.80,Italy,Brescia
+968,Ernesto Torregrossa,255,68,28,,,Centre-Forward,27,30.06.2022,3.00,1.84,Italy,Brescia
+969,Simon Skrabb,270,44,26,,,Centre-Forward,25,30.06.2023,2.50,1.74,Finland,Brescia
+970,Florian Aye,110,24,7,,,Centre-Forward,23,30.06.2022,2.00,1.84,France,Brescia
+971,Etrit Berisha,284,,,325,92,Goalkeeper,31,30.06.2020,3.00,1.94,Albania,SPAL
+972,Karlo Letica,58,,,49,24,Goalkeeper,23,30.06.2020,1.30,2.01,Croatia,SPAL
+973,Demba Thiam,50,37,22,,,,22,30.06.2020,100,G.al,"2,02 m",SPAL
+974,Francesco Vicari,221,5,4,,,Centre-Back,25,30.06.2022,5.00,1.90,Italy,SPAL
+975,Kevin Bonifazi,128,10,-,,,Centre-Back,23,30.06.2020,5.00,1.87,Italy,SPAL
+976,Ervin Zukanovic,349,22,10,,,Centre-Back,33,30.06.2020,1.20,1.88,Bosnia-Herzegovina,SPAL
+977,Thiago Cionek,351,8,6,,,Centre-Back,33,30.06.2020,600,1.83,Poland,SPAL
+978,Nenad Tomovi%c4%87,353,5,12,,,Centre-Back,32,30.06.2020,600,1.84,Serbia,SPAL
+979,Bartosz Salamon,262,14,5,,,Centre-Back,28,30.06.2021,500,1.94,Poland,SPAL
+980,Felipe,424,17,4,,,Centre-Back,35,30.06.2020,400,1.88,Brazil,SPAL
+981,Paolo Cannistra,46,5,-,,,Centre-Back,19,-,50,1.76,Italy,SPAL
+982,Arkadiusz Reca,146,22,13,,,Left-Back,24,30.06.2020,3.00,1.87,Poland,SPAL
+983,Riccardo Mastrilli,86,7,-,,,Left-Back,22,-,100,1.85,Italy,SPAL
+984,Jacopo Sala,170,5,11,,,Right-Back,28,30.06.2020,1.50,1.81,Italy,SPAL
+985,Simone Missiroli,481,44,36,,,Defensive Midfield,33,30.06.2021,1.50,1.91,Italy,SPAL
+986,Mirko Valdifiori,387,4,33,,,Defensive Midfield,33,30.06.2020,500,1.85,Italy,SPAL
+987,Lucas Castro,321,39,28,,,Central Midfield,30,30.06.2020,4.00,1.82,Argentina,SPAL
+988,Alessandro Murgia,180,27,14,,,Central Midfield,23,30.06.2024,3.50,1.85,Italy,SPAL
+989,Bryan Dabo,165,13,9,,,Central Midfield,28,30.06.2020,2.50,1.87,Burkina Faso,SPAL
+990,Mattia Valoti,197,32,12,,,Central Midfield,26,30.06.2021,1.00,1.81,Italy,SPAL
+991,Georgi Tunjov,82,14,1,,,Central Midfield,18,30.06.2023,400,1.86,Estonia,SPAL
+992,Gabriel Strefezza,110,14,16,,,Right Midfield,22,30.06.2022,2.50,1.68,Brazil,SPAL
+993,Marco Dalessandro,321,20,25,,,Right Midfield,29,30.06.2020,2.00,1.73,Italy,SPAL
+994,Mohamed Fares,158,20,4,,,Left Midfield,24,30.06.2022,6.00,1.83,Algeria,SPAL
+995,Federico Di Francesco,228,28,22,,,Left Winger,25,30.06.2020,5.00,1.71,Italy,SPAL
+996,Andrea Petagna,257,68,19,,,Centre-Forward,24,30.06.2020,18.00,1.90,Italy,SPAL
+997,Alberto Cerri,176,53,22,,,Centre-Forward,23,30.06.2020,4.50,1.94,Italy,SPAL
+998,Sergio Floccari,512,114,42,,,Centre-Forward,38,30.06.2020,300,1.80,Italy,SPAL
+999,Gabriel,144,,,175,48,Goalkeeper,27,30.06.2021,1.00,1.93,Brazil,Lecce
+1000,Mauro Vigorito,243,,,312,72,Goalkeeper,29,30.06.2022,800,1.87,Italy,Lecce
+1001,Gianmarco Chironi,55,,,55,17,Goalkeeper,22,30.06.2020,50,1.83,Italy,Lecce
+1002,Fabio Lucioni,316,18,4,,,Centre-Back,32,30.06.2021,900,1.85,Italy,Lecce
+1003,Biagio Meccariello,217,7,3,,,Centre-Back,29,30.06.2021,700,1.87,Italy,Lecce
+1004,Luca Rossettini,398,11,10,,,Centre-Back,34,30.06.2021,500,1.87,Italy,Lecce
+1005,Nehuen Paz,90,2,3,,,Centre-Back,26,30.06.2020,400,1.91,Argentina,Lecce
+1006,Marco Calderoni,398,14,29,,,Left-Back,31,30.06.2020,1.00,1.83,Italy,Lecce
+1007,Cristian Dellorco,159,4,4,,,Left-Back,26,30.06.2020,800,1.83,Italy,Lecce
+1008,Brayan Vera,6,-,-,,,Left-Back,21,30.06.2023,500,1.80,Colombia,Lecce
+1009,Giulio Donati,291,3,13,,,Right-Back,30,30.06.2020,1.00,1.78,Italy,Lecce
+1010,Andrea Rispoli,370,31,26,,,Right-Back,31,30.06.2021,1.00,1.88,Italy,Lecce
+1011,Jacopo Petriccione,231,11,18,,,Defensive Midfield,25,30.06.2023,3.00,1.76,Italy,Lecce
+1012,Panagiotis Tachtsidis,270,13,28,,,Defensive Midfield,29,30.06.2022,1.20,1.91,Greece,Lecce
+1013,Antonin Barak,147,27,11,,,Central Midfield,25,30.06.2020,10.00,1.90,Czech Republic,Lecce
+1014,Yevgen Shakhov,277,39,23,,,Central Midfield,29,30.06.2021,2.00,1.89,Ukraine,Lecce
+1015,Zan Majer,213,13,13,,,Central Midfield,27,30.06.2022,2.00,1.80,Slovenia,Lecce
+1016,Alessandro Deiola,164,15,5,,,Central Midfield,24,30.06.2020,1.20,1.90,Italy,Lecce
+1017,Riccardo Saponara,276,44,50,,,Attacking Midfield,28,30.06.2020,3.00,1.84,Italy,Lecce
+1018,Marco Mancosu,373,78,37,,,Attacking Midfield,31,30.06.2021,2.50,1.80,Italy,Lecce
+1019,Diego Farias,343,82,45,,,Second Striker,29,30.06.2021,4.50,1.72,Brazil,Lecce
+1020,Filippo Falco,293,45,43,,,Second Striker,28,30.06.2022,4.00,1.71,Italy,Lecce
+1021,Khouma Babacar,299,92,24,,,Centre-Forward,27,30.06.2020,6.50,1.85,Senegal,Lecce
+1022,Gianluca Lapadula,261,107,28,,,Centre-Forward,30,30.06.2020,6.00,1.78,Italy,Lecce
+1023,Samuele Oltremarini,17,5,-,,,Centre-Forward,17,-,6.00,1.75,Italy,Lecce
+1024,Salvatore Rimoli,58,12,1,,,,18,-,6.00,,Italy,Lecce
