@@ -1,78 +1,76 @@
-Referee_ID,Name,League_name,yellow_cards,red_cards,penalties_given
-1,Mike Dean,Premier League,1874,50,148
-2,Martin Atkinson,Premier League,1360,36,80
-3,Graham Poll,Premier League,1090,19,50
-4,Andre Marriner,Premier League,1051,30,51
-5,Phil Dowd,Premier League,1089,45,64
-6,Howard Webb,Premier League,975,17,59
-7,Mark Clattenburg,Premier League,946,23,70
-8,Mike Riley,Premier League,1019,43,54
-9,Mark Halsey,Premier League,623,27,59
-10,Alan Wiley,Premier League,830,16,59
-11,Lee Mason,Premier League,860,26,60
-12,Chris Foy,Premier League,714,17,55
-13,Dermot Gallagher,Premier League,652,21,30
-14,Steve Bennett,Premier League,855,17,45
-15,Michael Oliver,Premier League,815,24,58
-16,Anthony Taylor,Premier League,878,22,50
-17,Paul Durkin,Premier League,617,19,43
-18,Kevin Friend,Premier League,795,13,46
-19,Jonathan Moss,Premier League,769,12,52
-20,Rob Styles,Premier League,689,30,57
-21,Mike Jones,Premier League,647,14,40
-22,David Elleray,Premier League,567,18,45
-23,Steve Dunn,Premier League,603,8,25
-24,Jeff Winter,Premier League,535,9,27
-25,Lee Probert,Premier League,454,20,33
-Referee_ID,Name,League_name,yellow_cards,red_cards,penalties_given
-26,Alberto Undiano Mallenco,La Liga,1725,27,78
-27,Eduardo Iturralde González,La Liga,1514,62,80
-28,Miguel Ángel Pérez Lasa,La Liga,1481,41,46
-29,Manuel Enrique Mejuto González,La Liga,1122,20,53
-30,César Muñiz Fernández,La Liga,1481,51,62
-31,Arturo Daudén Ibáñez,La Liga,1303,49,72
-32,David Fernández Borbalán,La Liga,1250,30,50
-33,Alfonso Pérez Burrull,La Liga,1117,30,54
-34,Antonio Miguel Matéu Lahoz,La Liga,1111,26,41
-35,Carlos Velasco Carballo,La Liga,1337,43,57
-36,Javier Turienzo Álvarez,La Liga,1226,27,49
-37,Carlos Clos Gómez,La Liga,1138,32,77
-38,Álvarez Izquierdo,La Liga,1195,33,55
-39,González González,La Liga,1017,22,47
-40,Estrada Fernández,La Liga,1196,16,43
-41,Fernando Teixeira Vitienes,La Liga,1092,38,42
-42,Carlos Megía Dávila,La Liga,1215,51,53
-43,Juan Ansuátegui Roca,La Liga,894,23,21
-44,Antonio Jesús López Nieto,La Liga,1008,36,49
-45,Víctor José Esquinas Torres,La Liga,930,37,50
-46,Evaristo Puentes Leira,La Liga,830,32,32
-47,Rafael Ramírez Domínguez,La Liga,900,19,59
-48,Iglesias Villanueva,La Liga,944,21,38
-49,Manuel Díaz Vega,La Liga,858,28,41
-50,Julián Rodríguez Santiago,La Liga,822,30,50
-Referee_ID,Name,League_name,yellow_cards,red_cards,penalties_given
-51,Concetto Lo Bello,Serie A,10,19,66
-52,Gianluca Rocchi,Serie A,1327,59,107
-53,Pierluigi Collina,Serie A,838,60,84
-54,Stefano Farina,Serie A,968,52,66
-55,Generoso Dattilo,Serie A,-,26,14
-56,Nicola Rizzoli,Serie A,1140,33,75
-57,Cesare Jonni,Serie A,-,19,40
-58,Luca Banti,Serie A,1034,28,29
-59,Daniele Orsato,Serie A,1194,21,44
-60,Luigi Agnolin,Serie A,162,7,65
-61,Paolo Tagliavento,Serie A,1079,33,87
-62,Raffaele Scorzoni,Serie A,-,28,38
-63,Pierluigi Pairetto,Serie A,417,45,75
-64,Paolo Silvio Mazzoleni,Serie A,833,36,50
-65,Pasquale Rodomonti,Serie A,659,47,69
-66,Paolo Casarin,Serie A,52,7,39
-67,Vincenzo Orlandini,Serie A,-,12,40
-68,Alfredo Trentalange,Serie A,574,56,78
-69,Rosario Lo Bello,Serie A,213,23,67
-70,Antonio Damato,Serie A,891,21,60
-71,Domenico Messina,Serie A,796,41,62
-72,Giovanni Galeati,Serie A,-,43,37
-73,Pietro D'Elia,Serie A,193,22,43
-74,Roberto Rosetti,Serie A,933,29,82
-75,Paolo Valeri,Serie A,987,27,60
+"Referee_ID","Name","League_name","yellow_cards","red_cards","penalties_given"
+1,"Mike Dean","Premier League",1874,50,148
+2,"Martin Atkinson","Premier League",1360,36,80
+3,"Graham Poll","Premier League",1090,19,50
+4,"Andre Marriner","Premier League",1051,30,51
+5,"Phil Dowd","Premier League",1089,45,64
+6,"Howard Webb","Premier League",975,17,59
+7,"Mark Clattenburg","Premier League",946,23,70
+8,"Mike Riley","Premier League",1019,43,54
+9,"Mark Halsey","Premier League",623,27,59
+10,"Alan Wiley","Premier League",830,16,59
+11,"Lee Mason","Premier League",860,26,60
+12,"Chris Foy","Premier League",714,17,55
+13,"Dermot Gallagher","Premier League",652,21,30
+14,"Steve Bennett","Premier League",855,17,45
+15,"Michael Oliver","Premier League",815,24,58
+16,"Anthony Taylor","Premier League",878,22,50
+17,"Paul Durkin","Premier League",617,19,43
+18,"Kevin Friend","Premier League",795,13,46
+19,"Jonathan Moss","Premier League",769,12,52
+20,"Rob Styles","Premier League",689,30,57
+21,"Mike Jones","Premier League",647,14,40
+22,"David Elleray","Premier League",567,18,45
+23,"Steve Dunn","Premier League",603,8,25
+24,"Jeff Winter","Premier League",535,9,27
+25,"Lee Probert","Premier League",454,20,33
+26,"Alberto Undiano Mallenco","La Liga",1725,27,78
+27,"Eduardo Iturralde González","La Liga",1514,62,80
+28,"Miguel Ángel Pérez Lasa","La Liga",1481,41,46
+29,"Manuel Enrique Mejuto González","La Liga",1122,20,53
+30,"César Muñiz Fernández","La Liga",1481,51,62
+31,"Arturo Daudén Ibáñez","La Liga",1303,49,72
+32,"David Fernández Borbalán","La Liga",1250,30,50
+33,"Alfonso Pérez Burrull","La Liga",1117,30,54
+34,"Antonio Miguel Matéu Lahoz","La Liga",1111,26,41
+35,"Carlos Velasco Carballo","La Liga",1337,43,57
+36,"Javier Turienzo Álvarez","La Liga",1226,27,49
+37,"Carlos Clos Gómez","La Liga",1138,32,77
+38,"Álvarez Izquierdo","La Liga",1195,33,55
+39,"González González","La Liga",1017,22,47
+40,"Estrada Fernández","La Liga",1196,16,43
+41,"Fernando Teixeira Vitienes","La Liga",1092,38,42
+42,"Carlos Megía Dávila","La Liga",1215,51,53
+43,"Juan Ansuátegui Roca","La Liga",894,23,21
+44,"Antonio Jesús López Nieto","La Liga",1008,36,49
+45,"Víctor José Esquinas Torres","La Liga",930,37,50
+46,"Evaristo Puentes Leira","La Liga",830,32,32
+47,"Rafael Ramírez Domínguez","La Liga",900,19,59
+48,"Iglesias Villanueva","La Liga",944,21,38
+49,"Manuel Díaz Vega","La Liga",858,28,41
+50,"Julián Rodríguez Santiago","La Liga",822,30,50
+51,"Concetto Lo Bello","Serie A",10,19,66
+52,"Gianluca Rocchi","Serie A",1327,59,107
+53,"Pierluigi Collina","Serie A",838,60,84
+54,"Stefano Farina","Serie A",968,52,66
+55,"Generoso Dattilo","Serie A","-",26,14
+56,"Nicola Rizzoli","Serie A",1140,33,75
+57,"Cesare Jonni","Serie A","-",19,40
+58,"Luca Banti","Serie A",1034,28,29
+59,"Daniele Orsato","Serie A",1194,21,44
+60,"Luigi Agnolin","Serie A",162,7,65
+61,"Paolo Tagliavento","Serie A",1079,33,87
+62,"Raffaele Scorzoni","Serie A","-",28,38
+63,"Pierluigi Pairetto","Serie A",417,45,75
+64,"Paolo Silvio Mazzoleni","Serie A",833,36,50
+65,"Pasquale Rodomonti","Serie A",659,47,69
+66,"Paolo Casarin","Serie A",52,7,39
+67,"Vincenzo Orlandini","Serie A","-",12,40
+68,"Alfredo Trentalange","Serie A",574,56,78
+69,"Rosario Lo Bello","Serie A",213,23,67
+70,"Antonio Damato","Serie A",891,21,60
+71,"Domenico Messina","Serie A",796,41,62
+72,"Giovanni Galeati","Serie A","-",43,37
+73,"Pietro D'Elia","Serie A",193,22,43
+74,"Roberto Rosetti","Serie A",933,29,82
+75,"Paolo Valeri","Serie A",987,27,60
