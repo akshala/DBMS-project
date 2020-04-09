@@ -1,4 +1,4 @@
-"Referee_ID","Name","League_name","yellow_cards","red_cards","penalties_given"
+"Referee_ID","Referee_Name","League_name","Yellow_cards","Red_cards","Penalties_given"
 1,"Mike Dean","Premier League",1874,50,148
 2,"Martin Atkinson","Premier League",1360,36,80
 3,"Graham Poll","Premier League",1090,19,50
