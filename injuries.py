@@ -11,35 +11,40 @@ option = webdriver.ChromeOptions()
 option.add_argument(" — incognito")
 
 browser = webdriver.Chrome(executable_path = '/home/akshala/Documents/IIITD/fourthSem/Misc/web scraping/chromedriver_linux64/chromedriver', chrome_options=option)
-url = "https://www.transfermarkt.co.in/serie-a/schiedsrichter/wettbewerb/IT1/plus/?saison_id=all"
+url = "https://www.transfermarkt.com/serie-a/verletztespieler/wettbewerb/IT1"
 page = browser.get(url)
 
 row = []
-row.append(["Referee_ID","Name","League_name", "yellow_cards","red_cards","penalties_given"])
+# row.append(["Player_Name","Injury_name","Due_date"])
 
 name = browser.find_elements_by_xpath('//td[@class="hauptlink"]')
 name = [x.text for x in name]
 print(name)
+n = len(name)
 
-stats =  browser.find_elements_by_xpath("//td[@class='zentriert']")
-stats = [x.text for x in stats]
-while (not stats):
-    stats =  browser.find_elements_
-    by_xpath("//td[@class='zentriert']")
-    stats = [x.text for x in stats]
+injury =  browser.find_elements_by_xpath("//td[@class='links']")
+injury = [x.text for x in injury]
+while (not injury):
+    injury =  browser.find_elements_
+    by_xpath("//td[@class='links']")
+    injury = [x.text for x in injury]
 
-def divide_chunks(l, n): 
-    for i in range(0, len(l), n):  
-        yield l[i:i + n] 
+print(injury)
 
-stats = list(divide_chunks(stats, 6))
-print(stats)
+due_date =  browser.find_elements_by_xpath("//td[@class='zentriert']")
+due_date = [x.text for x in due_date]
+while (not due_date):
+    due_date =  browser.find_elements_
+    by_xpath("//td[@class='links']")
+    due_date = [x.text for x in due_date]
+due_date = due_date[:n]
+print(due_date)
 
 n = len(name)
 for i in range(n):
-    row.append([i+51, name[i], "Serie A", stats[i][2], stats[i][4], stats[i][5]])
+    row.append([name[i], injury[i], due_date[i]])
     # print(row)
 
-with open('referee.csv', 'a') as file:
+with open('injury.csv', 'a') as file:
     writer = csv.writer(file)
     writer.writerows(row)
