@@ -38,7 +38,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color.fromRGBO(23, 42, 30, 1),
+      color: Color.fromRGBO(42, 54, 63, 1),
       child: Center(
         child: Container(
         // mainAxisAlignment: MainAxisAlignment.center,
@@ -46,18 +46,21 @@ class MyHomePage extends StatelessWidget {
         width: 450.0,
         height: 600.0,
         decoration: BoxDecoration(
-          color: Colors.orange,
+            gradient: LinearGradient(
+              begin: Alignment.topRight,
+              end: Alignment.bottomLeft,
+              colors: [Colors.cyan[900], Colors.cyan[50]]),
           shape: BoxShape.rectangle,
           borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(25.0),
-            bottomRight: Radius.circular(25.0)
+            topLeft: Radius.circular(75.0),
+            bottomRight: Radius.circular(75.0)
           ) 
         ),
         child: Material(
           type:MaterialType.transparency,
           child:Column(
 
-            children:<Widget>[Login()],
+            children: <Widget>[Login()],
           )
         )
       ))
@@ -78,22 +81,37 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: new EdgeInsets.all(20.0),
+      margin: new EdgeInsets.all(50.0),
+      // padding: new EdgeInsets.only(top:100.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children:[
           TextField(
-            controller: pass,
+            controller: user,
             cursorColor: Colors.red,
             obscureText: false,
+            style: new TextStyle(
+              color: Colors.white,                
+              fontFamily: 'Montserrat',
+              fontWeight: FontWeight.w600,), 
             decoration: InputDecoration(
-              border: OutlineInputBorder(
+              enabledBorder: OutlineInputBorder(
+//               style: Theme.of(context).textTheme.headline4,
+//             ),
+//           ],
+//         ),
+//       ),
+//       floatingActionButton: FloatingActionButton(
+                // borderWeight: Border
                 borderRadius: BorderRadius.circular(15),
-                // borderSide: BorderSide(color:),
+                borderSide: BorderSide(width:2.0, color:Colors.white),
               ),
+              // contentPadding: EdgeInsets.all(200.0),
               labelText: 'Username',
               labelStyle: TextStyle(
-              color: Colors.black
+                fontFamily: 'Montserrat',
+                fontWeight: FontWeight.w600,
+                color: Colors.white
               ),
             ),
           ),
@@ -102,42 +120,56 @@ class _LoginState extends State<Login> {
             controller: pass,
             cursorColor: Colors.red,
             obscureText: true,
+            style: new TextStyle(
+              color: Colors.white,                
+              fontFamily: 'Montserrat',
+              fontWeight: FontWeight.w600,),  
             decoration: InputDecoration(
-              border: OutlineInputBorder(
+              enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(15),
+                borderSide: BorderSide(width:2.0, color:Colors.white),
                 // borderSide: BorderSide(color:),
               ),
               labelText: 'Password',
               labelStyle: TextStyle(
-              color: Colors.black
+                fontFamily: 'Montserrat',
+                fontWeight: FontWeight.w600,
+                color: Colors.white
               ),
             ),
           ),
           SizedBox(height: 30),
           Container(
-            width: 300,
-            height: 60,
+            height: 50.0,
             child: RaisedButton(
-              onPressed: () {
-                null;
-              },
-              textColor: Colors.black,
-              color: Color.fromRGBO(110, 217, 160, 1),
-          
-              shape: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(15),
-                borderSide: BorderSide.none
-              ),
-              child: new Text(
-                "Login",
-                style: TextStyle(
-                  fontFamily: 'RobotoMono',
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18
+              onPressed: null,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
+              padding: EdgeInsets.all(0.0),
+              child: Ink(
+                decoration: BoxDecoration(
+                    gradient: LinearGradient(colors: [Color(0xff374ABE), Color(0xff64B6FF)],
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
+                    ),
+                    borderRadius: BorderRadius.circular(30.0),
+                    // borderSide: BorderSide(width:2.0, color:Colors.white),
                 ),
-              ),  
-            )
-          )
+                child: Container(
+                  constraints: BoxConstraints(maxWidth: 300.0, minHeight: 50.0),
+                  alignment: Alignment.center,
+                  child: Text(
+                    "Login",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontWeight: FontWeight.w900,
+                      color: Colors.white
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
         ]  
       ),
     );
