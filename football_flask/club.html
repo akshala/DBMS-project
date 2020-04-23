@@ -13,12 +13,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="static/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="static/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="static/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="static/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="static/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="static/style.css" type="text/css">
 </head>
 
 <body>
@@ -92,15 +92,34 @@
     </section>
     <!-- Breadcrumb Section End -->
 
+    <section class="hero-section set-bg" data-setbg="static/hero/hero-1.jpg">
+        <button type="button" onclick="getData()">Make query</button>
+    </section>
 
+
+    
+    <!-- Hero Section End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+    <script src="static/jquery.magnific-popup.min.js"></script>
+    <script src="static/jquery.slicknav.js"></script>
+    <script src="static/owl.carousel.min.js"></script>
+    <script src="static/main.js"></script>
+
+<script>
+function getData(){  get entire database
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+         if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("demo").innerHTML = this.responseText;
+         }
+    };
+    xhttp.open("GET", "/club/Premier-League", true);
+    xhttp.send();
+}
+</script>
 </body>
 
 </html>
