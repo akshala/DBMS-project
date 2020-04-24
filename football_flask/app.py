@@ -12,7 +12,7 @@ from datetime import timedelta
 from functools import update_wrapper
 from pprint import pprint
 
-app = Flask(__name__, static_folder='/home/akshala/Documents/IIITD/fourthSem/DBMS/Project/flask/specer/football_flask/static', template_folder='/home/akshala/Documents/IIITD/fourthSem/DBMS/Project/flask/specer/football_flask')
+app = Flask(__name__, static_folder='./static', template_folder='.')
 
 mydb = mysql.connector.connect(
 	host="localhost",
