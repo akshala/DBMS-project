@@ -5,7 +5,7 @@ function validate(){
 	var password = document.getElementById("password").value;
 	if ( username == "player" && password == "Player@123"){
 		alert ("Login successfully");
-		window.location = "{{url_for('getPage_player')}}" // Redirecting to other page.
+		window.location = "player.html" // Redirecting to other page.
 		return false;
 	}
 	else{
