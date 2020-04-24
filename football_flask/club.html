@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../static/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="../static/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="../static/style.css" type="text/css">
-    <!-- <link rel="stylesheet" href="../static/club.css" type="text/css"> -->
+    <link rel="stylesheet" href="../static/club.css" type="text/css">
 </head>
 
 <body>
@@ -76,16 +76,6 @@
 
     <!-- Breadcrumb Section Begin -->
     <section class="breadcrumb-section set-bg" data-setbg="../static/breadcrumb-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="bs-text">
-                        <h2>Club</h2>
-
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <!-- Breadcrumb Section End -->
 
@@ -93,28 +83,32 @@
     <!-- Hero Section End -->
         <section class="hero-section set-bg">
                 <div class="container">
-            <!-- <table class="table table-bordered" id="myTable">
+                        <h1>{{league}}</h1>
+            <table class="table table-bordered" id="myTable">
                 <thead>
                 <tr>
                     <th>Club Name</th>
-                    <th>Manager ID</th>
-                    <th>League Name</th>
+                    <th>Manager Name</th>
+                    <th>Stadium</th>
 
                 </tr>
                 </thead>
                 <tbody id="mydata">
                     {%for data in r%}
                     <tr>
-                        <td>{{data.Club_name}}</td>
-                        <td>{{data.Manager_ID}}</td>
-                        <td>{{data.League_name}}</td>
+                        <td>{{data["Club_name"]}}</td>
+                        <td>{{data.Manager_name}}</td>
+                        <td>{{data.Stadium}}</td>
                     </tr> 
                     {%endfor%}
                 </tbody>
-            </table> -->
-            {% for data in r %}
-                {{ data }}
-            {%  endfor %}
+            </table>
+
+            <!-- {% for data in r %}
+                {{ data.Club_name }}
+            {%  endfor %} -->
+
+
         </div>
         </section>
 
@@ -126,21 +120,6 @@
     <script src="../static/owl.carousel.min.js"></script>
     <script src="../static/main.js"></script>
 
-<script>
-    $('#form').on('submit', function(e){
-        var number = $('#num').val();
-        e.preventDefault();
-        $.ajax({
-            url: '/club/Premier-League',
-            data: {'number': number},
-            method: 'POST',
-            success: function(data) {
-                $('#num').val('');
-                $('#square').html('Square of ' + number + ' is ' + data['square'])
-            }
-        });
-    });
-</script>
 </body>
 
 </html>
