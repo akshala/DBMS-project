@@ -24,8 +24,12 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 @app.route("/")
-def getPage():
+def getPage_index():
     return render_template('index.html')
+
+@app.route("/contact_us")
+def getPage_contact_us():
+    return render_template('contact.html')
 
 @app.route('/club/Premier-League', methods=['GET', 'OPTIONS'])
 def getData_club_Premier_League():

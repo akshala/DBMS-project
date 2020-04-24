@@ -41,29 +41,24 @@
                     <div class="col-lg-10">
                         <div class="nav-menu">
                             <ul class="main-menu">
-                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="{{url_for('getPage_index')}}">Home</a></li>
                                 <li class="active"><a href="#">Club</a>
-<!--                                     <ul class="dropdown">
-                                        <li><a href="./club.html">Premier League</a></li>
-                                        <li><a href="./club.html">La Liga</a></li>
-                                        <li><a href="./club.html">Serie A</a></li>
-                                    </ul> -->
+                                    <ul class="dropdown">
+                                        <li><a href="{{url_for('getData_club_Premier_League')}}">Premier League</a></li>
+                                        <li><a href="{{url_for('getData_club_Serie_A')}}">Serie A</a></li>
+                                        <li><a href="{{url_for('getData_club_La_Liga')}}">La Liga</a></li>
+                                    </ul>
                                 </li>
                                 <li><a href="#">Upcoming Matches</a>
-<!--                                     <ul class="dropdown">
+                                    <ul class="dropdown">
                                         <li><a href="./schedule.html">Premier League</a></li>
                                         <li><a href="./schedule.html">La Liga</a></li>
                                         <li><a href="./schedule.html">Serie A</a></li>
-                                    </ul> -->
+                                    </ul>
                                 </li>
                                 <li><a href="#">Results</a></li>
-<!--                                     <ul class="dropdown">
-                                        <li><a href="./result.html">Premier League</a></li>
-                                        <li><a href="./result.html">La Liga</a></li>
-                                        <li><a href="./result.html">Serie A</a></li>
-                                    </ul> -->
                                 </li>
-                                <li><a href="./contact.html">Contact Us</a></li>
+                                <li><a href="{{url_for('getPage_contact_us')}}">Contact Us</a></li>
                             </ul>
                             <div class="nm-right search-switch">
                                 <i class="fa fa-search"></i>
@@ -113,7 +108,7 @@
                         <td>{{data.Club_name}}</td>
                         <td>{{data.Manager_ID}}</td>
                         <td>{{data.League_name}}</td>
-                    </tr>
+                    </tr> 
                     {%endfor%}
                 </tbody>
             </table> -->
