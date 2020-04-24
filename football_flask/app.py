@@ -28,8 +28,46 @@ def getPage():
     return render_template('index.html')
 
 @app.route('/club/Premier-League', methods=['GET', 'OPTIONS'])
-def getData():
+def getData_club_Premier_League():
 	sql_cmd = "SELECT * FROM Club WHERE League_name=\'{}\'".format("Premier League")
+	print(sql_cmd, flush=True)
+	mycursor.execute(sql_cmd)
+	data = mycursor.fetchall() # data comes in the form of a list 
+	print(data, flush=True)
+	result = []
+	for entries in data:
+		result.append({
+			'Club_name': str(entries[0]),
+			'Manager_ID': int(entries[1]),
+			'League_name': str(entries[2]),
+			'Stadium': str(entries[3]),
+		})
+	data = json.dumps(result)
+	print("json data:", data, flush=True)
+	return render_template('club.html', r=data)
+
+@app.route('/club/Serie-A', methods=['GET', 'OPTIONS'])
+def getData_club_Serie_A():
+	sql_cmd = "SELECT * FROM Club WHERE League_name=\'{}\'".format("Serie A")
+	print(sql_cmd, flush=True)
+	mycursor.execute(sql_cmd)
+	data = mycursor.fetchall() # data comes in the form of a list 
+	print(data, flush=True)
+	result = []
+	for entries in data:
+		result.append({
+			'Club_name': str(entries[0]),
+			'Manager_ID': int(entries[1]),
+			'League_name': str(entries[2]),
+			'Stadium': str(entries[3]),
+		})
+	data = json.dumps(result)
+	print("json data:", data, flush=True)
+	return render_template('club.html', r=data)
+
+@app.route('/club/La-Liga', methods=['GET', 'OPTIONS'])
+def getData_club_La_Liga():
+	sql_cmd = "SELECT * FROM Club WHERE League_name=\'{}\'".format("La Liga")
 	print(sql_cmd, flush=True)
 	mycursor.execute(sql_cmd)
 	data = mycursor.fetchall() # data comes in the form of a list 
