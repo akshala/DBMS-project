@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, abort, make_response
+from flask import Flask, render_template, jsonify, abort, make_response,request
 from flask import request, url_for
 from flask import request, current_app
 from flask_restful import Resource, Api
@@ -17,15 +17,24 @@ app = Flask(__name__, static_folder='./static', template_folder='.')
 mydb = mysql.connector.connect(
 	host="localhost",
 	user="root",
-	passwd="Akshala@12",
+	# passwd="Akshala@12",
+	passwd="",
 	database="football"
 )
 
 mycursor = mydb.cursor()
 
-@app.route("/")
+@app.route("/",methods = ['POST', 'GET'])
 def getPage_index():
-    return render_template('index.html')
+	if request.method == "POST":
+		uname = request.form["uname"]
+		password = request.form["pwd"]
+		print("yes")
+		print(uname,password)
+		if (uname == "player" and password == "Player@123"):
+			return render_template('player.html')
+	print("fkn hell")
+	return render_template('index.html')
 
 @app.route("/contact_us")
 def getPage_contact_us():
