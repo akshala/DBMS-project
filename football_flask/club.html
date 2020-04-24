@@ -13,12 +13,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="static/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="static/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="static/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="static/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="static/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="static/style.css" type="text/css">
+    <link rel="stylesheet" href="../static/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../static/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="../static/club.css" type="text/css"> -->
 </head>
 
 <body>
@@ -34,33 +35,33 @@
                 <div class="row">
                     <div class="col-lg-2">
                         <div class="logo">
-                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                            <a href="../index.html"><img src="../static/logo.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-10">
                         <div class="nav-menu">
                             <ul class="main-menu">
-                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="../index.html">Home</a></li>
                                 <li class="active"><a href="#">Club</a>
-                                    <ul class="dropdown">
+<!--                                     <ul class="dropdown">
                                         <li><a href="./club.html">Premier League</a></li>
                                         <li><a href="./club.html">La Liga</a></li>
                                         <li><a href="./club.html">Serie A</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li><a href="#">Upcoming Matches</a>
-                                    <ul class="dropdown">
+<!--                                     <ul class="dropdown">
                                         <li><a href="./schedule.html">Premier League</a></li>
                                         <li><a href="./schedule.html">La Liga</a></li>
                                         <li><a href="./schedule.html">Serie A</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li><a href="#">Results</a></li>
-                                    <ul class="dropdown">
+<!--                                     <ul class="dropdown">
                                         <li><a href="./result.html">Premier League</a></li>
                                         <li><a href="./result.html">La Liga</a></li>
                                         <li><a href="./result.html">Serie A</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li><a href="./contact.html">Contact Us</a></li>
                             </ul>
@@ -79,12 +80,13 @@
     <!-- Header End -->
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb-bg.jpg">
+    <section class="breadcrumb-section set-bg" data-setbg="../static/breadcrumb-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="bs-text">
                         <h2>Club</h2>
+
                     </div>
                 </div>
             </div>
@@ -92,33 +94,57 @@
     </section>
     <!-- Breadcrumb Section End -->
 
-    <section class="hero-section set-bg" data-setbg="static/hero/hero-1.jpg">
-        <button type="button" onclick="getData()">Make query</button>
-    </section>
-
-
     
     <!-- Hero Section End -->
+        <section class="hero-section set-bg">
+                <div class="container">
+            <!-- <table class="table table-bordered" id="myTable">
+                <thead>
+                <tr>
+                    <th>Club Name</th>
+                    <th>Manager ID</th>
+                    <th>League Name</th>
+
+                </tr>
+                </thead>
+                <tbody id="mydata">
+                    {%for data in r%}
+                    <tr>
+                        <td>{{data.Club_name}}</td>
+                        <td>{{data.Manager_ID}}</td>
+                        <td>{{data.League_name}}</td>
+                    </tr>
+                    {%endfor%}
+                </tbody>
+            </table> -->
+            {% for data in r %}
+                {{ data }}
+            {%  endfor %}
+        </div>
+        </section>
 
     <!-- Js Plugins -->
-    <script src="static/jquery-3.3.1.min.js"></script>
-    <script src="static/bootstrap.min.js"></script>
-    <script src="static/jquery.magnific-popup.min.js"></script>
-    <script src="static/jquery.slicknav.js"></script>
-    <script src="static/owl.carousel.min.js"></script>
-    <script src="static/main.js"></script>
+    <script src="../static/jquery-3.3.1.min.js"></script>
+    <script src="../static/bootstrap.min.js"></script>
+    <script src="../static/jquery.magnific-popup.min.js"></script>
+    <script src="../static/jquery.slicknav.js"></script>
+    <script src="../static/owl.carousel.min.js"></script>
+    <script src="../static/main.js"></script>
 
 <script>
-function getData(){  get entire database
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-         if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("demo").innerHTML = this.responseText;
-         }
-    };
-    xhttp.open("GET", "/club/Premier-League", true);
-    xhttp.send();
-}
+    $('#form').on('submit', function(e){
+        var number = $('#num').val();
+        e.preventDefault();
+        $.ajax({
+            url: '/club/Premier-League',
+            data: {'number': number},
+            method: 'POST',
+            success: function(data) {
+                $('#num').val('');
+                $('#square').html('Square of ' + number + ' is ' + data['square'])
+            }
+        });
+    });
 </script>
 </body>
 

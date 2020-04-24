@@ -10,6 +10,7 @@ import mysql
 import json
 from datetime import timedelta
 from functools import update_wrapper
+from pprint import pprint
 
 app = Flask(__name__, static_folder='/home/akshala/Documents/IIITD/fourthSem/DBMS/Project/flask/specer/football_flask/static', template_folder='/home/akshala/Documents/IIITD/fourthSem/DBMS/Project/flask/specer/football_flask')
 
@@ -28,18 +29,22 @@ def getPage():
 
 @app.route('/club/Premier-League', methods=['GET', 'OPTIONS'])
 def getData():
-	sql_cmd = "SELECT * FROM Clubs WHERE Club_name={}".format("Premier League")
+	sql_cmd = "SELECT * FROM Club WHERE League_name=\'{}\'".format("Premier League")
+	print(sql_cmd, flush=True)
 	mycursor.execute(sql_cmd)
 	data = mycursor.fetchall() # data comes in the form of a list 
+	print(data, flush=True)
+	result = []
 	for entries in data:
-		print(entries)
-		result = {
+		result.append({
 			'Club_name': str(entries[0]),
 			'Manager_ID': int(entries[1]),
 			'League_name': str(entries[2]),
 			'Stadium': str(entries[3]),
-		}
-	return jsonify(result)
+		})
+	data = json.dumps(result)
+	print("json data:", data, flush=True)
+	return render_template('club.html', r=data)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug = True)
