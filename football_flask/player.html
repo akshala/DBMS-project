@@ -13,7 +13,7 @@
   <body>
 		
 		<div class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar" class="order-last" class="img" style="background-image: url(static/images/bg_1.jpg);">
+			<nav id="sidebar" class="order-last" class="img" style="background-image: url(static/bg_1.jpg);">
 				<div class="custom-menu">
 					<button type="button" id="sidebarCollapse" class="btn btn-primary">
 	        </button>
@@ -71,52 +71,51 @@
 
 		<label for="Club">Choose a club:</label>
 		  <select id="Club" name="Club">
-		  	<!-- <style> display:inline-block </style> -->
 		    <option value="Afc Bournemouth">Afc Bournemouth</option>
 		    <option value="Arsenal">Arsenal</option>
-		    <option value="Aston Villa">Aston Villa</option>
-		    <option value="Right-Back">Right-Back</option>
-		    <option value="Goalkeeper">Goalkeeper</option>
-		    <option value="Defensive Midfield">Defensive Midfield</option>
-		    <option value="Central Midfield">Central Midfield</option>
-		    <option value="Attacking Midfield">Attacking Midfield</option>
-		    <option value="Left Winger">Left Winger</option>
-		    <option value="Right Winger">Right Winger</option>
-		    <option value="Centre-Forward">Centre-Forward</option>
-		    <option value="Left Midfield">Left Midfield</option>
-		    <option value="-">-</option>
-		    <option value="Right Midfield">Right Midfield</option>
-		    <option value="Second Striker">Second Striker</option>
 		  </select>
 
 		 </div>
 		 <br>
 
-		<label for="Games_Played">Games Played</label>
-  			0&nbsp;<input type="range" id="Games_Played" name="Games_Played" min="0" max="912" value="0">912
+		<label for="Games_Played">Games Played</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span id="slider_value1"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+  			0&nbsp;<input type="range" id="Games_Played" name="Games_Played" min="0" max="912" value="0" onchange="document.getElementById('slider_value1').innerHTML = this.value">912
+  			<br>
 
-  		<label for="Goals">Goals</label>
-  			0&nbsp;<input type="range" id="Goals" name="Goals" min="0" max="627" value="0">627 &nbsp;&nbsp;&nbsp;&nbsp;
+  		<label for="Goals">Goals</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span id="slider_value2"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+  			0&nbsp;<input type="range" id="Goals" name="Goals" min="0" max="627" value="0" onchange="document.getElementById('slider_value2').innerHTML = this.value">627
+  			<br>
 
-  		<label for="Assists">Assists</label>
-  			0&nbsp;<input type="range" id="Assists" name="Assists" min="0" max="261" value="0">261 &nbsp;&nbsp;&nbsp;&nbsp;
+  		<label for="Assists">Assists</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span id="slider_value2"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+  			0&nbsp;<input type="range" id="Assists" name="Assists" min="0" max="261" value="0" onchange="document.getElementById('slider_value2').innerHTML = this.value">261 
+  			<br>
 
-  		<label for="GoalsConceded">Goals Conceded</label>
-  			0&nbsp;<input type="range" id="GoalsConceded" name="GoalsConceded" min="0" max="762" value="0">762 &nbsp;&nbsp;&nbsp;&nbsp;
+  		<label for="GoalsConceded">Goals Conceded</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span id="slider_value3"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+  			0&nbsp;<input type="range" id="GoalsConceded" name="GoalsConceded" min="0" max="762" value="0" onchange="document.getElementById('slider_value4').innerHTML = this.value">762 
+  			<br>
 
-  		<label for="CleanSheets">Clean Sheets</label>
-  			0&nbsp;<input type="range" id="CleanSheets" name="CleanSheets" min="0" max="408" value="0">408 &nbsp;&nbsp;&nbsp;&nbsp;
+  		<label for="CleanSheets">Clean Sheets</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span id="slider_value3"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+  			0&nbsp;<input type="range" id="CleanSheets" name="CleanSheets" min="0" max="408" value="0" onchange="document.getElementById('slider_value5').innerHTML = this.value">408
   		<br>
-  		<br>
 
-  		<label for="Age">Age</label>
-  			17&nbsp;<input type="range" id="Age" name="Age" min="17" max="42" value="17">42 &nbsp;&nbsp;&nbsp;&nbsp;
+  		<label for="Age">Age</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span id="slider_value4"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+  			17&nbsp;<input type="range" id="Age" name="Age" min="17" max="42" value="17" onchange="document.getElementById('slider_value6').innerHTML = this.value">42 
+  			<br>
 
-  		<label for="MarketValue">Market Value (in )</label>
-  			1.00&nbsp;<input type="range" id="MarketValue" name="MarketValue" min="1.00" max="900.00" value="1.00">900.00 &nbsp;&nbsp;&nbsp;&nbsp;
+  		<label for="MarketValue">Market Value (in )</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span id="slider_value5"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+  			1.00&nbsp;<input type="range" id="MarketValue" name="MarketValue" min="1.00" max="900.00" value="1.00" onchange="document.getElementById('slider_value7').innerHTML = this.value">900.00 
+  			<br>
 
-  		<label for="Height">Height (in )</label>
-  			1.00&nbsp;<input type="range" id="Height" name="Height" min="1.00" max="2.50" value="1.00">2.50 &nbsp;&nbsp;&nbsp;&nbsp;
+  		<label for="Height">Height (in )</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span id="slider_value6"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+  			1.00&nbsp;<input type="range" id="Height" name="Height" min="1.00" max="2.50" value="1.00" onchange="document.getElementById('slider_value8').innerHTML = this.value">2.50 &nbsp;&nbsp;&nbsp;&nbsp;
   		<br>
   		<br>
 
@@ -124,6 +123,27 @@
   		</form>
       </div>
 		</div>
+
+		<section class="hero-section set-bg">
+            <table class="table table-bordered" id="myTable">Table
+                <thead>
+                <tr>
+                    <th>Player Name</th>
+
+                </tr>
+                </thead>
+                <tbody id="mydata">
+                    {%for data in r%}
+                    <tr>
+                        <td>{{data}}</td>
+                    </tr> 
+                    {%endfor%}
+                </tbody>
+            </table>
+
+
+        </div>
+        </section>
 
     <script src="static/jquery.min.js"></script>
     <script src="static/popper.js"></script>
