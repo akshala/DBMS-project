@@ -44,8 +44,84 @@
         <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5 pt-5">
         <h2 class="mb-4">Player Data</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <form action="{{ url_for('getData_player') }}" method="post">
+
+        <div class="DropDowns">
+        <label for="Position">Choose a position:</label>
+		  <select id="Position" name="Position">
+		  	<style> display:inline-block </style>
+		    <option value="Goalkeeper">Goalkeeper</option>
+		    <option value="Centre-Back">Centre-Back</option>
+		    <option value="Left-Back">Left-Back</option>
+		    <option value="Right-Back">Right-Back</option>
+		    <option value="Goalkeeper">Goalkeeper</option>
+		    <option value="Defensive Midfield">Defensive Midfield</option>
+		    <option value="Central Midfield">Central Midfield</option>
+		    <option value="Attacking Midfield">Attacking Midfield</option>
+		    <option value="Left Winger">Left Winger</option>
+		    <option value="Right Winger">Right Winger</option>
+		    <option value="Centre-Forward">Centre-Forward</option>
+		    <option value="Left Midfield">Left Midfield</option>
+		    <option value="-">-</option>
+		    <option value="Right Midfield">Right Midfield</option>
+		    <option value="Second Striker">Second Striker</option>
+		  </select>
+		  &nbsp;&nbsp;&nbsp;&nbsp;
+
+		<label for="Club">Choose a club:</label>
+		  <select id="Club" name="Club">
+		  	<!-- <style> display:inline-block </style> -->
+		    <option value="Afc Bournemouth">Afc Bournemouth</option>
+		    <option value="Arsenal">Arsenal</option>
+		    <option value="Aston Villa">Aston Villa</option>
+		    <option value="Right-Back">Right-Back</option>
+		    <option value="Goalkeeper">Goalkeeper</option>
+		    <option value="Defensive Midfield">Defensive Midfield</option>
+		    <option value="Central Midfield">Central Midfield</option>
+		    <option value="Attacking Midfield">Attacking Midfield</option>
+		    <option value="Left Winger">Left Winger</option>
+		    <option value="Right Winger">Right Winger</option>
+		    <option value="Centre-Forward">Centre-Forward</option>
+		    <option value="Left Midfield">Left Midfield</option>
+		    <option value="-">-</option>
+		    <option value="Right Midfield">Right Midfield</option>
+		    <option value="Second Striker">Second Striker</option>
+		  </select>
+
+		 </div>
+		 <br>
+
+		<label for="Games_Played">Games Played</label>
+  			0&nbsp;<input type="range" id="Games_Played" name="Games_Played" min="0" max="912" value="0">912
+
+  		<label for="Goals">Goals</label>
+  			0&nbsp;<input type="range" id="Goals" name="Goals" min="0" max="627" value="0">627 &nbsp;&nbsp;&nbsp;&nbsp;
+
+  		<label for="Assists">Assists</label>
+  			0&nbsp;<input type="range" id="Assists" name="Assists" min="0" max="261" value="0">261 &nbsp;&nbsp;&nbsp;&nbsp;
+
+  		<label for="GoalsConceded">Goals Conceded</label>
+  			0&nbsp;<input type="range" id="GoalsConceded" name="GoalsConceded" min="0" max="762" value="0">762 &nbsp;&nbsp;&nbsp;&nbsp;
+
+  		<label for="CleanSheets">Clean Sheets</label>
+  			0&nbsp;<input type="range" id="CleanSheets" name="CleanSheets" min="0" max="408" value="0">408 &nbsp;&nbsp;&nbsp;&nbsp;
+  		<br>
+  		<br>
+
+  		<label for="Age">Age</label>
+  			17&nbsp;<input type="range" id="Age" name="Age" min="17" max="42" value="17">42 &nbsp;&nbsp;&nbsp;&nbsp;
+
+  		<label for="MarketValue">Market Value (in )</label>
+  			1.00&nbsp;<input type="range" id="MarketValue" name="MarketValue" min="1.00" max="900.00" value="1.00">900.00 &nbsp;&nbsp;&nbsp;&nbsp;
+
+  		<label for="Height">Height (in )</label>
+  			1.00&nbsp;<input type="range" id="Height" name="Height" min="1.00" max="2.50" value="1.00">2.50 &nbsp;&nbsp;&nbsp;&nbsp;
+  		<br>
+  		<br>
+
+  		<input type="submit">
+  		</form>
       </div>
 		</div>
 

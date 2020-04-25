@@ -17,14 +17,14 @@ app = Flask(__name__, static_folder='./static', template_folder='.')
 mydb = mysql.connector.connect(
 	host="localhost",
 	user="root",
-	# passwd="Akshala@12",
-	passwd="",
+	passwd="Akshala@12",
+	# passwd="",
 	database="football"
 )
 
 mycursor = mydb.cursor()
 
-@app.route("/",methods = ['POST', 'GET'])
+@app.route("/",methods = ['POST', 'GET', 'OPTIONS'])
 def getPage_index():
 	if request.method == "POST":
 		uname = request.form["uname"]
@@ -43,6 +43,45 @@ def getPage_contact_us():
 @app.route("/player")
 def getPage_player():
     return render_template('player.html')
+
+@app.route("/player_data", methods=['POST'])
+def getData_player():
+	Position = request.form['Position']
+	Club = request.form['Club']
+	Games_Played = request.form['Games_Played']
+	Goals = request.form['Goals']
+	Assists = request.form['Assists']
+	GoalsConceded = request.form['GoalsConceded']
+	CleanSheets = request.form['CleanSheets']
+	Age = request.form['Age']
+	MarketValue = request.form['MarketValue']
+	Height = request.form['Height']
+
+	print(Position, Games_Played, flush=True)
+
+	sql_cmd = "SELECT * from Player where Position=\'{}\' and Club=\'{}\' and Games_Played>={} and Goals>={} and Assists>={} and GoalsConceded>={} and CleanSheets>={} and Age>={} and MarketValue>={} and Height>={}".format(Position, Club, Games_Played, Goals, Assists, GoalsConceded, CleanSheets, Age, MarketValue, Height)
+	mycursor.execute(sql_cmd)
+	data = mycursor.fetchall() # data comes in the form of a list 
+	print("data", data, flush=True)
+	result = []
+	for entries in data:
+		result.append({
+			'Player_ID': int(entries[0]),
+			'Name': str(entries[1]),
+			'Games_Played': int(entries[2]),
+			'Goals': int(entries[3]),
+			'Assists': int(entries[4]),
+			'GoalsConceded': int(entries[5]),
+			'CleanSheets': int(entries[6]),
+			'Position': str(entries[7]),
+			'Age': int(entries[8]),
+			'Contract': str(entries[9]),
+			'MarketValue': float(entries[10]),
+			'Height': float(entries[11]),
+			'Club': str(entries[12]),
+		})
+	print(result, flush=True)
+	return render_template('player.html', r=result)
 
 @app.route('/club/Premier-League', methods=['GET', 'OPTIONS'])
 def getData_club_Premier_League():
