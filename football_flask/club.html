@@ -19,7 +19,51 @@
     <link rel="stylesheet" href="../static/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="../static/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="../static/style.css" type="text/css">
-    <link rel="stylesheet" href="../static/club.css" type="text/css">
+    <style>
+    @font-face {
+        font-family: montserrat;
+        src: url("static/Montserrat-Regular.ttf");
+      }
+      #hi{
+        font-family: montserrat;
+        font-weight: 700;
+        font-size: larger;
+      }
+      table {
+        /* font-family: montserrat; */
+        font-family: montserrat;
+        font-weight: 700;
+        font-size: larger;
+        border-collapse: collapse;
+        width: 80%;
+      }
+      
+      table.center {
+          margin-left:auto; 
+          margin-right:auto;
+      }
+      
+      td, th {
+        font-family: montserrat;
+        font-weight: 700;
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      #leagueName{
+        font-family: montserrat;
+        font-weight: 700;
+        font-size: 40px;
+        text-indent: 35%;
+        margin-bottom: 50px;          
+
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="../static/club.css" type="text/css "> -->
 </head>
 
 <body>
@@ -44,7 +88,7 @@
                                 <li><a href="{{url_for('getPage_index')}}">Home</a></li>
                                 <li class="active"><a href="#">Club</a>
                                     <ul class="dropdown">
-                                        <li><a href="{{url_for('getData_club_Premier_League')}}">Premier League</a></li>
+                                        <li><a href="{{url_for('getData_club_Premier_League')}}"><p id = "hi">Premier League</p></a></li>
                                         <li><a href="{{url_for('getData_club_Serie_A')}}">Serie A</a></li>
                                         <li><a href="{{url_for('getData_club_La_Liga')}}">La Liga</a></li>
                                     </ul>
@@ -83,7 +127,7 @@
     <!-- Hero Section End -->
         <section class="hero-section set-bg">
                 <div class="container">
-                        <h1>{{league}}</h1>
+                    <h2 id = "leagueName">    {{league}}</h2>
             <table class="table table-bordered" id="myTable">
                 <thead>
                 <tr>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Player Menu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="static/style_player.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" class="order-last" class="img" style="background-image: url(static/images/bg_1.jpg);">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	        </button>
+        </div>
+        <div class="">
+		  		<h1><a href="index.html" class="logo">All Football<span>Get all stats!</span></a></h1>
+	        <ul class="list-unstyled components mb-5">
+	          <li class="active">
+	            <a href="#"><span class="fa fa-home mr-3"></span>My Profile</a>
+	          </li>
+	          <li>
+	              <a href="#"><span class="fa fa-user mr-3"></span>Comparison with other players</a>
+	          </li>
+	          <li>
+              <a href="#"><span class="fa fa-sticky-note mr-3"></span>League Stats</a>
+	          </li>
+	          <li>
+              <a href="#"><span class="fa fa-cogs mr-3"></span>Club Stats</a>
+	          </li>
+	          <li>
+              <a href="#"><span class="fa fa-paper-plane mr-3"></span> Manager Stats</a>
+	          </li>
+	        </ul>
+
+
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">Player Data</h2>
+
+        <form action="{{ url_for('getData_player') }}" method="post">
+
+        <div class="DropDowns">
+        <label for="Position">Choose a position:</label>
+		  <select id="Position" name="Position">
+		  	<style> display:inline-block </style>
+		    <option value="Goalkeeper">Goalkeeper</option>
+		    <option value="Centre-Back">Centre-Back</option>
+		    <option value="Left-Back">Left-Back</option>
+		    <option value="Right-Back">Right-Back</option>
+		    <option value="Goalkeeper">Goalkeeper</option>
+		    <option value="Defensive Midfield">Defensive Midfield</option>
+		    <option value="Central Midfield">Central Midfield</option>
+		    <option value="Attacking Midfield">Attacking Midfield</option>
+		    <option value="Left Winger">Left Winger</option>
+		    <option value="Right Winger">Right Winger</option>
+		    <option value="Centre-Forward">Centre-Forward</option>
+		    <option value="Left Midfield">Left Midfield</option>
+		    <option value="-">-</option>
+		    <option value="Right Midfield">Right Midfield</option>
+		    <option value="Second Striker">Second Striker</option>
+		  </select>
+		  &nbsp;&nbsp;&nbsp;&nbsp;
+
+		<label for="Club">Choose a club:</label>
+		  <select id="Club" name="Club">
+		  	<!-- <style> display:inline-block </style> -->
+		    <option value="Afc Bournemouth">Afc Bournemouth</option>
+		    <option value="Arsenal">Arsenal</option>
+		    <option value="Aston Villa">Aston Villa</option>
+		    <option value="Right-Back">Right-Back</option>
+		    <option value="Goalkeeper">Goalkeeper</option>
+		    <option value="Defensive Midfield">Defensive Midfield</option>
+		    <option value="Central Midfield">Central Midfield</option>
+		    <option value="Attacking Midfield">Attacking Midfield</option>
+		    <option value="Left Winger">Left Winger</option>
+		    <option value="Right Winger">Right Winger</option>
+		    <option value="Centre-Forward">Centre-Forward</option>
+		    <option value="Left Midfield">Left Midfield</option>
+		    <option value="-">-</option>
+		    <option value="Right Midfield">Right Midfield</option>
+		    <option value="Second Striker">Second Striker</option>
+		  </select>
+
+		 </div>
+		 <br>
+
+		<label for="Games_Played">Games Played</label>
+  			0&nbsp;<input type="range" id="Games_Played" name="Games_Played" min="0" max="912" value="0">912
+
+  		<label for="Goals">Goals</label>
+  			0&nbsp;<input type="range" id="Goals" name="Goals" min="0" max="627" value="0">627 &nbsp;&nbsp;&nbsp;&nbsp;
+
+  		<label for="Assists">Assists</label>
+  			0&nbsp;<input type="range" id="Assists" name="Assists" min="0" max="261" value="0">261 &nbsp;&nbsp;&nbsp;&nbsp;
+
+  		<label for="GoalsConceded">Goals Conceded</label>
+  			0&nbsp;<input type="range" id="GoalsConceded" name="GoalsConceded" min="0" max="762" value="0">762 &nbsp;&nbsp;&nbsp;&nbsp;
+
+  		<label for="CleanSheets">Clean Sheets</label>
+  			0&nbsp;<input type="range" id="CleanSheets" name="CleanSheets" min="0" max="408" value="0">408 &nbsp;&nbsp;&nbsp;&nbsp;
+  		<br>
+  		<br>
+
+  		<label for="Age">Age</label>
+  			17&nbsp;<input type="range" id="Age" name="Age" min="17" max="42" value="17">42 &nbsp;&nbsp;&nbsp;&nbsp;
+
+  		<label for="MarketValue">Market Value (in )</label>
+  			1.00&nbsp;<input type="range" id="MarketValue" name="MarketValue" min="1.00" max="900.00" value="1.00">900.00 &nbsp;&nbsp;&nbsp;&nbsp;
+
+  		<label for="Height">Height (in )</label>
+  			1.00&nbsp;<input type="range" id="Height" name="Height" min="1.00" max="2.50" value="1.00">2.50 &nbsp;&nbsp;&nbsp;&nbsp;
+  		<br>
+  		<br>
+
+  		<input type="submit">
+  		</form>
+      </div>
+		</div>
+
+    <script src="static/jquery.min.js"></script>
+    <script src="static/popper.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+    <script src="static/main.js"></script>
+  </body>
+</html>

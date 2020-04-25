@@ -1,5 +1,17 @@
+@font-face {
+  font-family: montserrat;
+  src: url("static/Montserrat-Regular.ttf");
+}
+#hi{
+  font-family: montserrat;
+  font-weight: 700;
+  font-size: larger;
+}
 table {
-  font-family: arial, sans-serif;
+  /* font-family: montserrat; */
+  font-family: montserrat;
+  font-weight: 700;
+  font-size: larger;
   border-collapse: collapse;
   width: 80%;
 }

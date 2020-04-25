@@ -17,8 +17,8 @@ app = Flask(__name__, static_folder='./static', template_folder='.')
 mydb = mysql.connector.connect(
 	host="localhost",
 	user="root",
-	passwd="Akshala@12",
-	# passwd="",
+	# passwd="Akshala@12",
+	passwd="",
 	database="football"
 )
 
@@ -33,6 +33,8 @@ def getPage_index():
 		print(uname,password)
 		if (uname == "player" and password == "Player@123"):
 			return render_template('player.html')
+		elif (uname == "manager" and password == "Manager@123"):
+			return render_template('manager.html')
 	print("fkn hell")
 	return render_template('index.html')
 
