@@ -20,27 +20,30 @@
     <link rel="stylesheet" href="../static/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="../static/style.css" type="text/css">
     <style>
+    
     @font-face {
         font-family: montserrat;
         src: url("static/Montserrat-Regular.ttf");
       }
       table {
         /* font-family: montserrat; */
+        margin-top: 50px;
         font-family: montserrat;
-        font-weight: 700;
-        font-size: larger;
+        font-weight: 900;
+        font-size: 20px;
         border-collapse: collapse;
         width: 80%;
       }
       
       table.center {
+          /* margin-top: ; */
           margin-left:auto; 
           margin-right:auto;
       }
       
       td, th {
         font-family: montserrat;
-        font-weight: 700;
+        font-weight: 800;
         border: 1px solid #dddddd;
         text-align: center;
         padding: 8px;
@@ -49,27 +52,28 @@
       tr:nth-child(even) {
         background-color: #dddddd;
       }
-     /* #leagueName{
+     #upcoming{
         font-family: montserrat;
         font-weight: 700;
         font-size: 40px;
-        text-indent: 35%;
-        margin-bottom: 50px;          
+        text-indent: 30%;
+        margin-top: 105%;
+        /* margin-bottom: px;           */
 
-      }*/
+      }
     </style>
     <!-- <link rel="stylesheet" href="../static/club.css" type="text/css "> -->
 </head>
 
-<body>
+
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
     </div>
-
+    <body>
     <!-- Header Section Begin -->
     <header class="header-section">
-        <div class="header__nav">
+        <div class="header__nav" id="nav">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2">
@@ -108,11 +112,11 @@
     <!-- Breadcrumb Section Begin -->
     <!-- Breadcrumb Section End -->
 
-    
-    <!-- Hero Section End -->
+        <!-- <h2 id = "headding"> Matches </h2> -->
         <section class="hero-section set-bg">
                 <div class="container">
-                    <h2 id = "results">    Upcoming Matches</h2>
+                    <h2 id = "upcoming">    Upcoming Matches</h2>
+                    <!-- <h1>    Upcoming Matches</h1> -->
             <table class="table table-bordered" id="myTable">
                 <thead>
                 <tr>
@@ -132,10 +136,6 @@
                     {%endfor%}
                 </tbody>
             </table>
-
-            <!-- {% for data in r %}
-                {{ data.Club_name }}
-            {%  endfor %} -->
 
 
         </div>

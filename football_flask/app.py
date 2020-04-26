@@ -35,7 +35,7 @@ def getPage_index():
 			return redirect(url_for('getData_player'))
 	print("fkn hell")
 	return render_template('index.html', r=[])
-	
+
 @app.route("/contact_us")
 def getPage_contact_us():
     return render_template('contact.html')
@@ -172,6 +172,7 @@ def get_upcoming_matches():
 			'Away_team': str(entries[1]),
 			'Date': str(entries[2]),
 		})
+	# result = result[:13]
 	# print("json data:", data, flush=True)
 	return render_template('upcoming_matches.html', r=result)
 
