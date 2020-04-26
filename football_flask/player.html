@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -182,7 +183,7 @@
   		<input type="submit" onclick="show()">
   		</form>
       </div>
-            <table class="table table-bordered">
+            <table id="playerTable" class="table table-bordered">
                 <thead>
                 <tr>
                     <th>Player Name</th>
@@ -192,26 +193,50 @@
                 <tbody id="mydata">
                     {%for data in r%}
                     <tr>
-                        <td>{{data['Name']}}</td>
+                        <td><a href="#" Name="{{data['Name']}}", Player_ID="{{data['Player_ID']}}", Games_Played="{{data['Games_Played']}}", Goals="{{data['Goals']}}", Assists="{{data['Assists']}}", GoalsConceded="{{data['GoalsConceded']}}", CleanSheets="{{data['CleanSheets']}}", Age="{{data['Age']}}", MarketValue="{{data['MarketValue']}}", Height="{{data['Height']}}">{{data['Name']}}</td>
                     </tr> 
                     {%endfor%}
                 </tbody>
             </table>
         </div>
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <script src="static/bootstrap.min.js"></script>
 
     <script>
         function show()
       {
-          if (document.getElementById("table").style.display === "none")
-              document.getElementById("table").style.display="block";
+          if (document.getElementById("playerTable").style.display === "none")
+              document.getElementById("playerTable").style.display="block";
           else
-              document.getElementById("table").style.display="none";
+              document.getElementById("playerTable").style.display="none";
       }
     </script>
 
-    <script src="static/jquery.min.js"></script>
-    <script src="static/popper.js"></script>
-    <script src="static/bootstrap.min.js"></script>
-    <script src="static/main.js"></script>
+    <script>
+  //   	$(document).ready(function() {
+		// 	$(".playerTable").on('click','tr', function () { 
+		// 		// var dataString = $('td', this).attr('Player_ID');
+		// 		alert("dataString");
+		// 	});
+
+		// });
+		$(document).ready(function(){
+		  $("td").click(function(){
+		  	dataString = "Name: " + $("a", this).attr('Name') + "\n";
+		  	dataString += "Player ID: " + $("a", this).attr('Player_ID') + "\n";
+		  	dataString += "Games Played: " + $("a", this).attr('Games_Played') + "\n";
+		  	dataString += "Goals: " + $("a", this).attr('Goals') + "\n";
+		  	dataString += "Assists: " + $("a", this).attr('Assists') + "\n";
+		  	dataString += "GoalsConceded: " + $("a", this).attr('GoalsConceded') + "\n";
+		  	dataString += "CleanSheets: " + $("a", this).attr('CleanSheets') + "\n";
+		  	dataString += "Age: " + $("a", this).attr('Age') + "\n";
+		  	dataString += "MarketValue: " + $("a", this).attr('MarketValue') + "\n";
+		  	dataString += "Height: " + $("a", this).attr('Height') + "\n";
+		  	console.log(dataString);
+		    alert(dataString);
+		  });
+		});
+    </script>
+
   </body>
 </html>
