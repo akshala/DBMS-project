@@ -49,14 +49,9 @@
                                         <li><a href="{{url_for('getData_club_La_Liga')}}">La Liga</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Upcoming Matches</a>
-                                    <ul class="dropdown">
-                                        <li><a href="./schedule.html">Premier League</a></li>
-                                        <li><a href="./schedule.html">La Liga</a></li>
-                                        <li><a href="./schedule.html">Serie A</a></li>
-                                    </ul>
+                                <li><a href="{{url_for('get_upcoming_matches')}}">Upcoming Matches</a>
                                 </li>
-                                <li><a href="#">Results</a>
+                                <li><a href="{{url_for('get_results')}}">Results</a>
                                 </li>
                                 <li><a href="{{url_for('getPage_contact_us')}}">Contact Us</a></li>
                             </ul>

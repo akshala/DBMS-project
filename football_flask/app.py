@@ -35,7 +35,7 @@ def getPage_index():
 			return redirect(url_for('getData_player'))
 	print("fkn hell")
 	return render_template('index.html', r=[])
-
+	
 @app.route("/contact_us")
 def getPage_contact_us():
     return render_template('contact.html')
@@ -139,6 +139,41 @@ def getData_club_La_Liga():
 		})
 	# print("json data:", data, flush=True)
 	return render_template('club.html', r=result, league="La Liga")
+
+@app.route('/results', methods=['GET', 'OPTIONS'])
+def get_results():
+	sql_cmd = "SELECT Home_team, Away_team, Date, Result from Match_Details where Date != '-:-' and Date != 'ppd.'"
+	# print(sql_cmd, flush=True)
+	mycursor.execute(sql_cmd)
+	data = mycursor.fetchall() # data comes in the form of a list 
+	print(data, flush=True)
+	result = []
+	for entries in data:
+		result.append({
+			'Home_team': str(entries[0]),
+			'Away_team': str(entries[1]),
+			'Result': str(entries[2]),
+			'Date': str(entries[3])
+		})
+	# print("json data:", data, flush=True)
+	return render_template('result.html', r=result)
+
+@app.route('/upcoming_matches', methods=['GET', 'OPTIONS'])
+def get_upcoming_matches():
+	sql_cmd = "SELECT Home_team, Away_team, Result from Match_Details where Date = '-:-'"
+	# print(sql_cmd, flush=True)
+	mycursor.execute(sql_cmd)
+	data = mycursor.fetchall() # data comes in the form of a list 
+	print(data, flush=True)
+	result = []
+	for entries in data:
+		result.append({
+			'Home_team': str(entries[0]),
+			'Away_team': str(entries[1]),
+			'Date': str(entries[2]),
+		})
+	# print("json data:", data, flush=True)
+	return render_template('upcoming_matches.html', r=result)
 
 if __name__ == "__main__":
     app.run(debug = True)
