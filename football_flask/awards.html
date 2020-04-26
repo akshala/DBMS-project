@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="../static/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="../static/style.css" type="text/css">
     <style>
-    
     @font-face {
         font-family: montserrat;
         src: url("static/Montserrat-Regular.ttf");
@@ -29,21 +28,21 @@
         /* font-family: montserrat; */
         margin-top: 50px;
         font-family: montserrat;
-        font-weight: 900;
-        font-size: 20px;
+        font-weight: 700;
+        font-size: larger;
         border-collapse: collapse;
         width: 80%;
+        /* margin-top: 60; */
       }
       
       table.center {
-          /* margin-top: ; */
           margin-left:auto; 
           margin-right:auto;
       }
       
       td, th {
         font-family: montserrat;
-        font-weight: 800;
+        font-weight: 700;
         border: 1px solid #dddddd;
         text-align: center;
         padding: 8px;
@@ -52,28 +51,34 @@
       tr:nth-child(even) {
         background-color: #dddddd;
       }
-     #upcoming{
+      #upcoming{
         font-family: montserrat;
         font-weight: 700;
         font-size: 40px;
-        text-indent: 30%;
-        margin-top: 105%;
-        /* margin-bottom: px;           */
+        text-indent: 42%;
+        margin-top: 5670%;
+      }
+      #results{
+        font-family: montserrat;
+        font-weight: 700;
+        font-size: 40px;
+        /* text-indent: 50%; */
+        margin-top: 50%;
 
       }
     </style>
     <!-- <link rel="stylesheet" href="../static/club.css" type="text/css "> -->
 </head>
 
-
+<body>
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
     </div>
-    <body>
+
     <!-- Header Section Begin -->
     <header class="header-section">
-        <div class="header__nav" id="nav">
+        <div class="header__nav">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2">
@@ -92,11 +97,11 @@
                                         <li><a href="{{url_for('getData_club_La_Liga')}}">La Liga</a></li>
                                     </ul>
                                 </li>
-                                <li class="active"><a href="#">Upcoming Matches</a>
+                                <li><a href="{{url_for('get_upcoming_matches')}}">Upcoming Matches</a>
                                 </li>
                                 <li><a href="{{url_for('get_results')}}">Results</a></li>
                                 </li>
-                                <li><a href="{{url_for('get_awards')}}">Awards</a>
+                                <li class="active"><a href="#">Awards</a>
                                 </li>
                                 <li><a href="{{url_for('getPage_contact_us')}}">Contact Us</a></li>
                             </ul>
@@ -110,38 +115,13 @@
         </div>
     </header>
     <!-- Header End -->
-
-    <!-- Breadcrumb Section Begin -->
-    <!-- Breadcrumb Section End -->
-
-        <!-- <h2 id = "headding"> Matches </h2> -->
-        <section class="hero-section set-bg">
-                <div class="container">
-                    <h2 id = "upcoming">    Upcoming Matches</h2>
-                    <!-- <h1>    Upcoming Matches</h1> -->
-            <table class="table table-bordered" id="myTable">
-                <thead>
-                <tr>
-                    <th>Home Team</th>
-                    <th>Away Team</th>
-                    <th>Date</th>
-
-                </tr>
-                </thead>
-                <tbody id="mydata">
-                    {%for data in r%}
-                    <tr>
-                        <td>{{data["Home_team"]}}</td>
-                        <td>{{data.Away_team}}</td>
-                        <td>{{data.Date}}</td>
-                    </tr> 
-                    {%endfor%}
-                </tbody>
-            </table>
-
-
+    <!-- Hero Section End -->
+        <section class="hero-section set-bg" data-setbg="static/hero/trophie.jpg">
+        <div class="container">
         </div>
         </section>
+        <br>
+        <p style="font-size: 150%; color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Player of the Season &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Goalkeeper of the Season &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manager of the Season</p>
 
     <!-- Js Plugins -->
     <script src="../static/jquery-3.3.1.min.js"></script>
