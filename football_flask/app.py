@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, abort, make_response,request
+from flask import Flask, render_template, jsonify, abort, make_response,request,redirect
 from flask import request, url_for
 from flask import request, current_app
 from flask_restful import Resource, Api
@@ -17,8 +17,8 @@ app = Flask(__name__, static_folder='./static', template_folder='.')
 mydb = mysql.connector.connect(
 	host="localhost",
 	user="root",
-	passwd="Akshala@12",
-	# passwd="",
+	# passwd="Akshala@12",
+	passwd="",
 	database="football"
 )
 
@@ -26,15 +26,15 @@ mycursor = mydb.cursor()
 
 @app.route("/",methods = ['POST', 'GET', 'OPTIONS'])
 def getPage_index():
-	# if request.method == "POST":
-	# 	uname = request.form["uname"]
-	# 	password = request.form["pwd"]
-	# 	print("yes")
-	# 	print(uname,password)
-	# 	if (uname == "player" and password == "Player@123"):
-	# 		return render_template('player.html', r=[])
-	# print("fkn hell")
-	return render_template('player.html', r=[])
+	if request.method == "POST":
+		uname = request.form["uname"]
+		password = request.form["pwd"]
+		print("yes")
+		print(uname,password)
+		if (uname == "player" and password == "Player@123"):
+			return redirect(url_for('getData_player'))
+	print("fkn hell")
+	return render_template('index.html', r=[])
 
 @app.route("/contact_us")
 def getPage_contact_us():
@@ -86,6 +86,7 @@ def getData_player():
 			})
 		print(result, flush=True)
 		return render_template('player.html', r=result)
+	return render_template("player.html",r = [])
 
 @app.route('/club/Premier-League', methods=['GET', 'OPTIONS'])
 def getData_club_Premier_League():
