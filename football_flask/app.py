@@ -57,14 +57,13 @@ def getData_manager():
 		elif (Formation == "None"):
 			sql_cmd = "select * from Manager as M where M.Manager_ID in (select C1.Manager_ID from Club as C1 where C1.Club_name =\'{}\' and C1.Manager_ID =M.Manager_ID);".format(Club)
 			flag = True
-			# sql_cmd = "SELECT * from Manager where Club=\'{}\' and Age>={} and Win_Percentage>={}".format(Club,Age, win)
 		else:
 			sql_cmd = "select * from Manager as M where M.Manager_ID in (select C1.Manager_ID from Club as C1 where C1.Club_name =\'{}\' and C1.Manager_ID =M.Manager_ID);".format(Club)
 			flag = True
 		print(sql_cmd)
 		mycursor.execute(sql_cmd)
 		data = mycursor.fetchall() # data comes in the form of a list 
-		print("data", data, flush=True)
+		# print("data", data, flush=True)
 		result = []
 		for entries in data:
 			result.append({
@@ -74,29 +73,30 @@ def getData_manager():
 				'Country': str(entries[3]),
 				'Formation': str(entries[4]),
 				'Contract': str(entries[5]),
-				'Win Percentage': int(entries[6]),
+				'WinPercentage': int(entries[6]),
 			})
 		if (flag):
 			ans = result[0]
 			if (Formation !="None"):
 				age = int(ans["Age"])
-				Win = float(ans["Win Percentage"])
-				if (age>= Age and Win>=win):
+				Win = float(ans["WinPercentage"])
+				forms = str(ans["Formation"])
+				if (age>= Age and Win>=win and forms == Formation):
 					pass
 				else:
 					result = []
 			else:
 				age = int(ans["Age"])
-				Win = float(ans["Win Percentage"])
-				forms = str(ans["Formation"])
-				if (age>= Age and Win>=win and forms == Formation):
+				Win = float(ans["WinPercentage"])
+
+				if (age>= Age and Win>=win):
 					pass
 				else:
 					print("OH NO")
 					result = []
 
-		print(result, flush=True)
-		render_template("manager.html",r=result)
+		print("ANS: ",result)
+		return render_template("manager.html",r=result)
 
 		
 	return render_template("manager.html",r=[])

@@ -13,7 +13,7 @@
   <body>
 		
 		<div class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar" class="order-last" class="img" style="background-image: url(static/images/bg_1.jpg);">
+			<nav id="sidebar" class="order-last" class="img" style="background-image: url(static/bg_1.jpg);">
 				<div class="custom-menu">
 					<button type="button" id="sidebarCollapse" class="btn btn-primary">
 	        </button>
@@ -142,10 +142,10 @@
   		<br>
   		<br>
 
-  		<input type="submit">
+  		<input type="submit" onclick = "show()">
   		</form>
       </div>
-	  <table id="playerTable" class="table table-bordered">
+	  <table id="managerTable" class="table table-bordered">
                 <thead>
                 <tr>
                     <th>Manager Name</th>
@@ -155,7 +155,7 @@
                 <tbody id="mydata">
                     {%for data in r%}
                     <tr>
-                        <td><a href="#" Name="{{data['Name']}}", Age="{{data['Age']}}", Formation="{{data['Formation']}}", Country="{{data['Country']}},Contract="{{data['Contract']}}",Win Percentage="{{data['Win Percentage']}}">{{data['Name']}}</td>
+                        <td id ="hello"><a href="#" Name="{{data['Name']}}", Age="{{data['Age']}}", Formation="{{data['Formation']}}", Country="{{data['Country']}}",Contract="{{data['Contract']}}", win="{{data['WinPercentage']}}">{{data['Name']}}</td>
                     </tr> 
                     {%endfor%}
                 </tbody>
@@ -174,11 +174,39 @@
 	<script>
         function show()
       {
-          if (document.getElementById("playerTable").style.display === "none")
-              document.getElementById("playerTable").style.display="block";
-          else
-              document.getElementById("playerTable").style.display="none";
+		  /* alert(r) */
+		  /* alert(document.getElementById("managerTable").style.display) */
+		  /* document.getElementById("managerTable").style.display = "block" */
+          if (document.getElementById("managerTable").style.display === "none"){
+			
+			document.getElementById("managerTable").style.display="block";
+		  }
+          else{
+			document.getElementById("managerTable").style.display="none";
+              
+			  /* console.log("bhe") */
+			  /* alert("no") */
+		  }
       }
+    </script>
+	<script>
+		$(document).ready(function(){
+		  $("td").click(function(){
+			/* alert($("a", this).attr('Name')) */
+		  	dataString = "Name: " + $("a", this).attr('Name') + "\n";
+		  	/* dataString += "Player ID: " + $("a", this).attr('Player_ID') + "\n"; */
+		  	/* dataString += "Games Played: " + $("a", this).attr('Games_Played') + "\n"; */
+		  	/* dataString += "Goals: " + $("a", this).attr('Goals') + "\n"; */
+		  	/* dataString += "Assists: " + $("a", this).attr('Assists') + "\n"; */
+		  	dataString += "Win Percentage: " + $("a", this).attr('win') + "\n";
+		  	dataString += "Age: " + $("a", this).attr('Age') + "\n";
+			  dataString += "Country: " + $("a", this).attr('Country') + "\n";
+		  	dataString += "Formation: " + $("a", this).attr('Formation') + "\n";
+
+		  	console.log(dataString);
+		    alert(dataString);
+		  });
+		});
     </script>
   </body>
 </html>
