@@ -131,22 +131,54 @@
 		 </div>
 		 <br>
 
-  		<label for="Age">Age</label>
-  			38&nbsp;<input type="range" id="Age" name="Age" min="38" max="72" value="38">72 &nbsp;&nbsp;&nbsp;&nbsp;
+		 <label for="Age">Age</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span id="slider_value6"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+  			38&nbsp;<input type="range" id="Age" name="Age" min="38" max="72" value="38" onchange="document.getElementById('slider_value6').innerHTML = this.value">72 
+  			<br>
 
-  		<label for="Win Percentage">Win Percentage</label>
-  			0&nbsp;<input type="range" id="Win Percentage" name="Win Percentage" min="0.00" max="100.00" value="0.00">100.00 &nbsp;&nbsp;&nbsp;&nbsp;
-
+			  <label for="Win Percentage">Win Percentage</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span id="slider_value8"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+  			1.00&nbsp;<input type="range" id="Win Percentage" name="Win Percentage" min="1.00" max="100.0" value="1.00" onchange="document.getElementById('slider_value8').innerHTML = this.value">100.00 &nbsp;&nbsp;&nbsp;&nbsp;
+  		<br>
   		<br>
 
   		<input type="submit">
   		</form>
       </div>
+	  <table id="playerTable" class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Manager Name</th>
+
+                </tr>
+                </thead>
+                <tbody id="mydata">
+                    {%for data in r%}
+                    <tr>
+                        <td><a href="#" Name="{{data['Name']}}", Age="{{data['Age']}}", Formation="{{data['Formation']}}", Country="{{data['Country']}},Contract="{{data['Contract']}}",Win Percentage="{{data['Win Percentage']}}">{{data['Name']}}</td>
+                    </tr> 
+                    {%endfor%}
+                </tbody>
+            </table>
+        </div>
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+
 		</div>
+
 
     <script src="static/jquery.min.js"></script>
     <script src="static/popper.js"></script>
     <script src="static/bootstrap.min.js"></script>
     <script src="static/main.js"></script>
+	<script>
+        function show()
+      {
+          if (document.getElementById("playerTable").style.display === "none")
+              document.getElementById("playerTable").style.display="block";
+          else
+              document.getElementById("playerTable").style.display="none";
+      }
+    </script>
   </body>
 </html>
