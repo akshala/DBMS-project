@@ -1,0 +1,9 @@
+body {
+  background: -webkit-linear-gradient(top, #f2f9fe 0%,#d6f0fd 100%);
+  min-height: 100vh;
+}
+
+table {
+  /* font-family: montserrat; */
+  background: white;
+}

@@ -26,16 +26,16 @@
 	            <a href="#"><span class="fa fa-home mr-3"></span>My Profile</a>
 	          </li>
 	          <li>
-	              <a href="#"><span class="fa fa-user mr-3"></span>Comparison with other players</a>
+	              <a href="{{url_for('getData_player')}}"><span class="fa fa-user mr-3"></span>Search Player stats</a>
 	          </li>
 	          <li>
-              <a href="#"><span class="fa fa-sticky-note mr-3"></span>League Stats</a>
+              <a href="{{url_for('getData_club')}}"><span class="fa fa-cogs mr-3"></span>Club Stats</a>
 	          </li>
 	          <li>
-              <a href="#"><span class="fa fa-cogs mr-3"></span>Club Stats</a>
+              <a href="{{url_for('getData_manager')}}"><span class="fa fa-paper-plane mr-3"></span> Manager Stats</a>
 	          </li>
 	          <li>
-              <a href="#"><span class="fa fa-paper-plane mr-3"></span> Manager Stats</a>
+              <a href="{{url_for('getData_referee')}}"><span class="fa fa-sticky-note mr-3"></span> Referee Stats</a>
 	          </li>
 	        </ul>
 

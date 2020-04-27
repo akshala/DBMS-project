@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Player Menu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="static/style_player.css">
+		<link rel="stylesheet" href="static/afterLogin_club.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" class="order-last" class="img" style="background-image: url(static/bg_1.jpg);">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	        </button>
+        </div>
+        <div class="">
+		  		<h1><a href="index.html" class="logo">All Football<span>Get all stats!</span></a></h1>
+	        <ul class="list-unstyled components mb-5">
+	          <li class="active">
+	            <a href="#"><span class="fa fa-home mr-3"></span>My Profile</a>
+	          </li>
+	          <li>
+	              <a href="{{url_for('getData_player')}}"><span class="fa fa-user mr-3"></span>Search Player stats</a>
+	          </li>
+	          <li>
+              <a href="{{url_for('getData_club')}}"><span class="fa fa-cogs mr-3"></span>Club Stats</a>
+	          </li>
+	          <li>
+              <a href="{{url_for('getData_manager')}}"><span class="fa fa-paper-plane mr-3"></span> Manager Stats</a>
+	          </li>
+	          <li>
+              <a href="{{url_for('getData_referee')}}"><span class="fa fa-sticky-note mr-3"></span> Referee Stats</a>
+	          </li>
+	        </ul>
+
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <h1 class="display-4">{{club}}</h1>
+
+    <div class="">
+        <!-- <header class="py-5">
+            <h1 class="display-4">Bootstrap add, edit, delete buttons</h1>
+            <p class="font-italic mb-1">Use bootstrap button variants to create call to action buttons inside a table, that's just for design, I'm sure you can make them work.</p>
+            <p class="font-italic">Snippet by
+                <a class="text-white" href="https://bootstrapious.com/">
+                    <u>Bootstrapious</u>
+                </a>
+            </p>
+        </header>
+ -->
+
+       <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Player ID</th>
+                                        <th>Player</th>
+                                        <th>Position</th>
+                                        <th>Games_Played</th>
+                                        <th>Goals</th>
+                                        <th>Assists</th>
+                                        <th>Goals Conceded</th>
+                                        <th>Clean Sheets</th>
+                                        <th>Age</th>
+                                        <th>Market Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                	{%for data in r%}
+                                    <tr>
+                                        <td>{{data['Player_ID']}}</td>
+                                        <td>{{data['Name']}}</td>
+                                        <td>{{data['Position']}}</td>
+                                        <td>{{data['Games_Played']}}</td>
+                                        <td>{{data['Goals']}}</td>
+                                        <td>{{data['Assists']}}</td>
+                                        <td>{{data['GoalsConceded']}}</td>
+                                        <td>{{data['CleanSheets']}}</td>
+                                        <td>{{data['Age']}}</td>
+                                        <td>{{data['MarketValue']}}</td>
+                                        <td><button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><a href="{{url_for('delete_player', Player_ID= data['Player_ID'], Club= data['Club'])}}"><i class="fa fa-trash"></i></button></td>
+                                    </tr>
+                                    {%endfor%}
+                                </tbody>
+                            </table>
+
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+
+    <script>
+        function show()
+      {
+          if (document.getElementById("playerTable").style.display === "none"){
+              document.getElementById("playerTable").style.display="block";
+			  alert("helo")
+		  }
+          else{
+              document.gehellotElementById("playerTable").style.display="none";
+			  alert("no")
+		  }
+      }
+    </script>
+
+    <script>
+    	$(function () {
+	   		$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+
+  </body>
+</html>
