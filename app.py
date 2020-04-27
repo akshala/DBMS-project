@@ -29,6 +29,7 @@ def getPage_index():
 	if request.method == "POST":
 		uname = request.form["uname"]
 		password = request.form["pwd"]
+		print("yes")
 		print(uname,password)
 		if (uname == "player" and password == "Player@123"):
 			return redirect(url_for('getData_player'))
@@ -42,8 +43,6 @@ def getPage_index():
 			return redirect(url_for("get_club_after_login", club=uname))
 	print("fkn hell")
 	return render_template('index.html', r=[])
-
-	return redirect(url_for("get_club_after_login", club="Arsenal"))
 
 @app.route("/contact_us")
 def getPage_contact_us():
