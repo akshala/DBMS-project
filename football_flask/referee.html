@@ -44,9 +44,9 @@
 
         <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5 pt-5">
-        <h2 class="mb-4">Club stats</h2>
+        <h2 class="mb-4">Referee Stats</h2>
 
-        <form action="{{ url_for('getData_club') }}" method="post">
+        <form action="{{ url_for('getData_referee') }}" method="post">
 
         <div class="DropDowns">
         <label for="League">Choose a league:</label>
@@ -62,24 +62,35 @@
 		 </div>
 		 <br>
 
+     <label for="Yellow_cards">Yellow Cards</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <span id="slider_value1"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+          0&nbsp;<input type="range" id="Yellow_cards" name="Yellow_cards" min="0" max="1874" value="0" onchange="document.getElementById('slider_value1').innerHTML = this.value">1874
+          <br>
+
+      <label for="Red_cards">Red Cards</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <span id="slider_value2"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+          0&nbsp;<input type="range" id="Red_cards" name="Red_cards" min="0" max="62" value="0" onchange="document.getElementById('slider_value2').innerHTML = this.value">62
+          <br>
+
+      <label for="Penalties_given">Penalties Given</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <span id="slider_value3"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+          0&nbsp;<input type="range" id="Penalties_given" name="Penalties_given" min="0" max="148" value="0" onchange="document.getElementById('slider_value3').innerHTML = this.value">148
+          <br>
+
   		<input type="submit" onclick="show()">
   		</form>
       </div>
             <table id="clubTable" class="table table-bordered">
                 <thead>
                 <tr>
-                    <th>Club</th>
-                    <th>Manager</th>
-                    <th>Stadium</th>
+                    <th>Referee Name</th>
 
                 </tr>
                 </thead>
                 <tbody id="mydata">
                     {%for data in r%}
                     <tr>
-                        <td>{{data['Club_name']}}</td>
-                        <td>{{data['Manager_name']}}</td>
-                        <td>{{data['Stadium']}}</td>
+                        <td><a href="#" Name="{{data['Referee_name']}}", Referee_ID="{{data['Referee_ID']}}", League_name="{{data['League_name']}}", Yellow_cards="{{data['Yellow_cards']}}", Red_cards="{{data['Red_cards']}}", Penalties_given="{{data['Penalties_given']}}">{{data['Referee_name']}}</td>
                     </tr> 
                     {%endfor%}
                 </tbody>
@@ -96,6 +107,28 @@
           else
               document.getElementById("clubTable").style.display="none";
       }
+    </script>
+
+    <script>
+  //    $(document).ready(function() {
+    //  $(".playerTable").on('click','tr', function () { 
+    //    // var dataString = $('td', this).attr('Player_ID');
+    //    alert("dataString");
+    //  });
+
+    // });
+    $(document).ready(function(){
+      $("td").click(function(){
+        dataString = "Name: " + $("a", this).attr('Referee_name') + "\n";
+        dataString += "Referee ID: " + $("a", this).attr('Referee_ID') + "\n";
+        dataString += "League: " + $("a", this).attr('League_name') + "\n";
+        dataString += "Yeloow cards: " + $("a", this).attr('Yellow_cards') + "\n";
+        dataString += "Red cards: " + $("a", this).attr('Red_cards') + "\n";
+        dataString += "Penalties given: " + $("a", this).attr('Penalties_given') + "\n";
+        console.log(dataString);
+        alert(dataString);
+      });
+    });
     </script>
 
   </body>

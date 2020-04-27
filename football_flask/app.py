@@ -17,8 +17,8 @@ app = Flask(__name__, static_folder='./static', template_folder='.')
 mydb = mysql.connector.connect(
 	host="localhost",
 	user="root",
-	# passwd="Akshala@12",
-	passwd="",
+	passwd="Akshala@12",
+	# passwd="",
 	database="football"
 )
 
@@ -35,12 +35,69 @@ def getPage_index():
 			return redirect(url_for('getData_player'))
 		elif (uname == "manager" and password == "Manager@123"):
 			return redirect(url_for("getData_manager"))
+		elif (uname == "league" and password == "League@123"):
+			return redirect(url_for("getData_club"))
+		elif (uname == "referee" and password == "Referee@123"):
+			return redirect(url_for("getData_referee"))
 	print("fkn hell")
 	return render_template('index.html', r=[])
 
 @app.route("/contact_us")
 def getPage_contact_us():
     return render_template('contact.html')
+
+@app.route("/refereeData", methods=['POST', 'GET'])
+def getData_referee():
+	if request.method == 'POST':
+		League = request.form['League']
+		Yellow_cards = request.form['Yellow_cards']
+		Red_cards = request.form['Red_cards']
+		Penalties_given = request.form['Penalties_given']
+
+		if(League == 'None'):
+			sql_cmd = "SELECT * from Referee where Yellow_cards>={} and Red_cards>={} and Penalties_given>={}".format(Yellow_cards, Red_cards, Penalties_given) 
+		else:
+			sql_cmd = "SELECT * from Referee where League_name=\'{}\' and Yellow_cards>={} and Red_cards>={} and Penalties_given>={}".format(League, Yellow_cards, Red_cards, Penalties_given) 
+		mycursor.execute(sql_cmd)
+		data = mycursor.fetchall() # data comes in the form of a list 
+		print("data", data, flush=True)
+		result = []
+		for entries in data:
+			result.append({
+				'Referee_id': int(entries[0]),
+				'Referee_name': str(entries[1]),
+				'League_name': str(entries[2]),
+				'Yellow_cards': int(entries[3]),
+				'Red_cards': int(entries[4]),
+				'Penalties_given': int(entries[5]),
+			})
+		print(result, flush=True)
+		return render_template('referee.html', r=result)
+	return render_template("referee.html",r = [])
+
+@app.route("/clubData", methods=['POST', 'GET'])
+def getData_club():
+	if request.method == 'POST':
+		League = request.form['League']
+
+		if(League == 'None'):
+			sql_cmd = "SELECT c.Club_name, m.Name, c.League_name, c.Stadium from Club as c, Manager as m where (m.Manager_ID = c.Manager_ID)"
+		else:
+			sql_cmd = "SELECT c.Club_name, m.Name, c.League_name, c.Stadium from Club as c, Manager as m where (m.Manager_ID = c.Manager_ID) and c.League_name=\'{}\'".format(League)
+		mycursor.execute(sql_cmd)
+		data = mycursor.fetchall() # data comes in the form of a list 
+		print("data", data, flush=True)
+		result = []
+		for entries in data:
+			result.append({
+				'Club_name': str(entries[0]),
+				'Manager_name': str(entries[1]),
+				'League_name': str(entries[2]),
+				'Stadium': str(entries[3]),
+			})
+		print(result, flush=True)
+		return render_template('league_afterLogin.html', r=result)
+	return render_template("league_afterLogin.html",r = [])
 
 @app.route("/managerData", methods=['POST', 'GET'])
 def getData_manager():
@@ -96,9 +153,7 @@ def getData_manager():
 					result = []
 
 		print("ANS: ",result)
-		return render_template("manager.html",r=result)
-
-		
+		return render_template("manager.html",r=result)	
 	return render_template("manager.html",r=[])
 
 @app.route("/player_data", methods=['POST', 'GET'])
