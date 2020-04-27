@@ -72,8 +72,8 @@ def getData_referee():
 				'Penalties_given': int(entries[5]),
 			})
 		print(result, flush=True)
-		return render_template('referee.html', r=result)
-	return render_template("referee.html",r = [])
+		return render_template('player_referee.html', r=result)
+	return render_template("player_referee.html",r = [])
 
 @app.route("/clubData", methods=['POST', 'GET'])
 def getData_club():
@@ -96,8 +96,8 @@ def getData_club():
 				'Stadium': str(entries[3]),
 			})
 		print(result, flush=True)
-		return render_template('league_afterLogin.html', r=result)
-	return render_template("league_afterLogin.html",r = [])
+		return render_template('player_club.html', r=result)
+	return render_template("player_club.html",r = [])
 
 @app.route("/managerData", methods=['POST', 'GET'])
 def getData_manager():
@@ -153,8 +153,8 @@ def getData_manager():
 					result = []
 
 		print("ANS: ",result)
-		return render_template("manager.html",r=result)	
-	return render_template("manager.html",r=[])
+		return render_template("player_manager.html",r=result)	
+	return render_template("player_manager.html",r=[])
 
 @app.route("/player_data", methods=['POST', 'GET'])
 def getData_player():

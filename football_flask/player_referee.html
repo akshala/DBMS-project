@@ -1,0 +1,135 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Player Menu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="static/style_player.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" class="order-last" class="img" style="background-image: url(static/bg_1.jpg);">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	        </button>
+        </div>
+        <div class="">
+          <h1><a href="index.html" class="logo">All Football<span>Get all stats!</span></a></h1>
+          <ul class="list-unstyled components mb-5">
+            <li class="active">
+              <a href="#"><span class="fa fa-home mr-3"></span>My Profile</a>
+            </li>
+            <li>
+                <a href="{{url_for('getData_player')}}"><span class="fa fa-user mr-3"></span>Search Player stats</a>
+            </li>
+            <li>
+              <a href="{{url_for('getData_club')}}"><span class="fa fa-cogs mr-3"></span>Club Stats</a>
+            </li>
+            <li>
+              <a href="{{url_for('getData_manager')}}"><span class="fa fa-paper-plane mr-3"></span> Manager Stats</a>
+            </li>
+            <li>
+              <a href="{{url_for('getData_referee')}}"><span class="fa fa-sticky-note mr-3"></span> Referee Stats</a>
+            </li>
+          </ul>
+
+
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">Referee Stats</h2>
+
+        <form action="{{ url_for('getData_referee') }}" method="post">
+
+        <div class="DropDowns">
+        <label for="League">Choose a league:</label>
+		  <select id="League" name="League">
+		  	<style> display:inline-block </style>
+		  	<option value="None">None</option>
+		    <option value="Premier League">Premier League</option>
+		    <option value="Serie A">Serie A</option>
+		    <option value="La Liga">La Liga</option>
+		  </select>
+		  &nbsp;&nbsp;&nbsp;&nbsp;
+
+		 </div>
+		 <br>
+
+     <label for="Yellow_cards">Yellow Cards</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <span id="slider_value1"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+          0&nbsp;<input type="range" id="Yellow_cards" name="Yellow_cards" min="0" max="1874" value="0" onchange="document.getElementById('slider_value1').innerHTML = this.value">1874
+          <br>
+
+      <label for="Red_cards">Red Cards</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <span id="slider_value2"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+          0&nbsp;<input type="range" id="Red_cards" name="Red_cards" min="0" max="62" value="0" onchange="document.getElementById('slider_value2').innerHTML = this.value">62
+          <br>
+
+      <label for="Penalties_given">Penalties Given</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <span id="slider_value3"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+          0&nbsp;<input type="range" id="Penalties_given" name="Penalties_given" min="0" max="148" value="0" onchange="document.getElementById('slider_value3').innerHTML = this.value">148
+          <br>
+
+  		<input type="submit" onclick="show()">
+  		</form>
+      </div>
+            <table id="clubTable" class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Referee Name</th>
+
+                </tr>
+                </thead>
+                <tbody id="mydata">
+                    {%for data in r%}
+                    <tr>
+                        <td><a href="#" Name="{{data['Referee_name']}}", Referee_ID="{{data['Referee_ID']}}", League_name="{{data['League_name']}}", Yellow_cards="{{data['Yellow_cards']}}", Red_cards="{{data['Red_cards']}}", Penalties_given="{{data['Penalties_given']}}">{{data['Referee_name']}}</td>
+                    </tr> 
+                    {%endfor%}
+                </tbody>
+            </table>
+        </div>
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+
+    <script>
+        function show()
+      {
+          if (document.getElementById("clubTable").style.display === "none")
+              document.getElementById("clubTable").style.display="block";
+          else
+              document.getElementById("clubTable").style.display="none";
+      }
+    </script>
+
+    <script>
+  //    $(document).ready(function() {
+    //  $(".playerTable").on('click','tr', function () { 
+    //    // var dataString = $('td', this).attr('Player_ID');
+    //    alert("dataString");
+    //  });
+
+    // });
+    $(document).ready(function(){
+      $("td").click(function(){
+        dataString = "Name: " + $("a", this).attr('Referee_name') + "\n";
+        dataString += "Referee ID: " + $("a", this).attr('Referee_ID') + "\n";
+        dataString += "League: " + $("a", this).attr('League_name') + "\n";
+        dataString += "Yeloow cards: " + $("a", this).attr('Yellow_cards') + "\n";
+        dataString += "Red cards: " + $("a", this).attr('Red_cards') + "\n";
+        dataString += "Penalties given: " + $("a", this).attr('Penalties_given') + "\n";
+        console.log(dataString);
+        alert(dataString);
+      });
+    });
+    </script>
+
+  </body>
+</html>
