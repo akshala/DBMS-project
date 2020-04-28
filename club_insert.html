@@ -1,0 +1,81 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Player Menu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="static/style_player.css">
+		<link rel="stylesheet" href="static/afterLogin_club.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" class="order-last" class="img" style="background-image: url(static/bg_1.jpg);">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	        </button>
+        </div>
+        <div class="">
+		  		<h1><a href="index.html" class="logo">All Football<span>Get all stats!</span></a></h1>
+	        <ul class="list-unstyled components mb-5">
+	          <li class="active">
+	            <a href="#"><span class="fa fa-home mr-3"></span>My Profile</a>
+	          </li>
+	          <li>
+	              <a href="{{url_for('club_add_player')}}"><span class="fa fa-user mr-3"></span>Add Players</a>
+	          </li>
+	          <li>
+              <a href="{{url_for('logout')}}"><span class="fa fa-cogs mr-3"></span>Logout</a>
+	        </ul>
+
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <!-- <h1 class="display-4">{{club}}</h1> -->
+        <h2 class="display-4">Add new player</h2>
+
+    <div class="">
+        <!-- <header class="py-5">
+            <h1 class="display-4">Bootstrap add, edit, delete buttons</h1>
+            <p class="font-italic mb-1">Use bootstrap button variants to create call to action buttons inside a table, that's just for design, I'm sure you can make them work.</p>
+            <p class="font-italic">Snippet by
+                <a class="text-white" href="https://bootstrapious.com/">
+                    <u>Bootstrapious</u>
+                </a>
+            </p>
+        </header>
+ -->
+
+
+
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+
+    <script>
+        function show()
+      {
+          if (document.getElementById("playerTable").style.display === "none"){
+              document.getElementById("playerTable").style.display="block";
+			  alert("helo")
+		  }
+          else{
+              document.gehellotElementById("playerTable").style.display="none";
+			  alert("no")
+		  }
+      }
+    </script>
+
+    <script>
+    	$(function () {
+	   		$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+
+  </body>
+</html>

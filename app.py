@@ -24,7 +24,7 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-@app.route("/",methods = ['POST', 'GET', 'OPTIONS'])
+@app.route("/", methods = ['POST', 'GET', 'OPTIONS'])
 def getPage_index():
 	if request.method == "POST":
 		uname = request.form["uname"]
@@ -42,6 +42,10 @@ def getPage_index():
 		elif (uname == "Arsenal" and password == "Arsenal@123"):
 			return redirect(url_for("get_club_after_login", club=uname))
 	print("fkn hell")
+	return render_template('index.html', r=[])
+
+@app.route("/back", methods = ['POST', 'GET', 'OPTIONS'])
+def logout():
 	return render_template('index.html', r=[])
 
 @app.route("/contact_us")
@@ -84,6 +88,10 @@ def delete_player():
 	mycursor.execute(sql_cmd)
 	mydb.commit()
 	return redirect(url_for("get_club_after_login", club=current_club))
+
+@app.route("/add_player")
+def club_add_player():
+	return render_template('club_insert.html')
 
 
 @app.route("/refereeData", methods=['POST', 'GET'])

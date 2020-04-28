@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Manager Menu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="static/style_player.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" class="order-last" class="img" style="background-image: url(static/bg_1.jpg);">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	        </button>
+        </div>
+        <div class="">
+		  		<h1><a href="index.html" class="logo">All Football<span>Get all stats!</span></a></h1>
+	        <ul class="list-unstyled components mb-5">
+	          <li class="active">
+	            <a href="#"><span class="fa fa-home mr-3"></span>My Profile</a>
+	          </li>
+	          <li>
+	              <a href="#"><span class="fa fa-user mr-3"></span>Comparison with other players</a>
+	          </li>
+	          <li>
+              <a href="#"><span class="fa fa-sticky-note mr-3"></span>League Stats</a>
+	          </li>
+	          <li>
+              <a href="#"><span class="fa fa-cogs mr-3"></span>Club Stats</a>
+	          </li>
+	          <li>
+              <a href="#"><span class="fa fa-paper-plane mr-3"></span> Manager Stats</a>
+	          </li>
+	        </ul>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">Manager Data</h2>
+
+        <form action="{{ url_for('getData_manager') }}" method="post">
+
+        <div class="DropDowns">
+        <label for="Position">Choose a formation:</label>
+		  <select id="Formation" name="Formation">
+		  	<style> display:inline-block </style>
+			  		  	<option value="None">None</option>
+		    <option value="4-4-2">4-4-2</option>
+		    <option value="3-5-2">3-5-2</option>
+		    <option value="4-3-3">4-3-3</option>
+		    <option value="4-2-3-1">4-2-3-1</option>
+		    <option value="5-4-1">5-4-1 </option>
+		    <option value="4-1-4-1">4-1-4-1</option>
+		    <option value="3-4-2-1">3-4-2-1</option>
+		    <option value="3-4-1-2">3-4-1-2 </option>
+		    <option value="4-3-1-2">4-3-1-2</option>
+		  </select>
+		  &nbsp;&nbsp;&nbsp;&nbsp;
+
+		<label for="Club">Choose a club:</label>
+		  <select id="Club" name="Club">
+		  	/* <!-- <style> display:inline-block </style> --> */
+			  <option value="None">None</option>
+			  <option value="Afc Bournemouth">Afc Bournemouth</option>
+		    <option value="Arsenal">Arsenal</option>
+		    <option value="Aston Villa">Aston Villa</option>
+		    <option value="Athletic Bilbao">Athletic Bilbao</option>
+		    <option value="Atlanta">Atlanta</option>
+		    <option value="Atletico Madrid">Atletico Madrid</option>
+		    <option value="Barcelona">Barcelona</option>
+		    <option value="Bologna">Bologna</option>
+		    <option value="Brescia">Brescia</option>
+		    <option value="Brighton Amp Hove Albion">Brighton Amp Hove Albion</option>
+		    <option value="Burnley">Burnley</option>
+		    <option value="Ca Osasuna">Ca Osasuna</option>
+		    <option value="Cagliari">Cagliari</option>
+		    <option value="Cd Leganes">Cd Leganes</option>
+		    <option value="Celta Vigo">Celta Vigo</option>
+		    <option value="Chelsea">Chelsea</option>
+		    <option value="Crystal Palace">Crystal Palace</option>
+		    <option value="Deportivo Alaves">Deportivo Alaves</option>
+		    <option value="Espanyol Barcelona">Espanyol Barcelona</option>
+		    <option value="Everton">Everton</option>
+		    <option value="Fiorentina">Fiorentina</option>
+		    <option value="Genoa">Genoa</option>
+		    <option value="Getafe">Getafe</option>
+		    <option value="Granada">Granada</option>
+		    <option value="Hellas Verona">Hellas Verona</option>
+		    <option value="Inter Milan">Inter Milan</option>
+		    <option value="Juventus">Juventus</option>
+		    <option value="Lazio">Lazio</option>
+		    <option value="Lecce">Lecce</option>
+		    <option value="Leicester City">Leicester City</option>
+		    <option value="Liverpool">Liverpool</option>
+		    <option value="Manchester City">Manchester City</option>
+		    <option value="Manchester United">Manchester United</option>
+		    <option value="Milan">Milan</option>
+		    <option value="Newcastle United">Newcastle United</option>
+		    <option value="Norwich City">Norwich City</option>
+		    <option value="Parma">Parma</option>
+		    <option value="Rcd Mallorca">Rcd Mallorca</option>
+		    <option value="Real Betis Sevilla">Real Betis Sevilla</option>
+		    <option value="Real Madrid">Real Madrid</option>
+		    <option value="Real Sociedad San Sebastian">Real Sociedad San Sebastian</option>
+		    <option value="Real Valladolid">Real Valladolid</option>
+		    <option value="Roma">Roma</option>
+		    <option value="Sampordia">Sampordia</option>
+		    <option value="Sassuolo">Sassuolo</option>
+		    <option value="Sd Eibar">Sd Eibar</option>
+		    <option value="Sevilla">Sevilla</option>
+		    <option value="Sheffield United">Sheffield United</option>
+		    <option value="Southampton">Southampton</option>
+		    <option value="SPAL">SPAL</option>
+		    <option value="SSC Napoli">SSC Napoli</option>
+		    <option value="Torino">Torino</option>
+		    <option value="Tottenham Hotspur">Tottenham Hotspur</option>
+		    <option value="Ud Levante">Ud Levante</option>
+		    <option value="Udinese">Udinese</option>
+		    <option value="Valencia">Valencia</option>
+		    <option value="Villarreal">Villarreal</option>
+		    <option value="Watford">Watford</option>
+		    <option value="West Ham United">West Ham United</option>
+		    <option value="Wolverhampton Wanderers">Wolverhampton Wanderers</option>
+		  </select>
+
+		 </div>
+		 <br>
+
+		 <label for="Age">Age</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span id="slider_value6"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+  			38&nbsp;<input type="range" id="Age" name="Age" min="38" max="72" value="38" onchange="document.getElementById('slider_value6').innerHTML = this.value">72 
+  			<br>
+
+			  <label for="Win Percentage">Win Percentage</label>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span id="slider_value8"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+  			1.00&nbsp;<input type="range" id="Win Percentage" name="Win Percentage" min="1.00" max="100.0" value="1.00" onchange="document.getElementById('slider_value8').innerHTML = this.value">100.00 &nbsp;&nbsp;&nbsp;&nbsp;
+  		<br>
+  		<br>
+
+  		<input type="submit" onclick = "show()">
+  		</form>
+      </div>
+	  <table id="managerTable" class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Manager Name</th>
+
+                </tr>
+                </thead>
+                <tbody id="mydata">
+                    {%for data in r%}
+                    <tr>
+                        <td id ="hello"><a href="#" Name="{{data['Name']}}", Age="{{data['Age']}}", Formation="{{data['Formation']}}", Country="{{data['Country']}}",Contract="{{data['Contract']}}", win="{{data['WinPercentage']}}">{{data['Name']}}</td>
+                    </tr> 
+                    {%endfor%}
+                </tbody>
+            </table>
+        </div>
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+
+		</div>
+
+
+    <script src="static/jquery.min.js"></script>
+    <script src="static/popper.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+    <script src="static/main.js"></script>
+	<script>
+        function show()
+      {
+		  /* alert(r) */
+		  /* alert(document.getElementById("managerTable").style.display) */
+		  /* document.getElementById("managerTable").style.display = "block" */
+          if (document.getElementById("managerTable").style.display === "none"){
+			
+			document.getElementById("managerTable").style.display="block";
+		  }
+          else{
+			document.getElementById("managerTable").style.display="none";
+              
+			  /* console.log("bhe") */
+			  /* alert("no") */
+		  }
+      }
+    </script>
+	<script>
+		$(document).ready(function(){
+		  $("td").click(function(){
+			/* alert($("a", this).attr('Name')) */
+		  	dataString = "Name: " + $("a", this).attr('Name') + "\n";
+		  	/* dataString += "Player ID: " + $("a", this).attr('Player_ID') + "\n"; */
+		  	/* dataString += "Games Played: " + $("a", this).attr('Games_Played') + "\n"; */
+		  	/* dataString += "Goals: " + $("a", this).attr('Goals') + "\n"; */
+		  	/* dataString += "Assists: " + $("a", this).attr('Assists') + "\n"; */
+		  	dataString += "Win Percentage: " + $("a", this).attr('win') + "\n";
+		  	dataString += "Age: " + $("a", this).attr('Age') + "\n";
+			  dataString += "Country: " + $("a", this).attr('Country') + "\n";
+		  	dataString += "Formation: " + $("a", this).attr('Formation') + "\n";
+
+		  	console.log(dataString);
+		    alert(dataString);
+		  });
+		});
+    </script>
+  </body>
+</html>

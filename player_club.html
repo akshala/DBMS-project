@@ -1,0 +1,105 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Player Menu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="static/style_player.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" class="order-last" class="img" style="background-image: url(static/bg_1.jpg);">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	        </button>
+        </div>
+        <div class="">
+		  		<h1><a href="index.html" class="logo">All Football<span>Get all stats!</span></a></h1>
+	        <ul class="list-unstyled components mb-5">
+	          <li class="active">
+	            <a href="#"><span class="fa fa-home mr-3"></span>My Profile</a>
+	          </li>
+	          <li>
+	              <a href="{{url_for('getData_player')}}"><span class="fa fa-user mr-3"></span>Search Player stats</a>
+	          </li>
+	          <li>
+              <a href="{{url_for('getData_club')}}"><span class="fa fa-cogs mr-3"></span>Club Stats</a>
+	          </li>
+	          <li>
+              <a href="{{url_for('getData_manager')}}"><span class="fa fa-paper-plane mr-3"></span> Manager Stats</a>
+	          </li>
+	          <li>
+              <a href="{{url_for('getData_referee')}}"><span class="fa fa-sticky-note mr-3"></span> Referee Stats</a>
+	          </li>
+            <li>
+              <a href="{{url_for('logout')}}">Logout</a>
+            </li>
+	        </ul>
+
+
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">Club stats</h2>
+
+        <form action="{{ url_for('getData_club') }}" method="post">
+
+        <div class="DropDowns">
+        <label for="League">Choose a league:</label>
+		  <select id="League" name="League">
+		  	<style> display:inline-block </style>
+		  	<option value="None">None</option>
+		    <option value="Premier League">Premier League</option>
+		    <option value="Serie A">Serie A</option>
+		    <option value="La Liga">La Liga</option>
+		  </select>
+		  &nbsp;&nbsp;&nbsp;&nbsp;
+
+		 </div>
+		 <br>
+
+  		<input type="submit" onclick="show()">
+  		</form>
+      </div>
+            <table id="clubTable" class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Club</th>
+                    <th>Manager</th>
+                    <th>Stadium</th>
+
+                </tr>
+                </thead>
+                <tbody id="mydata">
+                    {%for data in r%}
+                    <tr>
+                        <td>{{data['Club_name']}}</td>
+                        <td>{{data['Manager_name']}}</td>
+                        <td>{{data['Stadium']}}</td>
+                    </tr> 
+                    {%endfor%}
+                </tbody>
+            </table>
+        </div>
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+
+    <script>
+        function show()
+      {
+          if (document.getElementById("clubTable").style.display === "none")
+              document.getElementById("clubTable").style.display="block";
+          else
+              document.getElementById("clubTable").style.display="none";
+      }
+    </script>
+
+  </body>
+</html>
