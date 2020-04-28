@@ -11,6 +11,142 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="../static/style_player.css">
   </head>
+  <style>
+    @font-face {
+    font-family: montserrat;
+    src: url("static/Montserrat-Bold.ttf");
+      }
+    
+    .DropDowns select {
+    background-color: #5DB0E8;
+    font-family: montserrat;
+    color: white;
+    padding: 12px;
+    width: 250px;
+    border: none;
+    font-size: 13px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    margin-left: 20px;
+    }
+  
+    .DropDowns::before {
+    content: "\f13a";
+    font-family: montserrat;
+    font-weight: 1000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+    }
+  
+    .DropDowns:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+    }
+  
+    .DropDowns select option {
+    padding: 30px;
+    }
+  
+  input[type="range"] { 
+  margin: auto;
+  -webkit-appearance: none;
+  position: relative;
+  overflow: hidden;
+  height: 18px;
+  width: 250px;
+  cursor: pointer;
+  /* margin-top: 50px; */
+  border-radius: 0; /* iOS */
+  }
+  
+  ::-webkit-slider-runnable-track {
+  background: #ddd;
+  }
+  
+  /*
+  * 1. Set to 0 width and remove border for a slider without a thumb
+  */
+  ::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px; /* 1 */
+  height: 18px;
+  background: #fff;
+  box-shadow: -100vw 0 0 100vw #5DB0E8;
+  border: 2px solid #999; /* 1 */
+  }
+  
+  ::-moz-range-track {
+  height: 25px;
+  background: #ddd;
+  }
+  
+  ::-moz-range-thumb {
+  background: #fff;
+  height: 25px;
+  width: 18px;
+  border: 3px solid #999;
+  border-radius: 0 !important;
+  box-shadow: -100vw 0 0 100vw #5DB0E8;
+  box-sizing: border-box;
+  }
+  
+  ::-ms-fill-lower { 
+  background: #5DB0E8;
+  }
+  
+  ::-ms-thumb { 
+  background: #fff;
+  border: 2px solid #999;
+  height: 25px;
+  width: 18px;
+  box-sizing: border-box;
+  }
+  
+  ::-ms-ticks-after { 
+  display: none; 
+  }
+  
+  ::-ms-ticks-before { 
+  display: none; 
+  }
+  
+  ::-ms-track { 
+  background: #ddd;
+  color: transparent;
+  height: 18px;
+  border: none;
+  }
+  
+  ::-ms-tooltip { 
+  display: none;
+  }
+  #dropDownLabel{
+  font-family: montserrat;
+  font-size: large;
+  margin-top: 25px;
+  }
+  #sliderLabel{
+  font-family: montserrat;
+  font-size: large;
+  margin-top: 8px;
+  }
+  #heading{
+  font-family: montserrat;
+  font-size: 35px;
+  
+  }
+  </style>
   <body>
 		
 		<div class="wrapper d-flex align-items-stretch">
@@ -44,30 +180,30 @@
 
         <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5 pt-5">
-        <h2 class="mb-4">Referee Stats</h2>
+        <h2 class="mb-4" id = "heading">Referee Stats</h2>
 
         <form action="{{ url_for('refereePage',ref=ref) }}" method="post">
 
         <div class="DropDowns">
-        <label for="Club1">Choose 1st Club: </label>
+        <label for="Club1" id = "dropDownLabel">Choose 1st Club: </label>&nbsp;&nbsp;&nbsp;&nbsp;
 		  <select id="Club1" name="Club1">
 		  	<style> display:inline-block </style>
 		  	<option value="None">None</option>
             {%for club in clubs%}
-            <option value={{club["club"]}}>{{club["club"]}}</option>
+            <option value = "{{club["club"]}}">{{club["club"]}}</option>
             {%endfor%}
 		  </select>
 		  &nbsp;&nbsp;&nbsp;&nbsp;
 
 		 </div>
 		 <br>
-         <div class="DropDowns">
+         <div class="DropDowns" id = "dropDownLabel">
         <label for="Club2">Choose 2nd Club: </label>
 		  <select id="Club2" name="Club2">
 		  	<style> display:inline-block </style>
 		  	<option value="None">None</option>
             {%for club in clubs%}
-            <option value={{club["club"]}}>{{club["club"]}}</option>
+            <option value = "{{club["club"]}}">{{club["club"]}}</option>
             alert({{club}})
             {%endfor%}
 		  </select>
@@ -82,14 +218,14 @@
             <table id="clubTable" class="table table-bordered">
                 <thead>
                 <tr>
-                    <th>Referee Name</th>
+                    <th>Player Name</th>
 
                 </tr>
                 </thead>
                 <tbody id="mydata">
                     {%for data in r%}
                     <tr>
-                        <td>hello</td>
+                        <td>{{data["player"]}}</td>
                     </tr> 
                     {%endfor%}
                 </tbody>

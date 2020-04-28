@@ -17,8 +17,8 @@ app = Flask(__name__, static_folder='./static', template_folder='.')
 mydb = mysql.connector.connect(
 	host="localhost",
 	user="root",
-	passwd="Akshala@12",
-	# passwd="",
+	# passwd="Akshala@12",
+	passwd="",
 	database="football"
 )
 
@@ -39,7 +39,7 @@ def getPage_index():
 			return redirect(url_for("getData_club"))
 		elif (uname == "referee" and password == "Referee@123"):
 			return redirect(url_for("getData_referee"))
-		elif (uname == "Arsenal" and password == "Arsenal@123"):
+		elif (password == "Club@123"):
 			return redirect(url_for("get_club_after_login", Club=uname))
 		elif (password == "Referee@123"):
 			return redirect(url_for("refereePage",ref = uname))
@@ -87,19 +87,72 @@ def searching():
 	if request.method == 'POST':
 		Entity = request.form['Entity']
 		name = request.form['name']
+		columns = []
 		if(Entity == 'Club'):
 			sql_cmd = "SELECT * from {} where Club_name=\'{}\'".format(Entity, name)
-		if(Entity == 'Referee'):
+			columns = ["Club Name", "Manager","League","Stadium"]
+			s = "Club"
+		elif(Entity == 'Referee'):
 			sql_cmd = "SELECT * from {} where Referee_Name=\'{}\'".format(Entity, name)
+			columns = ["Name","League","Yellow Cards", "Red Cards","Penalties"]
+			s = "Referee"
+		elif (Entity=="Player"):
+			sql_cmd = "SELECT * from {} where Name=\'{}\'".format(Entity, name)
+			# columns = ["Name","Games Played","Goals","Assists","Goals "]
+			s = "Player"
+		elif (Entity == "League"):
+			columns = ["Name", "Country"]
+			sql_cmd = "SELECT * from {} where Name=\'{}\'".format(Entity, name)
+			s = "League"
 		else:
 			sql_cmd = "SELECT * from {} where Name=\'{}\'".format(Entity, name)
+			columns = ["Name","Age","Country","Formation","Contract","Win Percentage"]
+			s = "Manager"
 		print(sql_cmd, flush=True)
 		mycursor.execute(sql_cmd)
-		data = mycursor.fetchall() # data comes in the form of a list 
-		print("data", data, flush=True)
+		data = mycursor.fetchall()
+		print("data", data[0], flush=True)
+		data = data[0]
+		if not columns:
+			if data[7]=="Goalkeeper":
+				columns = ["Name", "Games Played", "Goals Conceded","Clean Sheets","Position","Age", "Contract", "Market Value","Country","Club"]
+				ans = []
+				for i in range(len(data)):
+					if (i==3 or i==4):
+						pass
+					else:
+						ans.append(data[i])
+				print(ans)
+			else:
+				columns = ["Name","Games Played","Goals","Assists","Goals "]
+				columns = ["Name", "Games Played", "Goals","Assists","Position","Age", "Contract", "Market Value(euros)","Height (m)","Country","Club"]
+				ans = []
+				for i in range(len(data)):
+					if (i==5 or i==6):
+						pass
+					else:
+						ans.append(data[i])
+			data = ans[1:]
+			print(data)
+		else:
+			ans = []
+			for i in data:
+				ans.append(i)
+			if (Entity =="Club" or Entity == "League"):
+				data = ans
+				if (Entity == "Club"):
+					print(data[1])
+					sql_cmd = "select Name from Manager where Manager_ID=\'{}\'".format(data[1])
+					mycursor.execute(sql_cmd)
+					hi = mycursor.fetchall()[0][0]
+					print(hi)
+					data[1] = hi
 
-		return render_template('search.html', r=data)
-	return render_template("search.html",r = [])
+			else:
+				data = ans[1:]
+		print(data)
+		return render_template('search.html', r=data,c=columns,name = s)
+	return render_template("search.html",r = [], c=[])
 
 @app.route("/referee/<ref>",methods = ['POST', 'GET', 'OPTIONS'])
 def refereePage(ref):
@@ -111,30 +164,31 @@ def refereePage(ref):
 	cmd = "SELECT League_name from Referee where Referee_name=\'{}\'".format(refName)
 	mycursor.execute(cmd)
 	league = str(mycursor.fetchall()[0])[2:-3]
-	print(league[2:-3])
+	# print(league[2:-3])
 	cmd = "select Club_name from Club where League_name=\'{}\'".format(league)
 	mycursor.execute(cmd)
 	clubs = (mycursor.fetchall())
-	print(clubs)
+	# print(clubs)
 	ans = []
 	for i in range(len(clubs)):
 		# print(clubs[i][2:-3])
-		print(clubs[i][0])
+		print("club: "+str(clubs[i][0]))
 		ans.append({"club":str(clubs[i][0])})
 
-
+	print(ans)
 	if request.method == "POST":
 		team1 = request.form["Club1"]
 		team2 = request.form["Club2"]
 		print(team1,team2)
-		cmd = "select P1.Name from Season_player as S,Player as P1 where S.Player_ID=P1.Player_ID and  S.Player_ID in (select P.Player_ID from Player as P where P.Player_ID = S.Player_Id and (P.Club=\'{}\' or P.Club = \'{}\' )) order by Yellow_cards+Red_cards desc limit 5;".format(team1,team2)
+		cmd = "select P1.Name from Season_player as S,Player as P1 where S.Player_ID=P1.Player_ID and  S.Player_ID in (select P.Player_ID from Player as P where P.Player_ID = S.Player_Id and (P.Club = \'{}\' or P.Club = \'{}\' )) order by Yellow_cards+Red_cards desc limit 5;".format(team1,team2)
 		mycursor.execute(cmd)
 		players = mycursor.fetchall()
+		print(players)
 		ans2 = []
 		for i in range(5):
 		# print(clubs[i][2:-3])
 			print(players[i][0])
-			ans.append({"player":str(players[i][0])})
+			ans2.append({"player":str(players[i][0])})
 		return render_template("ref.html",clubs = ans,ref = x,r = ans2)
 
 

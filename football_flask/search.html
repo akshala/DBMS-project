@@ -66,7 +66,7 @@
     width: 250px;
   cursor: pointer;
   /* margin-top: 50px; */
-    border-radius: 0; /* iOS */
+    border-radius: 0; /* iOS */searchin
   }
   
   ::-webkit-slider-runnable-track {
@@ -145,6 +145,9 @@
   font-size: 35px;
   
   }
+  #name{
+    width: 250px;
+  }
   </style>
   </head>
   <body>
@@ -206,7 +209,7 @@
 		 </div>
      <br>
 
-     <label for="name">Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+     <label for="name" id = "sliderLabel">Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <input type="text" id="name" name="name">
       &nbsp;&nbsp;&nbsp;&nbsp;
     <br>
@@ -215,23 +218,21 @@
   		<input type="submit" onclick="show()">
   		</form>
 
-      <div id="content" class="p-4 p-md-5 pt-5">
-        <h1 class="display-4">{{Club}}</h1>
-
-    <div class="">
-        <!-- <header class="py-5">
-            <h1 class="display-4">Bootstrap add, edit, delete buttons</h1>
-            <p class="font-italic mb-1">Use bootstrap button variants to create call to action buttons inside a table, that's just for design, I'm sure you can make them work.</p>
-            <p class="font-italic">Snippet by
-                <a class="text-white" href="https://bootstrapious.com/">
-                    <u>Bootstrapious</u>
-                </a>
-            </p>
-        </header>
- -->
-              {%for data in r%}
-              <p style="font-size: 150%">{{data}}</p>
-              {%endfor%}
+    </div>
+            <table id="playerTable" class="table table-bordered">
+                <thead>
+                  {%- for column in c %}
+     <th>{{ column }}</th>
+  {%- endfor %}
+                </thead>
+                <tbody id="mydata">
+                  <tr>
+    {%- for d in r %}
+       <td>{{ d }}</td>
+    {%- endfor %}
+    </tr>
+                </tbody>
+            </table>
         </div>
     <script src="static/jquery-3.3.1.min.js"></script>
     <script src="static/bootstrap.min.js"></script>
