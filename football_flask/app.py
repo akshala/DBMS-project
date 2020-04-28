@@ -17,8 +17,8 @@ app = Flask(__name__, static_folder='./static', template_folder='.')
 mydb = mysql.connector.connect(
 	host="localhost",
 	user="root",
-	# passwd="Akshala@12",
-	passwd="",
+	passwd="Akshala@12",
+	# passwd="",
 	database="football"
 )
 
@@ -54,6 +54,52 @@ def logout():
 @app.route("/contact_us")
 def getPage_contact_us():
     return render_template('contact.html')
+
+@app.route("/club_season", methods=['POST', 'GET'])
+def get_club_season_page():
+	club = request.args['Club']
+	if request.method == 'POST':
+		League = request.form['League']
+
+		sql_cmd = "SELECT S.* ,C.League_name from Season_club  as S , Club as C where C.League_name = \'{}\' and C.Club_name = S.Club_name order by S.League_Position".format(League)
+		mycursor.execute(sql_cmd)
+		data = mycursor.fetchall() # data comes in the form of a list 
+		print("data", data, flush=True)
+		result = []
+		for entries in data:
+			result.append({
+				'Club_name': str(entries[0]),
+				'League_Position': int(entries[1]),
+				'Matches_played': int(entries[2]),
+				'Matches_won': int(entries[3]),
+				'Matches_Lost': int(entries[4]),
+				'Goals_For': int(entries[5]),
+				'Goals_Against': int(entries[6]),
+				'Season_Year': int(entries[7]),
+				'League_name': str(entries[8]),
+			})
+		print(result, flush=True)
+		return render_template('club_season.html', r=result, Club=club)
+	return render_template("club_season.html",r = [], Club=club)
+
+@app.route("/search", methods=['POST', 'GET'])
+def searching():
+	if request.method == 'POST':
+		Entity = request.form['Entity']
+		name = request.form['name']
+		if(Entity == 'Club'):
+			sql_cmd = "SELECT * from {} where Club_name=\'{}\'".format(Entity, name)
+		if(Entity == 'Referee'):
+			sql_cmd = "SELECT * from {} where Referee_Name=\'{}\'".format(Entity, name)
+		else:
+			sql_cmd = "SELECT * from {} where Name=\'{}\'".format(Entity, name)
+		print(sql_cmd, flush=True)
+		mycursor.execute(sql_cmd)
+		data = mycursor.fetchall() # data comes in the form of a list 
+		print("data", data, flush=True)
+
+		return render_template('search.html', r=data)
+	return render_template("search.html",r = [])
 
 @app.route("/referee/<ref>",methods = ['POST', 'GET', 'OPTIONS'])
 def refereePage(ref):
@@ -121,7 +167,7 @@ def get_club_after_login():
 			'Club': str(entries[13]),
 		})
 	print(result, flush=True)
-	return render_template('club_profile.html', club=club, r=result)
+	return render_template('club_profile.html', Club=club, r=result)
 
 @app.route("/club_delete")
 def get_club_after_delete():
@@ -148,7 +194,7 @@ def get_club_after_delete():
 			'Club': str(entries[13]),
 		})
 	print(result, flush=True)
-	return render_template('afterLogin_club.html', r=result, club=club,)
+	return render_template('afterLogin_club.html', r=result, Club=club)
 
 @app.route("/club_after_player_deletion")
 def delete_player():
@@ -157,7 +203,7 @@ def delete_player():
 	sql_cmd = "UPDATE Player set Club=\'{}\' where Player_ID={}".format("-", Player_ID)
 	mycursor.execute(sql_cmd)
 	mydb.commit()
-	return redirect(url_for("get_club_after_delete", club=current_club))
+	return redirect(url_for("get_club_after_delete", Club=current_club))
 
 @app.route("/add_player")
 def get_club_add_player_page():
@@ -182,7 +228,7 @@ def get_club_add_player_page():
 			'MarketValue': float(entries[10]),
 		})
 		print(result, flush=True)
-	return render_template('club_insert.html', r=result, club=current_club)
+	return render_template('club_insert.html', r=result, Club=current_club)
 
 @app.route("/added_player")
 def playerAdd():

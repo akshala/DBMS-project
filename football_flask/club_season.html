@@ -12,6 +12,54 @@
 		<link rel="stylesheet" href="static/style_player.css">
 		<link rel="stylesheet" href="static/afterLogin_club.css">
   </head>
+
+  <style>
+  @font-face {
+  font-family: montserrat;
+  src: url("static/Montserrat-Bold.ttf");
+    }
+  
+  .DropDowns select {
+  background-color: #5DB0E8;
+  font-family: montserrat;
+  color: white;
+  padding: 12px;
+  width: 250px;
+  border: none;
+  font-size: 13px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  margin-left: 20px;
+  }
+
+  .DropDowns::before {
+  content: "\f13a";
+  font-family: montserrat;
+  font-weight: 1000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+  }
+
+  .DropDowns:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .DropDowns select option {
+  padding: 30px;
+  }
+</style>
   <body>
 		
 		<div class="wrapper d-flex align-items-stretch">
@@ -24,7 +72,7 @@
 		  		<h1><a href="index.html" class="logo">All Football<span>Get all stats!</span></a></h1>
 	        <ul class="list-unstyled components mb-5">
 	          <li class="active">
-	            <a href="#"><span class="fa fa-home mr-3"></span>My Profile</a>
+	            <a href="{{url_for('get_club_after_login', Club=Club)}}"><span class="fa fa-home mr-3"></span>My Profile</a>
 	          </li>
 	          <li>
 	              <a href="{{url_for('get_club_add_player_page', Club=Club)}}"><span class="fa fa-user mr-3"></span>Add Players</a>
@@ -33,7 +81,7 @@
                   <a href="{{url_for('get_club_after_delete', Club=Club)}}"><span class="fa fa-user mr-3"></span>Delete Players</a>
               </li>
               <li>
-                  <a href="{{url_for('get_club_season_page', Club=Club)}}"><span class="fa fa-sticky-note mr-3"></span>Season Data</a>
+                  <a href="#"><span class="fa fa-sticky-note mr-3"></span>Season Data</a>
               </li>
 	          <li>
               <a href="{{url_for('logout')}}"><span class="fa fa-cogs mr-3"></span>Logout</a>
@@ -57,35 +105,53 @@
             </p>
         </header>
  -->
+   <div id="content" class="p-4 p-md-5 pt-5">
+          <h2 class="mb-4" id = "heading">Club Season stats</h2>
+
+          <form action="{{ url_for('get_club_season_page', Club=Club)}}" method="post">
+
+          <div class="DropDowns">
+          <label for="League" id= "dropDownLabel">Choose a league:</label>
+        <select id="League" name="League">
+          <style> display:inline-block </style>
+          <option value="None">None</option>
+          <option value="Premier League">Premier League</option>
+          <option value="Serie A">Serie A</option>
+          <option value="La Liga">La Liga</option>
+        </select>
+        <br>
+
+        <input type="submit" onclick="show()">
+      </form>
+      <br>
 
        <table class="table table-bordered">
+        <br>
                                 <thead>
                                     <tr>
-                                        <th>Player ID</th>
-                                        <th>Player</th>
-                                        <th>Position</th>
-                                        <th>Games_Played</th>
-                                        <th>Goals</th>
-                                        <th>Assists</th>
-                                        <th>Goals Conceded</th>
-                                        <th>Clean Sheets</th>
-                                        <th>Age</th>
-                                        <th>Market Value</th>
+                                        <th>League Position</th>
+                                        <th>Club name</th>
+                                        <th>Matches Played</th>
+                                        <th>Matches Won</th>
+                                        <th>Matches Lost</th>
+                                        <th>Goals For</th>
+                                        <th>Goals Against</th>
+                                        <th>Season Year</th>
+                                        <th>League</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                 	{%for data in r%}
                                     <tr>
-                                        <td>{{data['Player_ID']}}</td>
-                                        <td>{{data['Name']}}</td>
-                                        <td>{{data['Position']}}</td>
-                                        <td>{{data['Games_Played']}}</td>
-                                        <td>{{data['Goals']}}</td>
-                                        <td>{{data['Assists']}}</td>
-                                        <td>{{data['GoalsConceded']}}</td>
-                                        <td>{{data['CleanSheets']}}</td>
-                                        <td>{{data['Age']}}</td>
-                                        <td>{{data['MarketValue']}}</td>
+                                        <td>{{data['League_Position']}}</td>
+                                        <td>{{data['Club_name']}}</td>
+                                        <td>{{data['Matches_played']}}</td>
+                                        <td>{{data['Matches_won']}}</td>
+                                        <td>{{data['Matches_Lost']}}</td>
+                                        <td>{{data['Goals_For']}}</td>
+                                        <td>{{data['Goals_Against']}}</td>
+                                        <td>{{data['Season_Year']}}</td>
+                                        <td>{{data['League_name']}}</td>
                                     </tr>
                                     {%endfor%}
                                 </tbody>

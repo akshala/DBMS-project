@@ -159,24 +159,26 @@ font-size: 35px;
         <div class="">
 		  		<h1><a href="index.html" class="logo">All Football<span>Get all stats!</span></a></h1>
 	        <ul class="list-unstyled components mb-5">
-	          <li class="active">
+	          <li>
 	            <a href="#"><span class="fa fa-home mr-3"></span>My Profile</a>
 	          </li>
 	          <li>
-	              <a href="#"><span class="fa fa-user mr-3"></span>Comparison with other players</a>
+              <a href="#"><span class="fa fa-search"></span>Search by name</a>
+            </li>
+	          <li>
+	              <a href="{{url_for('searching')}}"><span class="fa fa-user mr-3"></span>Search Player stats</a>
 	          </li>
 	          <li>
-              <a href="#"><span class="fa fa-sticky-note mr-3"></span>League Stats</a>
+              <a href="{{url_for('getData_club')}}"><span class="fa fa-cogs mr-3"></span>Club Stats</a>
 	          </li>
 	          <li>
-              <a href="#"><span class="fa fa-cogs mr-3"></span>Club Stats</a>
+              <a href="{{url_for('getData_manager')}}"><span class="fa fa-paper-plane mr-3"></span> Manager Stats</a>
 	          </li>
 	          <li>
-              <a href="#"><span class="fa fa-paper-plane mr-3"></span> Manager Stats</a>
+              <a href="{{url_for('getData_referee')}}"><span class="fa fa-sticky-note mr-3"></span> Referee Stats</a>
 	          </li>
-	          <li>
+            <li>
               <a href="{{url_for('logout')}}">Logout</a>
-          		</li>
             </li>
 	        </ul>
 

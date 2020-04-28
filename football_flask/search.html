@@ -165,7 +165,7 @@
               <a href="#"><span class="fa fa-search"></span>Search by name</a>
             </li>
 	          <li>
-	              <a href="{{url_for('searching')}}"><span class="fa fa-user mr-3"></span>Search stats by name</a>
+	              <a href="{{url_for('getData_player')}}"><span class="fa fa-user mr-3"></span>Search stats by name</a>
 	          </li>
 	          <li>
               <a href="{{url_for('getData_club')}}"><span class="fa fa-cogs mr-3"></span>Club Stats</a>
@@ -186,46 +186,52 @@
 
         <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5 pt-5">
-        <h2 class="mb-4" id = "heading">Club stats</h2>
+        <h2 class="mb-4" id = "heading">Search stats by name</h2>
 
-        <form action="{{ url_for('getData_club') }}" method="post">
+        <form action="{{ url_for('searching') }}" method="post">
 
         <div class="DropDowns">
-        <label for="League" id= "dropDownLabel">Choose a league:</label>
-		  <select id="League" name="League">
+        <label for="Entity" id= "dropDownLabel">Choose an entity:</label>
+		  <select id="Entity" name="Entity">
 		  	<style> display:inline-block </style>
-		  	<option value="None">None</option>
-		    <option value="Premier League">Premier League</option>
-		    <option value="Serie A">Serie A</option>
-		    <option value="La Liga">La Liga</option>
+        <option value="League">League</option>
+        <option value="Club">Club</option>
+        <option value="Referee">Referee</option>
+        <option value="Manager">Manager</option>
+        <option value="Player">Player</option>
 		  </select>
 		  &nbsp;&nbsp;&nbsp;&nbsp;
+    <br>
 
 		 </div>
+     <br>
+
+     <label for="name">Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" id="name" name="name">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+    <br>
 		 <br>
 
   		<input type="submit" onclick="show()">
   		</form>
-      </div>
-            <table id="clubTable" class="table table-bordered">
-                <thead>
-                <tr>
-                    <th>Club</th>
-                    <th>Manager</th>
-                    <th>Stadium</th>
 
-                </tr>
-                </thead>
-                <tbody id="mydata">
-                    {%for data in r%}
-                    <tr>
-                        <td>{{data['Club_name']}}</td>
-                        <td>{{data['Manager_name']}}</td>
-                        <td>{{data['Stadium']}}</td>
-                    </tr> 
-                    {%endfor%}
-                </tbody>
-            </table>
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <h1 class="display-4">{{Club}}</h1>
+
+    <div class="">
+        <!-- <header class="py-5">
+            <h1 class="display-4">Bootstrap add, edit, delete buttons</h1>
+            <p class="font-italic mb-1">Use bootstrap button variants to create call to action buttons inside a table, that's just for design, I'm sure you can make them work.</p>
+            <p class="font-italic">Snippet by
+                <a class="text-white" href="https://bootstrapious.com/">
+                    <u>Bootstrapious</u>
+                </a>
+            </p>
+        </header>
+ -->
+              {%for data in r%}
+              <p style="font-size: 150%">{{data}}</p>
+              {%endfor%}
         </div>
     <script src="static/jquery-3.3.1.min.js"></script>
     <script src="static/bootstrap.min.js"></script>
