@@ -24,13 +24,13 @@
 		  		<h1><a href="index.html" class="logo">All Football<span>Get all stats!</span></a></h1>
 	        <ul class="list-unstyled components mb-5">
 	          <li class="active">
-	            <a href="{{url_for('get_club_after_login', Club=club)}}"><span class="fa fa-home mr-3"></span>My Profile</a>
+	            <a href="#"><span class="fa fa-home mr-3"></span>My Profile</a>
 	          </li>
 	          <li>
 	              <a href="{{url_for('get_club_add_player_page', Club=club)}}"><span class="fa fa-user mr-3"></span>Add Players</a>
 	          </li>
               <li>
-                  <a href="#"><span class="fa fa-user mr-3"></span>Delete Players</a>
+                  <a href="{{url_for('get_club_after_delete', Club=club)}}"><span class="fa fa-user mr-3"></span>Delete Players</a>
               </li>
 	          <li>
               <a href="{{url_for('logout')}}"><span class="fa fa-cogs mr-3"></span>Logout</a>
@@ -67,7 +67,7 @@
                                         <th>Goals Conceded</th>
                                         <th>Clean Sheets</th>
                                         <th>Age</th>
-                                        <th>Market Value(in euro)</th>
+                                        <th>Market Value</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -83,7 +83,6 @@
                                         <td>{{data['CleanSheets']}}</td>
                                         <td>{{data['Age']}}</td>
                                         <td>{{data['MarketValue']}}</td>
-                                        <td><button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><a href="{{url_for('delete_player', Player_ID= data['Player_ID'], Club= data['Club'])}}"><i class="fa fa-trash"></i></button></td>
                                     </tr>
                                     {%endfor%}
                                 </tbody>

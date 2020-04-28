@@ -11,6 +11,138 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="static/style_player.css">
   </head>
+
+  <style>
+	    @font-face {
+        font-family: montserrat;
+        src: url("static/Montserrat-Bold.ttf");
+		  }
+		
+		.DropDowns select {
+		background-color: #5DB0E8;
+		font-family: montserrat;
+		color: white;
+		padding: 12px;
+		width: 250px;
+		border: none;
+		font-size: 13px;
+		box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+		-webkit-appearance: button;
+		appearance: button;
+		outline: none;
+		margin-left: 20px;
+		}
+
+		.DropDowns::before {
+		content: "\f13a";
+		font-family: montserrat;
+		font-weight: 1000;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 20%;
+		height: 100%;
+		text-align: center;
+		font-size: 20px;
+		line-height: 45px;
+		color: rgba(255, 255, 255, 0.5);
+		background-color: rgba(255, 255, 255, 0.1);
+		pointer-events: none;
+		}
+
+		.DropDowns:hover::before {
+		color: rgba(255, 255, 255, 0.6);
+		background-color: rgba(255, 255, 255, 0.2);
+		}
+
+		.DropDowns select option {
+		padding: 30px;
+		}
+
+input[type="range"] { 
+    margin: auto;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    height: 18px;
+    width: 250px;
+	cursor: pointer;
+	/* margin-top: 50px; */
+    border-radius: 0; /* iOS */
+}
+
+::-webkit-slider-runnable-track {
+    background: #ddd;
+}
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ */
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px; /* 1 */
+    height: 18px;
+    background: #fff;
+    box-shadow: -100vw 0 0 100vw #5DB0E8;
+    border: 2px solid #999; /* 1 */
+}
+
+::-moz-range-track {
+    height: 25px;
+    background: #ddd;
+}
+
+::-moz-range-thumb {
+    background: #fff;
+    height: 25px;
+    width: 18px;
+    border: 3px solid #999;
+    border-radius: 0 !important;
+    box-shadow: -100vw 0 0 100vw #5DB0E8;
+    box-sizing: border-box;
+}
+
+::-ms-fill-lower { 
+    background: #5DB0E8;
+}
+
+::-ms-thumb { 
+    background: #fff;
+    border: 2px solid #999;
+    height: 25px;
+    width: 18px;
+    box-sizing: border-box;
+}
+
+::-ms-ticks-after { 
+    display: none; 
+}
+
+::-ms-ticks-before { 
+    display: none; 
+}
+
+::-ms-track { 
+    background: #ddd;
+    color: transparent;
+    height: 18px;
+    border: none;
+}
+
+::-ms-tooltip { 
+    display: none;
+}
+#dropDownLabel{
+	font-family: montserrat;
+	font-size: large;
+	margin-top: 25px;
+}
+#sliderLabel{
+	font-family: montserrat;
+	font-size: large;
+	margin-top: 8px;
+}
+ </style>
   <body>
 		
 		<div class="wrapper d-flex align-items-stretch">
@@ -26,17 +158,21 @@
 	            <a href="#"><span class="fa fa-home mr-3"></span>My Profile</a>
 	          </li>
 	          <li>
-	              <a href="{{url_for('getData_player')}}"><span class="fa fa-user mr-3"></span>Search Player stats</a>
+	              <a href="#"><span class="fa fa-user mr-3"></span>Comparison with other players</a>
 	          </li>
 	          <li>
-              <a href="{{url_for('getData_club')}}"><span class="fa fa-cogs mr-3"></span>Club Stats</a>
+              <a href="#"><span class="fa fa-sticky-note mr-3"></span>League Stats</a>
 	          </li>
 	          <li>
-              <a href="{{url_for('getData_manager')}}"><span class="fa fa-paper-plane mr-3"></span> Manager Stats</a>
+              <a href="#"><span class="fa fa-cogs mr-3"></span>Club Stats</a>
 	          </li>
 	          <li>
-              <a href="{{url_for('getData_referee')}}"><span class="fa fa-sticky-note mr-3"></span> Referee Stats</a>
+              <a href="#"><span class="fa fa-paper-plane mr-3"></span> Manager Stats</a>
 	          </li>
+	          <li>
+              <a href="{{url_for('logout')}}">Logout</a>
+          		</li>
+            </li>
 	        </ul>
 
 
@@ -49,7 +185,7 @@
         <form action="{{ url_for('getData_player') }}" method="post">
 
         <div class="DropDowns">
-        <label for="Position">Choose a position:</label>
+        <label for="Position" id= "dropDownLabel">Choose a position:</label>
 		  <select id="Position" name="Position">
 		  	<style> display:inline-block </style>
 		  	<option value="None">None</option>
@@ -70,8 +206,9 @@
 		    <option value="Second Striker">Second Striker</option>
 		  </select>
 		  &nbsp;&nbsp;&nbsp;&nbsp;
-
-		<label for="Club">Choose a club:</label>
+		<br>
+		<label for="Club" id= "dropDownLabel">Choose a club:</label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 		  <select id="Club" name="Club">
 		  	<option value="None">None</option>
 		    <option value="Afc Bournemouth">Afc Bournemouth</option>
@@ -139,44 +276,39 @@
 		 </div>
 		 <br>
 
-		<label for="Games_Played">Games Played</label>&nbsp;&nbsp;&nbsp;&nbsp;
-		<span id="slider_value1"></span>&nbsp;&nbsp;&nbsp;&nbsp;
-  			0&nbsp;<input type="range" id="Games_Played" name="Games_Played" min="0" max="912" value="0" onchange="document.getElementById('slider_value1').innerHTML = this.value">912
+		<label for="Games_Played" id = "sliderLabel">Games Played:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  			0&nbsp;&nbsp;<input type="range" id="Games_Played" name="Games_Played" min="0" max="912" value="0" onchange="document.getElementById('slider_value1').innerHTML = this.value">&nbsp;&nbsp;912&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Current Value:</span>&nbsp;&nbsp;<span id="slider_value1"></span>
   			<br>
 
-  		<label for="Goals">Goals</label>&nbsp;&nbsp;&nbsp;&nbsp;
-		<span id="slider_value2"></span>&nbsp;&nbsp;&nbsp;&nbsp;
-  			0&nbsp;<input type="range" id="Goals" name="Goals" min="0" max="627" value="0" onchange="document.getElementById('slider_value2').innerHTML = this.value">627
+  		<label for="Goals" id = "sliderLabel">Goals:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  			0&nbsp;&nbsp;<input type="range" id="Goals" name="Goals" min="0" max="627" value="0" onchange="document.getElementById('slider_value2').innerHTML = this.value">&nbsp;&nbsp;627&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Current Value:</span>&nbsp;&nbsp;<span id="slider_value2"></span>
   			<br>
 
-  		<label for="Assists">Assists</label>&nbsp;&nbsp;&nbsp;&nbsp;
-		<span id="slider_value3"></span>&nbsp;&nbsp;&nbsp;&nbsp;
-  			0&nbsp;<input type="range" id="Assists" name="Assists" min="0" max="261" value="0" onchange="document.getElementById('slider_value3').innerHTML = this.value">261 
+  		<label for="Assists" id = "sliderLabel">Assists:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			  0&nbsp;&nbsp;<input type="range" id="Assists" name="Assists" min="0" max="261" value="0" onchange="document.getElementById('slider_value3').innerHTML = this.value">&nbsp;&nbsp;261&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Current Value:</span>&nbsp;&nbsp;<span id="slider_value3"></span>
   			<br>
 
-  		<label for="GoalsConceded">Goals Conceded</label>&nbsp;&nbsp;&nbsp;&nbsp;
-		<span id="slider_value4"></span>&nbsp;&nbsp;&nbsp;&nbsp;
-  			0&nbsp;<input type="range" id="GoalsConceded" name="GoalsConceded" min="0" max="762" value="0" onchange="document.getElementById('slider_value4').innerHTML = this.value">762 
+  		<label for="GoalsConceded" id = "sliderLabel">Goals Conceded:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  			0&nbsp;&nbsp;<input type="range" id="GoalsConceded" name="GoalsConceded" min="0" max="762" value="0" onchange="document.getElementById('slider_value4').innerHTML = this.value">&nbsp;&nbsp;762&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Current Value:</span>&nbsp;&nbsp;<span id="slider_value4"></span>
   			<br>
 
-  		<label for="CleanSheets">Clean Sheets</label>&nbsp;&nbsp;&nbsp;&nbsp;
-		<span id="slider_value5"></span>&nbsp;&nbsp;&nbsp;&nbsp;
-  			0&nbsp;<input type="range" id="CleanSheets" name="CleanSheets" min="0" max="408" value="0" onchange="document.getElementById('slider_value5').innerHTML = this.value">408
+  		<label for="CleanSheets" id = "sliderLabel">Clean Sheets:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  			0&nbsp;&nbsp;<input type="range" id="CleanSheets" name="CleanSheets" min="0" max="408" value="0" onchange="document.getElementById('slider_value5').innerHTML = this.value">&nbsp;&nbsp;408&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Current Value:</span>&nbsp;&nbsp;<span id="slider_value5"></span>
   		<br>
 
-  		<label for="Age">Age</label>&nbsp;&nbsp;&nbsp;&nbsp;
-		<span id="slider_value6"></span>&nbsp;&nbsp;&nbsp;&nbsp;
-  			17&nbsp;<input type="range" id="Age" name="Age" min="17" max="42" value="17" onchange="document.getElementById('slider_value6').innerHTML = this.value">42 
+  		<label for="Age" id = "sliderLabel">Age:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  			17&nbsp;&nbsp;<input type="range" id="Age" name="Age" min="17" max="42" value="17" onchange="document.getElementById('slider_value6').innerHTML = this.value">&nbsp;&nbsp;42 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Current Value:</span>&nbsp;&nbsp;<span id="slider_value6"></span>
   			<br>
 
-  		<label for="MarketValue">Market Value (in euro)</label>&nbsp;&nbsp;&nbsp;&nbsp;
-		<span id="slider_value7"></span>&nbsp;&nbsp;&nbsp;&nbsp;
-  			1.00&nbsp;<input type="range" id="MarketValue" name="MarketValue" min="1.00" max="900.00" value="1.00" onchange="document.getElementById('slider_value7').innerHTML = this.value">900.00 
+  		<label for="MarketValue" id = "sliderLabel">Market Value (€):</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+  			1.00&nbsp;&nbsp;<input type="range" id="MarketValue" name="MarketValue" min="1.00" max="900.00" value="1.00" onchange="document.getElementById('slider_value7').innerHTML = this.value">&nbsp;&nbsp;900&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Current Value:</span>&nbsp;&nbsp;<span id="slider_value7"></span>
   			<br>
 
-  		<label for="Height">Height (in m)</label>&nbsp;&nbsp;&nbsp;&nbsp;
-		<span id="slider_value8"></span>&nbsp;&nbsp;&nbsp;&nbsp;
-  			1.00&nbsp;<input type="range" id="Height" name="Height" min="1.00" max="2.50" value="1.00" onchange="document.getElementById('slider_value8').innerHTML = this.value">2.50 &nbsp;&nbsp;&nbsp;&nbsp;
+  		<label for="Height" id = "sliderLabel">Height (in m):</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+  			1.00&nbsp;&nbsp;<input type="range" id="Height" name="Height" min="1.00" max="2.50" value="1.00" onchange="document.getElementById('slider_value8').innerHTML = this.value">&nbsp;&nbsp;2.50 &nbsp;&nbsp;&nbsp;<span>Current Value:</span>&nbsp;&nbsp;<span id="slider_value8"></span>
   		<br>
   		<br>
 

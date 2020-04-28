@@ -24,35 +24,81 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-@app.route("/",methods = ['POST', 'GET', 'OPTIONS'])
+@app.route("/", methods = ['POST', 'GET', 'OPTIONS'])
 def getPage_index():
-	# if request.method == "POST":
-	# 	uname = request.form["uname"]
-	# 	password = request.form["pwd"]
-	# 	print("yes")
-	# 	print(uname,password)
-	# 	if (uname == "player" and password == "Player@123"):
-	# 		return redirect(url_for('getData_player'))
-	# 	elif (uname == "manager" and password == "Manager@123"):
-	# 		return redirect(url_for("getData_manager"))
-	# 	elif (uname == "league" and password == "League@123"):
-	# 		return redirect(url_for("getData_club"))
-	# 	elif (uname == "referee" and password == "Referee@123"):
-	# 		return redirect(url_for("getData_referee"))
-	# 	elif (uname == "Arsenal" and password == "Arsenal@123"):
-	# 		return redirect(url_for("get_club_after_login", club=uname))
-	# print("fkn hell")
-	# return render_template('index.html', r=[])
+	if request.method == "POST":
+		uname = request.form["uname"]
+		password = request.form["pwd"]
+		print("yes")
+		print(uname,password)
+		if (uname == "player" and password == "Player@123"):
+			return redirect(url_for('getData_player'))
+		elif (uname == "manager" and password == "Manager@123"):
+			return redirect(url_for("getData_manager"))
+		elif (uname == "league" and password == "League@123"):
+			return redirect(url_for("getData_club"))
+		elif (uname == "referee" and password == "Referee@123"):
+			return redirect(url_for("getData_referee"))
+		elif (uname == "Arsenal" and password == "Arsenal@123"):
+			return redirect(url_for("get_club_after_login", Club=uname))
+		elif (password == "Referee@123"):
+			return redirect(url_for("refereePage",ref = uname))
+	print("fkn hell")
+	return render_template('index.html', r=[])
+	# return redirect(url_for("get_club_add_player_page", Club="Arsenal"))
 
-	return redirect(url_for("get_club_after_login", club="Arsenal"))
+@app.route("/back", methods = ['POST', 'GET', 'OPTIONS'])
+def logout():
+	return render_template('index.html', r=[])
 
 @app.route("/contact_us")
 def getPage_contact_us():
     return render_template('contact.html')
 
+@app.route("/referee/<ref>",methods = ['POST', 'GET', 'OPTIONS'])
+def refereePage(ref):
+	print("hello")
+	x = ref
+	ref = ref.split("_")
+	refName = " ".join(ref)
+	print(refName)
+	cmd = "SELECT League_name from Referee where Referee_name=\'{}\'".format(refName)
+	mycursor.execute(cmd)
+	league = str(mycursor.fetchall()[0])[2:-3]
+	print(league[2:-3])
+	cmd = "select Club_name from Club where League_name=\'{}\'".format(league)
+	mycursor.execute(cmd)
+	clubs = (mycursor.fetchall())
+	print(clubs)
+	ans = []
+	for i in range(len(clubs)):
+		# print(clubs[i][2:-3])
+		print(clubs[i][0])
+		ans.append({"club":str(clubs[i][0])})
+
+
+	if request.method == "POST":
+		team1 = request.form["Club1"]
+		team2 = request.form["Club2"]
+		print(team1,team2)
+		cmd = "select P1.Name from Season_player as S,Player as P1 where S.Player_ID=P1.Player_ID and  S.Player_ID in (select P.Player_ID from Player as P where P.Player_ID = S.Player_Id and (P.Club=\'{}\' or P.Club = \'{}\' )) order by Yellow_cards+Red_cards desc limit 5;".format(team1,team2)
+		mycursor.execute(cmd)
+		players = mycursor.fetchall()
+		ans2 = []
+		for i in range(5):
+		# print(clubs[i][2:-3])
+			print(players[i][0])
+			ans.append({"player":str(players[i][0])})
+		return render_template("ref.html",clubs = ans,ref = x,r = ans2)
+
+
+
+	# print(box)
+	return render_template("ref.html",clubs = ans,ref = x,r=[])
+
 @app.route("/club_after_login")
 def get_club_after_login():
-	club = request.args['club']
+	club = request.args['Club']
 	sql_cmd = "SELECT * from Player where Club=\'{}\'".format(club)
 	mycursor.execute(sql_cmd)
 	data = mycursor.fetchall() # data comes in the form of a list 
@@ -75,8 +121,34 @@ def get_club_after_login():
 			'Club': str(entries[13]),
 		})
 	print(result, flush=True)
-	return render_template('afterLogin_club.html', club=club, r=result)
+	return render_template('club_profile.html', club=club, r=result)
 
+@app.route("/club_delete")
+def get_club_after_delete():
+	club = request.args['Club']
+	sql_cmd = "SELECT * from Player where Club=\'{}\'".format(club)
+	mycursor.execute(sql_cmd)
+	data = mycursor.fetchall() # data comes in the form of a list 
+	print("data", data, flush=True)
+	result = []
+	for entries in data:
+		result.append({
+			'Player_ID': int(entries[0]),
+			'Name': str(entries[1]),
+			'Games_Played': int(entries[2]),
+			'Goals': int(entries[3]),
+			'Assists': int(entries[4]),
+			'GoalsConceded': int(entries[5]),
+			'CleanSheets': int(entries[6]),
+			'Position': str(entries[7]),
+			'Age': int(entries[8]),
+			'Contract': str(entries[9]),
+			'MarketValue': float(entries[10]),
+			'Height': float(entries[11]),
+			'Club': str(entries[13]),
+		})
+	print(result, flush=True)
+	return render_template('afterLogin_club.html', r=result, club=club,)
 
 @app.route("/club_after_player_deletion")
 def delete_player():
@@ -85,8 +157,43 @@ def delete_player():
 	sql_cmd = "UPDATE Player set Club=\'{}\' where Player_ID={}".format("-", Player_ID)
 	mycursor.execute(sql_cmd)
 	mydb.commit()
-	return redirect(url_for("get_club_after_login", club=current_club))
+	return redirect(url_for("get_club_after_delete", club=current_club))
 
+@app.route("/add_player")
+def get_club_add_player_page():
+	current_club = request.args['Club']
+	sql_cmd = "SELECT * from Player where Contract=\'{}\'".format('-')
+	# print(sql_cmd, flush=True)
+	mycursor.execute(sql_cmd)
+	data = mycursor.fetchall() # data comes in the form of a list 
+	print(data, flush=True)
+	result = []
+	for entries in data:
+		result.append({
+			'Player_ID': int(entries[0]),
+			'Name': str(entries[1]),
+			'Games_Played': int(entries[2]),
+			'Goals': int(entries[3]),
+			'Assists': int(entries[4]),
+			'GoalsConceded': int(entries[5]),
+			'CleanSheets': int(entries[6]),
+			'Position': str(entries[7]),
+			'Age': int(entries[8]),
+			'MarketValue': float(entries[10]),
+		})
+		print(result, flush=True)
+	return render_template('club_insert.html', r=result, club=current_club)
+
+@app.route("/added_player")
+def playerAdd():
+	Player_ID =  request.args['Player_ID']
+	current_club = request.args['Club']
+	print(current_club, flush=True)
+	sql_cmd = "UPDATE Player set Club=\'{}\' where Player_ID={}".format(current_club, Player_ID)
+	print(sql_cmd, flush=True)
+	mycursor.execute(sql_cmd)
+	mydb.commit()
+	return redirect(url_for("get_club_add_player_page", Club=current_club))
 
 @app.route("/refereeData", methods=['POST', 'GET'])
 def getData_referee():

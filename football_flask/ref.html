@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="static/style_player.css">
+		<link rel="stylesheet" href="../static/style_player.css">
   </head>
   <body>
 		
@@ -37,9 +37,6 @@
             <li>
               <a href="{{url_for('getData_referee')}}"><span class="fa fa-sticky-note mr-3"></span> Referee Stats</a>
             </li>
-            <li>
-              <a href="{{url_for('logout')}}">Logout</a>
-            </li>
           </ul>
 
 
@@ -49,36 +46,35 @@
       <div id="content" class="p-4 p-md-5 pt-5">
         <h2 class="mb-4">Referee Stats</h2>
 
-        <form action="{{ url_for('getData_referee') }}" method="post">
+        <form action="{{ url_for('refereePage',ref=ref) }}" method="post">
 
         <div class="DropDowns">
-        <label for="League">Choose a league:</label>
-		  <select id="League" name="League">
+        <label for="Club1">Choose 1st Club: </label>
+		  <select id="Club1" name="Club1">
 		  	<style> display:inline-block </style>
 		  	<option value="None">None</option>
-		    <option value="Premier League">Premier League</option>
-		    <option value="Serie A">Serie A</option>
-		    <option value="La Liga">La Liga</option>
+            {%for club in clubs%}
+            <option value={{club["club"]}}>{{club["club"]}}</option>
+            {%endfor%}
 		  </select>
 		  &nbsp;&nbsp;&nbsp;&nbsp;
 
 		 </div>
 		 <br>
+         <div class="DropDowns">
+        <label for="Club2">Choose 2nd Club: </label>
+		  <select id="Club2" name="Club2">
+		  	<style> display:inline-block </style>
+		  	<option value="None">None</option>
+            {%for club in clubs%}
+            <option value={{club["club"]}}>{{club["club"]}}</option>
+            alert({{club}})
+            {%endfor%}
+		  </select>
+		  &nbsp;&nbsp;&nbsp;&nbsp;
 
-     <label for="Yellow_cards">Yellow Cards</label>&nbsp;&nbsp;&nbsp;&nbsp;
-      <span id="slider_value1"></span>&nbsp;&nbsp;&nbsp;&nbsp;
-          0&nbsp;<input type="range" id="Yellow_cards" name="Yellow_cards" min="0" max="1874" value="0" onchange="document.getElementById('slider_value1').innerHTML = this.value">1874
-          <br>
-
-      <label for="Red_cards">Red Cards</label>&nbsp;&nbsp;&nbsp;&nbsp;
-      <span id="slider_value2"></span>&nbsp;&nbsp;&nbsp;&nbsp;
-          0&nbsp;<input type="range" id="Red_cards" name="Red_cards" min="0" max="62" value="0" onchange="document.getElementById('slider_value2').innerHTML = this.value">62
-          <br>
-
-      <label for="Penalties_given">Penalties Given</label>&nbsp;&nbsp;&nbsp;&nbsp;
-      <span id="slider_value3"></span>&nbsp;&nbsp;&nbsp;&nbsp;
-          0&nbsp;<input type="range" id="Penalties_given" name="Penalties_given" min="0" max="148" value="0" onchange="document.getElementById('slider_value3').innerHTML = this.value">148
-          <br>
+		 </div>
+		 <br>
 
   		<input type="submit" onclick="show()">
   		</form>
@@ -93,7 +89,7 @@
                 <tbody id="mydata">
                     {%for data in r%}
                     <tr>
-                        <td><a href="#" Name="{{data['Referee_name']}}", Referee_ID="{{data['Referee_ID']}}", League_name="{{data['League_name']}}", Yellow_cards="{{data['Yellow_cards']}}", Red_cards="{{data['Red_cards']}}", Penalties_given="{{data['Penalties_given']}}">{{data['Referee_name']}}</td>
+                        <td>hello</td>
                     </tr> 
                     {%endfor%}
                 </tbody>
